@@ -1,0 +1,76 @@
+name: Backfill weekly report 2026-09-08 to 2026-09-14
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/backfill-2026-09-08-14.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install document dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-docx
+          sudo apt-get update
+          sudo apt-get install -y libreoffice-writer
+
+      - name: Generate DOCX reports and update index
+        run: python .github/scripts/backfill_week_2026_09_08_14.py
+
+      - name: Convert DOCX reports to PDF
+        run: |
+          OUT='reports/2026/2026-09-08_2026-09-14'
+          libreoffice --headless --convert-to pdf --outdir "$OUT" "$OUT/Relatorio_Semanal_Observatorio_Global_08-14_Set_2026_WCS.docx"
+          libreoffice --headless --convert-to pdf --outdir "$OUT" "$OUT/Weekly_Report_Global_Observatory_08-14_Sep_2026_WCS.docx"
+          libreoffice --headless --convert-to pdf --outdir "$OUT" "$OUT/Informe_Semanal_Observatorio_Global_08-14_Sep_2026_WCS.docx"
+
+      - name: Validate outputs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          out=Path('reports/2026/2026-09-08_2026-09-14')
+          files=[
+            'Relatorio_Semanal_Observatorio_Global_08-14_Set_2026_WCS.docx',
+            'Relatorio_Semanal_Observatorio_Global_08-14_Set_2026_WCS.pdf',
+            'Weekly_Report_Global_Observatory_08-14_Sep_2026_WCS.docx',
+            'Weekly_Report_Global_Observatory_08-14_Sep_2026_WCS.pdf',
+            'Informe_Semanal_Observatorio_Global_08-14_Sep_2026_WCS.docx',
+            'Informe_Semanal_Observatorio_Global_08-14_Sep_2026_WCS.pdf'
+          ]
+          missing=[f for f in files if not (out/f).is_file() or (out/f).stat().st_size < 1000]
+          assert not missing, missing
+          data=json.loads(Path('reports.json').read_text())
+          assert any(r.get('id')=='2026-09-08_2026-09-14' for r in data)
+          print('validated', len(files), 'files and reports.json')
+          PY
+
+      - name: Commit generated reports
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports.json reports/2026/2026-09-08_2026-09-14/
+          if git diff --cached --quiet; then
+            echo 'No report changes to commit.'
+          else
+            git commit -m 'Add weekly report for 2026-09-08 to 2026-09-14'
+            git push
+          fi
