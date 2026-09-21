@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-22T00:00:00-04:00",
+  "audited_through": "2026-09-21",
+  "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
+  "rendering": {
+    "default_layer": "documented_routes",
+    "solid": "Exact or explicitly reported itinerary/segment.",
+    "dashed": "Documented route with generalized endpoint, broad geography, or route based on an attributed statement.",
+    "dotted": "Named corridor or partial direction only; do not imply unknown origin/destination.",
+    "bidirectional": "Use only when a source explicitly describes movement in both directions.",
+    "context_only": "Never render in the current-event documented-route layer."
+  },
+  "routes": [
+    {
+      "id": "alicante-oran-2026-09",
+      "event_match": {"location_contains": "Alicante", "publication_date": "2026-09-11"},
+      "status": "DOCUMENTED",
+      "route_type": "planned_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Alicante → Orán",
+      "label_en": "Alicante → Oran",
+      "label_es": "Alicante → Orán",
+      "segments": [
+        {
+          "from": {"name": "Porto de Alicante", "country": "Espanha", "lat": 38.3452, "lon": -0.4810, "precision": "city_port_generalized"},
+          "to": {"name": "Orán", "country": "Argélia", "lat": 35.6971, "lon": -0.6308, "precision": "city"}
+        }
+      ],
+      "evidence_pt": "As aves foram interceptadas no porto de Alicante antes do embarque em ferry para Orán, Argélia.",
+      "evidence_en": "The birds were intercepted at Alicante port before boarding a ferry to Oran, Algeria.",
+      "evidence_es": "Las aves fueron interceptadas en el puerto de Alicante antes del embarque en ferry hacia Orán, Argelia.",
+      "source_label": "EFE",
+      "source_url": "https://efe.com/espana/2026-09-11/jilgueros-hacinados-puerto-alicante-destino-argelia/"
+    },
+    {
+      "id": "miami-istanbul-turin-2026-09",
+      "event_match": {"location_contains": "Turim-Caselle", "publication_date": "2026-09-08"},
+      "status": "DOCUMENTED",
+      "route_type": "completed_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Miami → Istambul → Turim",
+      "label_en": "Miami → Istanbul → Turin",
+      "label_es": "Miami → Estambul → Turín",
+      "segments": [
+        {
+          "from": {"name": "Miami", "country": "Estados Unidos", "lat": 25.7617, "lon": -80.1918, "precision": "city"},
+          "to": {"name": "Istambul", "country": "Turquia", "lat": 41.0082, "lon": 28.9784, "precision": "city"}
+        },
+        {
+          "from": {"name": "Istambul", "country": "Turquia", "lat": 41.0082, "lon": 28.9784, "precision": "city"},
+          "to": {"name": "Aeroporto de Turim-Caselle", "country": "Itália", "lat": 45.2008, "lon": 7.6496, "precision": "airport"}
+        }
+      ],
+      "evidence_pt": "O passageiro chegou a Turim vindo de Miami via Istambul.",
+      "evidence_en": "The passenger arrived in Turin from Miami via Istanbul.",
+      "evidence_es": "El pasajero llegó a Turín desde Miami vía Estambul.",
+      "source_label": "Guardia di Finanza / ANSA",
+      "source_url": "https://www.ansa.it/sito/notizie/cronaca/2026/09/08/testa-di-coccodrillo-nella-valigia-denunciato-un-uomo-a-torino-caselle_a1716d6b-4d1d-4b65-abdd-74b9240da610.html"
+    },
+    {
+      "id": "luque-sao-paulo-bangkok-2026-09",
+      "event_match": {"location_contains": "Luque", "event_date": "2026-09-02"},
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "planned_itinerary",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Luque → São Paulo → Bangkok",
+      "label_en": "Luque → São Paulo → Bangkok",
+      "label_es": "Luque → São Paulo → Bangkok",
+      "segments": [
+        {
+          "from": {"name": "Aeroporto Silvio Pettirossi", "country": "Paraguai", "lat": -25.2399, "lon": -57.5191, "precision": "airport"},
+          "to": {"name": "São Paulo", "country": "Brasil", "lat": -23.5505, "lon": -46.6333, "precision": "city_generalized"}
+        },
+        {
+          "from": {"name": "São Paulo", "country": "Brasil", "lat": -23.5505, "lon": -46.6333, "precision": "city_generalized"},
+          "to": {"name": "Bangkok", "country": "Tailândia", "lat": 13.7563, "lon": 100.5018, "precision": "city_generalized"}
+        }
+      ],
+      "evidence_pt": "Reportagem baseada no boletim policial indicou itinerário previsto via São Paulo, com destino posterior a Bangkok.",
+      "evidence_en": "Reporting based on the police bulletin described a planned itinerary via São Paulo and onward to Bangkok.",
+      "evidence_es": "Una nota basada en el boletín policial indicó un itinerario previsto vía São Paulo y posteriormente Bangkok.",
+      "source_label": "ABC Color / MADES",
+      "source_url": "https://www.abc.com.py/nacionales/2026/09/03/esto-dice-el-mades-sobre-el-decomiso-de-mas-de-40-huevos-de-fauna-en-el-aeropuerto/"
+    },
+    {
+      "id": "soekarnohatta-srilanka-2026-09-05",
+      "event_match": {"location_contains": "Tangerang", "event_date": "2026-09-05"},
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "planned_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Jacarta/Soekarno-Hatta → Sri Lanka",
+      "label_en": "Jakarta/Soekarno-Hatta → Sri Lanka",
+      "label_es": "Yakarta/Soekarno-Hatta → Sri Lanka",
+      "segments": [
+        {
+          "from": {"name": "Aeroporto Soekarno-Hatta", "country": "Indonésia", "lat": -6.1256, "lon": 106.6559, "precision": "airport"},
+          "to": {"name": "Sri Lanka", "country": "Sri Lanka", "lat": 7.8731, "lon": 80.7718, "precision": "country_centroid_generalized"}
+        }
+      ],
+      "evidence_pt": "As 101 aves seriam levadas em voo internacional para o Sri Lanka; o aeroporto/cidade de destino não foi divulgado.",
+      "evidence_en": "The 101 birds were to be taken on an international flight to Sri Lanka; the destination airport/city was not disclosed.",
+      "evidence_es": "Las 101 aves serían transportadas en un vuelo internacional hacia Sri Lanka; no se divulgó el aeropuerto/ciudad de destino.",
+      "source_label": "ANTARA",
+      "source_url": "https://en.antaranews.com/news/430071/101-birds-seized-from-sri-lankan-national-at-soekarno-hatta-airport"
+    },
+    {
+      "id": "denton-china-2026-09-01",
+      "event_match": {"location_contains": "Denton", "event_date": "2026-09-01"},
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "planned_shipment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Denton (Texas) → China",
+      "label_en": "Denton (Texas) → China",
+      "label_es": "Denton (Texas) → China",
+      "segments": [
+        {
+          "from": {"name": "Denton, Texas", "country": "Estados Unidos", "lat": 33.2148, "lon": -97.1331, "precision": "city"},
+          "to": {"name": "China", "country": "China", "lat": 35.8617, "lon": 104.1954, "precision": "country_centroid_generalized"}
+        }
+      ],
+      "evidence_pt": "A tentativa de envio de 191 quelônios foi reportada como tendo a China como destino; a cidade de destino não foi divulgada.",
+      "evidence_en": "The attempted shipment of 191 turtles and tortoises was reported as destined for China; no destination city was disclosed.",
+      "evidence_es": "El intento de envío de 191 tortugas fue reportado con destino a China; no se divulgó la ciudad de destino.",
+      "source_label": "FOX 4 Dallas-Fort Worth",
+      "source_url": "https://www.fox4news.com/news/denton-animal-shelter-turtles-fedex.amp"
+    },
+    {
+      "id": "us-hongkong-2026-09-01",
+      "event_match": {"location_contains": "Aeroporto Internacional de Hong Kong", "event_date": "2026-09-01"},
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "completed_shipment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Estados Unidos → Hong Kong",
+      "label_en": "United States → Hong Kong",
+      "label_es": "Estados Unidos → Hong Kong",
+      "segments": [
+        {
+          "from": {"name": "Estados Unidos", "country": "Estados Unidos", "lat": 39.8283, "lon": -98.5795, "precision": "country_centroid_generalized"},
+          "to": {"name": "Aeroporto Internacional de Hong Kong", "country": "Hong Kong", "lat": 22.3080, "lon": 113.9185, "precision": "airport"}
+        }
+      ],
+      "evidence_pt": "A encomenda contendo seis tartarugas foi enviada dos Estados Unidos para Hong Kong.",
+      "evidence_en": "The parcel containing six turtles was sent from the United States to Hong Kong.",
+      "evidence_es": "El paquete con seis tortugas fue enviado desde Estados Unidos hacia Hong Kong.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.customs.gov.hk/en/customs-announcement/press-release/index_id_5588.html"
+    },
+    {
+      "id": "us-hongkong-2026-09-19",
+      "event_match": {"location_contains": "Hong Kong", "event_date": "2026-09-19"},
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "completed_shipment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Estados Unidos → Hong Kong",
+      "label_en": "United States → Hong Kong",
+      "label_es": "Estados Unidos → Hong Kong",
+      "segments": [
+        {
+          "from": {"name": "Estados Unidos", "country": "Estados Unidos", "lat": 39.8283, "lon": -98.5795, "precision": "country_centroid_generalized"},
+          "to": {"name": "Aeroporto Internacional de Hong Kong", "country": "Hong Kong", "lat": 22.3080, "lon": 113.9185, "precision": "airport"}
+        }
+      ],
+      "evidence_pt": "A remessa contendo dez tartarugas havia sido enviada dos Estados Unidos para Hong Kong.",
+      "evidence_en": "The shipment containing ten turtles had been sent from the United States to Hong Kong.",
+      "evidence_es": "El envío con diez tortugas había sido remitido desde Estados Unidos hacia Hong Kong.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.customs.gov.hk/en/customs-announcement/press-release/index_id_5642.html"
+    },
+    {
+      "id": "caninde-iati-caruaru-2026-08-18",
+      "event_match": {"location_contains": "Iati", "event_date": "2026-08-18"},
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_supply_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Canindé de São Francisco → Iati/BR-423 → Caruaru",
+      "label_en": "Canindé de São Francisco → Iati/BR-423 → Caruaru",
+      "label_es": "Canindé de São Francisco → Iati/BR-423 → Caruaru",
+      "segments": [
+        {
+          "from": {"name": "Canindé de São Francisco (SE)", "country": "Brasil", "lat": -9.6481, "lon": -37.7923, "precision": "city"},
+          "to": {"name": "Iati / BR-423", "country": "Brasil", "lat": -9.0456, "lon": -36.8496, "precision": "city_generalized"}
+        },
+        {
+          "from": {"name": "Iati / BR-423", "country": "Brasil", "lat": -9.0456, "lon": -36.8496, "precision": "city_generalized"},
+          "to": {"name": "Caruaru (PE)", "country": "Brasil", "lat": -8.2846, "lon": -35.9702, "precision": "city"}
+        }
+      ],
+      "evidence_pt": "Segundo declaração do motorista registrada pela PRF, os animais teriam sido adquiridos em Canindé de São Francisco e seriam revendidos em Caruaru; a apreensão ocorreu em Iati.",
+      "evidence_en": "According to the driver's statement recorded by PRF, the animals had allegedly been acquired in Canindé de São Francisco and were to be resold in Caruaru; the seizure occurred in Iati.",
+      "evidence_es": "Según la declaración del conductor registrada por la PRF, los animales habrían sido adquiridos en Canindé de São Francisco y serían revendidos en Caruaru; el decomiso ocurrió en Iati.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/nacionais/2026/agosto/prf-resgata-584-animais-silvestres-em-iati-pe"
+    },
+    {
+      "id": "juanda-makassar-2026-09-13",
+      "event_match": {"location_contains": "Juanda", "event_date": "2026-09-13"},
+      "status": "DOCUMENTED",
+      "route_type": "intercepted_itinerary",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Surabaya/Juanda → Makassar",
+      "label_en": "Surabaya/Juanda → Makassar",
+      "label_es": "Surabaya/Juanda → Makassar",
+      "segments": [
+        {
+          "from": {"name": "Aeroporto Internacional de Juanda", "country": "Indonésia", "lat": -7.3797, "lon": 112.7870, "precision": "airport"},
+          "to": {"name": "Makassar", "country": "Indonésia", "lat": -5.0616, "lon": 119.5540, "precision": "airport_generalized"}
+        }
+      ],
+      "evidence_pt": "Um filhote de macaco-de-cauda-longa foi detectado em bagagem no trajeto Surabaya–Makassar.",
+      "evidence_en": "A juvenile long-tailed macaque was detected in baggage on the Surabaya–Makassar route.",
+      "evidence_es": "Un juvenil de macaco de cola larga fue detectado en equipaje en la ruta Surabaya–Makassar.",
+      "source_label": "TNI AL / Badan Karantina Indonesia",
+      "source_url": "https://www.tnial.mil.id/berita/93106/SATGASPAM-TNI-AL-BANDARA-JUANDA-GAGALKAN-DUA-KASUS-PENYELUNDUPAN-SATWA-ILEGAL/"
+    },
+    {
+      "id": "pangkalanbun-juanda-lombok-2026-09-14",
+      "event_match": {"location_contains": "Juanda", "event_date": "2026-09-14"},
+      "status": "DOCUMENTED",
+      "route_type": "intercepted_itinerary",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Pangkalan Bun → Surabaya/Juanda → Lombok",
+      "label_en": "Pangkalan Bun → Surabaya/Juanda → Lombok",
+      "label_es": "Pangkalan Bun → Surabaya/Juanda → Lombok",
+      "segments": [
+        {
+          "from": {"name": "Pangkalan Bun", "country": "Indonésia", "lat": -2.7052, "lon": 111.6732, "precision": "airport_generalized"},
+          "to": {"name": "Aeroporto Internacional de Juanda", "country": "Indonésia", "lat": -7.3797, "lon": 112.7870, "precision": "airport"}
+        },
+        {
+          "from": {"name": "Aeroporto Internacional de Juanda", "country": "Indonésia", "lat": -7.3797, "lon": 112.7870, "precision": "airport"},
+          "to": {"name": "Lombok", "country": "Indonésia", "lat": -8.7573, "lon": 116.2767, "precision": "airport_generalized"}
+        }
+      ],
+      "evidence_pt": "Seis animais sem documentação foram detectados em bagagem em conexão na rota Pangkalan Bun–Surabaya–Lombok.",
+      "evidence_en": "Six undocumented animals were detected in transfer baggage on the Pangkalan Bun–Surabaya–Lombok route.",
+      "evidence_es": "Seis animales sin documentación fueron detectados en equipaje en conexión en la ruta Pangkalan Bun–Surabaya–Lombok.",
+      "source_label": "TNI AL / Badan Karantina Indonesia",
+      "source_url": "https://www.tnial.mil.id/berita/93106/SATGASPAM-TNI-AL-BANDARA-JUANDA-GAGALKAN-DUA-KASUS-PENYELUNDUPAN-SATWA-ILEGAL/"
+    },
+    {
+      "id": "andhrapradesh-motu-odisha-2026-09",
+      "event_match": {"location_contains": "Malkangiri", "event_date_range": ["2026-09-16", "2026-09-17"]},
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "interstate_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Andhra Pradesh → Motu/Malkangiri, Odisha",
+      "label_en": "Andhra Pradesh → Motu/Malkangiri, Odisha",
+      "label_es": "Andhra Pradesh → Motu/Malkangiri, Odisha",
+      "segments": [
+        {
+          "from": {"name": "Andhra Pradesh", "country": "Índia", "lat": 15.9129, "lon": 79.7400, "precision": "state_centroid_generalized"},
+          "to": {"name": "Motu, Malkangiri, Odisha", "country": "Índia", "lat": 17.830558, "lon": 81.392247, "precision": "locality"}
+        }
+      ],
+      "evidence_pt": "Fontes reportam 55 tartarugas transportadas de Andhra Pradesh para Odisha e interceptadas na região de Motu/Malkangiri.",
+      "evidence_en": "Sources report 55 turtles transported from Andhra Pradesh to Odisha and intercepted in the Motu/Malkangiri area.",
+      "evidence_es": "Las fuentes informan que 55 tortugas eran transportadas desde Andhra Pradesh hacia Odisha y fueron interceptadas en la zona de Motu/Malkangiri.",
+      "source_label": "OrissaPOST",
+      "source_url": "https://www.orissapost.com/55-live-turtles-rescued-in-malkangiri-four-arrested/"
+    },
+    {
+      "id": "ribhoi-mawhati-2026-09-07",
+      "event_match": {"location_contains": "Ri-Bhoi", "event_date": "2026-09-07"},
+      "status": "DOCUMENTED_PARTIAL",
+      "route_type": "directional_segment",
+      "direction": "forward",
+      "line_style": "dotted",
+      "label_pt": "Ri-Bhoi/Nongpoh → direção a Mawhati",
+      "label_en": "Ri-Bhoi/Nongpoh → toward Mawhati",
+      "label_es": "Ri-Bhoi/Nongpoh → en dirección a Mawhati",
+      "segments": [
+        {
+          "from": {"name": "Ri-Bhoi/Nongpoh", "country": "Índia", "lat": 25.9023, "lon": 91.8768, "precision": "district_reference_generalized"},
+          "to": {"name": "Mawhati", "country": "Índia", "lat": 25.80947, "lon": 92.07787, "precision": "locality"}
+        }
+      ],
+      "evidence_pt": "O veículo foi interceptado enquanto seguia em direção a Mawhati. A rota anterior e o destino final não foram estabelecidos.",
+      "evidence_en": "The vehicle was intercepted while travelling toward Mawhati. The preceding route and final destination were not established.",
+      "evidence_es": "El vehículo fue interceptado mientras se dirigía hacia Mawhati. No se establecieron la ruta anterior ni el destino final.",
+      "source_label": "ThePrint / PTI",
+      "source_url": "https://theprint.in/india/dried-pangolin-scales-seized-2-persons-arrested-by-dri-in-meghalayas-ri-bhoi/3039820/"
+    },
+    {
+      "id": "bahia-pernambuco-2026-09-16",
+      "event_match": {"location_contains": "Paulo Afonso", "event_date": "2026-09-16"},
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "interstate_corridor",
+      "direction": "unspecified",
+      "line_style": "dashed",
+      "label_pt": "Bahia ↔ Pernambuco (direção não explicitada)",
+      "label_en": "Bahia ↔ Pernambuco (direction not specified)",
+      "label_es": "Bahia ↔ Pernambuco (dirección no especificada)",
+      "segments": [
+        {
+          "from": {"name": "Bahia", "country": "Brasil", "lat": -12.5797, "lon": -41.7007, "precision": "state_centroid_generalized"},
+          "to": {"name": "Pernambuco", "country": "Brasil", "lat": -8.8137, "lon": -36.9541, "precision": "state_centroid_generalized"}
+        }
+      ],
+      "evidence_pt": "A PRF informou que o condutor fora contratado para transportar as aves entre Bahia e Pernambuco; a nota não estabelece com segurança a direção origem→destino.",
+      "evidence_en": "PRF reported that the driver had been hired to transport the birds between Bahia and Pernambuco; the release does not safely establish origin→destination direction.",
+      "evidence_es": "La PRF informó que el conductor había sido contratado para transportar las aves entre Bahia y Pernambuco; la nota no establece con seguridad la dirección origen→destino.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/nacionais/2026/setembro/prf-resgata-37-aves-silvestres-transportadas-irregularmente-na-br-110-em-paulo-afonso-ba"
+    },
+    {
+      "id": "diiso-hagadera-corridor-2026-09-11",
+      "event_match": {"location_contains": "Garissa", "event_date": "2026-09-11"},
+      "status": "DOCUMENTED_CORRIDOR",
+      "route_type": "named_road_corridor",
+      "direction": "unspecified",
+      "line_style": "dotted",
+      "label_pt": "Corredor rodoviário Diiso–Hagadera",
+      "label_en": "Diiso–Hagadera road corridor",
+      "label_es": "Corredor vial Diiso–Hagadera",
+      "segments": [
+        {
+          "from": {"name": "Diiso", "country": "Quênia", "lat": -0.445944, "lon": 39.9246, "precision": "locality_approximate"},
+          "to": {"name": "Hagadera", "country": "Quênia", "lat": 0.00039, "lon": 40.3721, "precision": "locality_approximate"}
+        }
+      ],
+      "evidence_pt": "A apreensão ocorreu na estrada Diiso–Hagadera. A fonte não estabelece o sentido de deslocamento, origem anterior ou destino final.",
+      "evidence_en": "The seizure occurred on the Diiso–Hagadera road. The source does not establish travel direction, prior origin, or final destination.",
+      "evidence_es": "El decomiso ocurrió en la carretera Diiso–Hagadera. La fuente no establece el sentido del desplazamiento, el origen previo ni el destino final.",
+      "source_label": "The Star",
+      "source_url": "https://www.the-star.co.ke/news/2026-09-12-27-dik-dik-carcasses-seized-in-garissa-bushmeat-trade"
+    },
+    {
+      "id": "kano-daura-corridor-2026-08-25",
+      "event_match": {"location_contains": "Kano–Daura", "event_date": "2026-08-25"},
+      "status": "DOCUMENTED_CORRIDOR",
+      "route_type": "named_road_corridor",
+      "direction": "unspecified",
+      "line_style": "dotted",
+      "label_pt": "Corredor rodoviário Kano–Daura",
+      "label_en": "Kano–Daura road corridor",
+      "label_es": "Corredor vial Kano–Daura",
+      "segments": [
+        {
+          "from": {"name": "Kano", "country": "Nigéria", "lat": 12.0022, "lon": 8.5920, "precision": "city"},
+          "to": {"name": "Daura", "country": "Nigéria", "lat": 13.0354, "lon": 8.3173, "precision": "city"}
+        }
+      ],
+      "evidence_pt": "Os 48 animais foram interceptados ao longo da estrada Kano–Daura. Origem, destino final e sentido de deslocamento não foram divulgados.",
+      "evidence_en": "The 48 animals were intercepted along the Kano–Daura road. Origin, final destination and travel direction were not disclosed.",
+      "evidence_es": "Los 48 animales fueron interceptados a lo largo de la carretera Kano–Daura. No se divulgaron el origen, el destino final ni el sentido de desplazamiento.",
+      "source_label": "Nigeria Customs / Punch Nigeria / World Animal News",
+      "source_url": null
+    },
+    {
+      "id": "mexico-sanysidro-2026-08-10",
+      "event_match": {"location_contains": "San Ysidro", "event_date": "2026-08-10"},
+      "status": "DOCUMENTED_PARTIAL",
+      "route_type": "border_crossing",
+      "direction": "forward",
+      "line_style": "dotted",
+      "label_pt": "México → San Ysidro (EUA), travessia fronteiriça",
+      "label_en": "Mexico → San Ysidro (U.S.), border crossing",
+      "label_es": "México → San Ysidro (EE. UU.), cruce fronterizo",
+      "segments": [
+        {
+          "from": {"name": "lado mexicano da fronteira San Ysidro/Tijuana", "country": "México", "lat": 32.5400, "lon": -117.0280, "precision": "border_context_generalized"},
+          "to": {"name": "San Ysidro Port of Entry", "country": "Estados Unidos", "lat": 32.5435, "lon": -117.0308, "precision": "border_port"}
+        }
+      ],
+      "evidence_pt": "A acusada foi detida ao tentar entrar nos Estados Unidos pelo porto de entrada de San Ysidro; a origem anterior no México não foi especificada.",
+      "evidence_en": "The defendant was arrested while attempting to enter the United States at the San Ysidro Port of Entry; the prior origin within Mexico was not specified.",
+      "evidence_es": "La acusada fue detenida al intentar ingresar a Estados Unidos por el puerto de entrada de San Ysidro; no se especificó el origen previo dentro de México.",
+      "source_label": "U.S. Department of Justice",
+      "source_url": "https://www.justice.gov/usao-sdca/pr/two-arrested-years-long-scheme-smuggle-protected-reptiles-across-us-mexico-border"
+    },
+    {
+      "id": "africa-quynhon-2026-08-06",
+      "event_match": {"location_contains": "Quy Nhon", "event_date": "2026-08-06"},
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "maritime_shipment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "África → Quy Nhon, Vietnã (origem nacional em revisão)",
+      "label_en": "Africa → Quy Nhon, Vietnam (country of origin under review)",
+      "label_es": "África → Quy Nhon, Vietnam (país de origen en revisión)",
+      "segments": [
+        {
+          "from": {"name": "África", "country": null, "lat": 1.6508, "lon": 17.6791, "precision": "continent_centroid_generalized"},
+          "to": {"name": "Quy Nhon", "country": "Vietnã", "lat": 13.7820, "lon": 109.2190, "precision": "port_city"}
+        }
+      ],
+      "evidence_pt": "Fonte governamental vietnamita confirma que os contêineres vieram da África. Fontes secundárias divergem entre República do Congo e República Democrática do Congo; por isso, o país de origem não é fixado no mapa.",
+      "evidence_en": "A Vietnamese government source confirms that the containers came from Africa. Secondary sources conflict between the Republic of the Congo and the Democratic Republic of the Congo, so no origin country is fixed on the map.",
+      "evidence_es": "Una fuente gubernamental vietnamita confirma que los contenedores procedían de África. Fuentes secundarias discrepan entre la República del Congo y la República Democrática del Congo; por ello no se fija un país de origen en el mapa.",
+      "source_label": "Government of Vietnam / Bao Chinh Phu",
+      "source_url": "https://www2.en.baochinhphu.vn/hai-quan-ban-giao-cho-cong-an-vu-phat-hien-12-tan-nga-voi-tu-chau-phi-102260812205748003.htm"
+    }
+  ],
+  "network_context": [
+    {
+      "id": "us-mexico-bidirectional-allegation-2023-2026",
+      "status": "ALLEGED_NETWORK",
+      "render_by_default": false,
+      "label_pt": "EUA ↔ México — alegação de esquema bidirecional em processo federal",
+      "label_en": "U.S. ↔ Mexico — alleged bidirectional scheme in federal case",
+      "label_es": "EE. UU. ↔ México — presunto esquema bidireccional en proceso federal",
+      "note_pt": "O DOJ alega um esquema de vários anos para mover répteis nos dois sentidos da fronteira. Exibir apenas em camada analítica separada, não como rota factual de uma única apreensão.",
+      "source_url": "https://www.justice.gov/usao-sdca/pr/two-arrested-years-long-scheme-smuggle-protected-reptiles-across-us-mexico-border"
+    }
+  ],
+  "excluded": [
+    {
+      "case": "Quito — iguanas-marinhas",
+      "reason": "CONFLICTING_DESTINATION",
+      "detail_pt": "As fontes divergem entre Bangkok/Tailândia e Islândia. Não fixar destino até resolução por fonte confiável."
+    },
+    {
+      "case": "Lo Wu — quatro tartarugas",
+      "reason": "CONTEXT_ONLY_ROUTE",
+      "detail_pt": "O texto menciona como antecedente outro caso Estados Unidos → Hong Kong; essa rota pertence ao caso de 1º de setembro, não ao evento de Lo Wu."
+    },
+    {
+      "case": "Caruaru — operação de 5 de setembro",
+      "reason": "CONTEXT_ONLY_ROUTE",
+      "detail_pt": "O contexto cita a rota Canindé de São Francisco → Iati → Caruaru de uma apreensão anterior; não duplicar essa rota no caso de Caruaru."
+    },
+    {
+      "case": "Joanesburgo — ovos de psitacídeos em 2026",
+      "reason": "HISTORICAL_CONTEXT_ONLY",
+      "detail_pt": "A rota África do Sul → Etiópia → Hong Kong citada no contexto refere-se a um caso de 2024. O destino dos casos de 2026 não foi divulgado."
+    },
+    {
+      "case": "Balasore — cinco orangotangos",
+      "reason": "ORIGIN_DESTINATION_UNKNOWN",
+      "detail_pt": "A origem biogeográfica da espécie não constitui evidência da rota. Origem, destino e responsáveis permanecem sob investigação."
+    },
+    {
+      "case": "Porto de Surigao — fauna exótica/protegida",
+      "reason": "ORIGIN_DESTINATION_UNKNOWN",
+      "detail_pt": "A fonte registra o ponto de interceptação, mas não origem ou destino da remessa."
+    },
+    {
+      "case": "Futian/Shenzhen — tartarugas em passageira",
+      "reason": "ORIGIN_UNKNOWN",
+      "detail_pt": "O ponto de entrada é conhecido, mas a origem do deslocamento não é explicitada na fonte; não inferir Hong Kong apenas pela geografia da fronteira."
+    },
+    {
+      "case": "Malkangiri — 352 escamas de pangolim",
+      "reason": "ORIGIN_DESTINATION_UNKNOWN",
+      "detail_pt": "Origem, compradores e destino permanecem sem confirmação."
+    },
+    {
+      "case": "Quy Nhon — país de origem",
+      "reason": "COUNTRY_CONFLICT",
+      "detail_pt": "Manter apenas África → Vietnã até resolver a divergência entre República do Congo e República Democrática do Congo."
+    }
+  ]
+}
