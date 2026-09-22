@@ -757,6 +757,350 @@
       "evidence_es": "Según la declaración del conductor registrada por la PRF, las aves habían salido de Valença do Piauí, Piauí, y serían entregadas en Campina Grande, Paraíba. El vehículo fue abordado en la BR-116 en Parnamirim, Pernambuco. La ruta se atribuye a la declaración del conductor y no representa una verificación independiente del origen o destino final.",
       "source_label": "Polícia Rodoviária Federal",
       "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/pernambuco/2026/junho/prf-resgata-250-passaros-silvestres-na-br-116-em-parnamirim"
+    },
+    {
+      "id": "sao-paulo-vitoria-aracaju-2026-02-06",
+      "event_match": {
+        "location_contains": "Vitória da Conquista",
+        "event_date": "2026-02-06"
+      },
+      "status": "DOCUMENTED_ROUTE",
+      "route_type": "interstate_bus_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "São Paulo → Vitória da Conquista/BR-116 → Aracaju",
+      "label_en": "São Paulo → Vitória da Conquista/BR-116 → Aracaju",
+      "label_es": "São Paulo → Vitória da Conquista/BR-116 → Aracaju",
+      "segments": [
+        {
+          "from": {
+            "name": "São Paulo (SP)",
+            "country": "Brasil",
+            "lat": -23.5505,
+            "lon": -46.6333,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Vitória da Conquista / BR-116",
+            "country": "Brasil",
+            "lat": -14.8619,
+            "lon": -40.8442,
+            "precision": "road_corridor_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Vitória da Conquista / BR-116",
+            "country": "Brasil",
+            "lat": -14.8619,
+            "lon": -40.8442,
+            "precision": "road_corridor_generalized"
+          },
+          "to": {
+            "name": "Aracaju (SE)",
+            "country": "Brasil",
+            "lat": -10.9472,
+            "lon": -37.0731,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A PRF informa que o ônibus fiscalizado em Vitória da Conquista fazia a rota São Paulo (SP)–Aracaju (SE).",
+      "evidence_en": "PRF reports that the bus inspected in Vitória da Conquista was travelling from São Paulo, São Paulo, to Aracaju, Sergipe.",
+      "evidence_es": "La PRF informa que el autobús fiscalizado en Vitória da Conquista cubría la ruta São Paulo (SP)–Aracaju (SE).",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/bahia/2026/fevereiro/prf-resgata-43-aves-silvestres-em-onibus-interestadual-na-br-116-em-vitoria-da-conquista-ba"
+    },
+    {
+      "id": "minas-gerais-atibaia-2026-02",
+      "event_match": {
+        "location_contains": "Atibaia",
+        "publication_date": "2026-02-09"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_origin_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Minas Gerais → Atibaia/BR-381 (origem declarada)",
+      "label_en": "Minas Gerais → Atibaia/BR-381 (reported origin)",
+      "label_es": "Minas Gerais → Atibaia/BR-381 (origen declarado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Minas Gerais",
+            "country": "Brasil",
+            "lat": -18.5122,
+            "lon": -44.555,
+            "precision": "state_centroid_generalized"
+          },
+          "to": {
+            "name": "Atibaia / BR-381",
+            "country": "Brasil",
+            "lat": -23.117,
+            "lon": -46.55,
+            "precision": "road_corridor_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Segundo declaração do suspeito registrada pela PRF, as aves teriam sido caçadas no estado de Minas Gerais. O destino após Atibaia não foi informado.",
+      "evidence_en": "According to the suspect's statement recorded by PRF, the birds had allegedly been hunted in Minas Gerais state. The destination beyond Atibaia was not reported.",
+      "evidence_es": "Según la declaración del sospechoso registrada por la PRF, las aves habrían sido cazadas en el estado de Minas Gerais. No se informó el destino posterior a Atibaia.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/sao-paulo/prf-prende-homem-por-trafico-de-animais-silvestres-na-br-381"
+    },
+    {
+      "id": "interlagos-pirai-2026-03-28",
+      "event_match": {
+        "location_contains": "Piraí",
+        "event_date": "2026-03-28"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_acquisition_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Interlagos, São Paulo → Piraí (aquisição declarada)",
+      "label_en": "Interlagos, São Paulo → Piraí (reported acquisition)",
+      "label_es": "Interlagos, São Paulo → Piraí (adquisición declarada)",
+      "segments": [
+        {
+          "from": {
+            "name": "Interlagos, São Paulo (SP)",
+            "country": "Brasil",
+            "lat": -23.701,
+            "lon": -46.697,
+            "precision": "neighborhood_generalized"
+          },
+          "to": {
+            "name": "Piraí / BR-116 (RJ)",
+            "country": "Brasil",
+            "lat": -22.6292,
+            "lon": -43.8981,
+            "precision": "road_corridor_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Os ocupantes declararam à PRF que o macaco-prego e a iguana haviam sido comprados em uma feira livre em Interlagos, São Paulo. O destino final da viagem não foi informado.",
+      "evidence_en": "The occupants told PRF that the capuchin monkey and iguana had been bought at a street market in Interlagos, São Paulo. The final destination of the journey was not reported.",
+      "evidence_es": "Los ocupantes declararon a la PRF que el mono capuchino y la iguana habían sido comprados en una feria de Interlagos, São Paulo. No se informó el destino final del viaje.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/rio-de-janeiro/2026/marco/prf-resgata-animais-silvestres-transportados-dentro-do-porta-malas-de-um-carro-no-rj"
+    },
+    {
+      "id": "maranhao-pirai-rio-2026-04-12",
+      "event_match": {
+        "location_contains": "Piraí",
+        "event_date": "2026-04-12"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_interstate_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Maranhão → Piraí/BR-116 → Rio de Janeiro (destino amplo)",
+      "label_en": "Maranhão → Piraí/BR-116 → Rio de Janeiro (broad destination)",
+      "label_es": "Maranhão → Piraí/BR-116 → Rio de Janeiro (destino amplio)",
+      "segments": [
+        {
+          "from": {
+            "name": "Maranhão",
+            "country": "Brasil",
+            "lat": -5.42,
+            "lon": -45.44,
+            "precision": "state_centroid_generalized"
+          },
+          "to": {
+            "name": "Piraí / BR-116 (RJ)",
+            "country": "Brasil",
+            "lat": -22.6292,
+            "lon": -43.8981,
+            "precision": "road_corridor_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Piraí / BR-116 (RJ)",
+            "country": "Brasil",
+            "lat": -22.6292,
+            "lon": -43.8981,
+            "precision": "road_corridor_generalized"
+          },
+          "to": {
+            "name": "Rio de Janeiro — destino não especificado",
+            "country": "Brasil",
+            "lat": -22.25,
+            "lon": -42.66,
+            "precision": "state_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "O passageiro informou à PRF que transportava as duas aves do Maranhão para o Rio de Janeiro. Municípios de origem e destino não foram especificados.",
+      "evidence_en": "The passenger told PRF that he was transporting the two birds from Maranhão to Rio de Janeiro. Origin and destination municipalities were not specified.",
+      "evidence_es": "El pasajero informó a la PRF que transportaba las dos aves desde Maranhão hacia Rio de Janeiro. No se especificaron los municipios de origen y destino.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/rio-de-janeiro/2026/abril/prf-flagra-motorista-sem-habilitacao-e-resgata-aves-silvestres-em-onibus-na-dutra/"
+    },
+    {
+      "id": "curitiba-registro-bras-2026-05-16",
+      "event_match": {
+        "location_contains": "Registro",
+        "event_date": "2026-05-16"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_paid_transport_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Curitiba → Registro/BR-116 → Brás, São Paulo",
+      "label_en": "Curitiba → Registro/BR-116 → Brás, São Paulo",
+      "label_es": "Curitiba → Registro/BR-116 → Brás, São Paulo",
+      "segments": [
+        {
+          "from": {
+            "name": "Curitiba (PR)",
+            "country": "Brasil",
+            "lat": -25.4284,
+            "lon": -49.2733,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Registro / BR-116 (SP)",
+            "country": "Brasil",
+            "lat": -24.4875,
+            "lon": -47.8436,
+            "precision": "road_corridor_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Registro / BR-116 (SP)",
+            "country": "Brasil",
+            "lat": -24.4875,
+            "lon": -47.8436,
+            "precision": "road_corridor_generalized"
+          },
+          "to": {
+            "name": "Brás, São Paulo (SP)",
+            "country": "Brasil",
+            "lat": -23.545,
+            "lon": -46.616,
+            "precision": "neighborhood_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Segundo declaração do passageiro registrada pela PRF, uma pessoa em Curitiba ofereceu dinheiro para transportar as aves até a região do Brás, em São Paulo.",
+      "evidence_en": "According to the passenger's statement recorded by PRF, a person in Curitiba offered money to transport the birds to the Brás area of São Paulo.",
+      "evidence_es": "Según la declaración del pasajero registrada por la PRF, una persona en Curitiba ofreció dinero para transportar las aves hasta la zona de Brás, São Paulo.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/sao-paulo/prf-resgata-mais-de-150-aves-silvestres-transportadas-irregularmente-na-regis-bittencourt"
+    },
+    {
+      "id": "caxambu-juiz-de-fora-2026-06-05",
+      "event_match": {
+        "location_contains": "Caxambu",
+        "event_date": "2026-06-05"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_destination_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Caxambu/BR-267 → Juiz de Fora (destino declarado)",
+      "label_en": "Caxambu/BR-267 → Juiz de Fora (reported destination)",
+      "label_es": "Caxambu/BR-267 → Juiz de Fora (destino declarado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Caxambu / BR-267 (MG)",
+            "country": "Brasil",
+            "lat": -21.9793,
+            "lon": -44.9315,
+            "precision": "road_corridor_generalized"
+          },
+          "to": {
+            "name": "Juiz de Fora (MG)",
+            "country": "Brasil",
+            "lat": -21.7624,
+            "lon": -43.3434,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Um ocupante informou à PRF que as seis aves seriam levadas para Juiz de Fora. A origem anterior a Caxambu não foi informada.",
+      "evidence_en": "One occupant told PRF that the six birds were to be taken to Juiz de Fora. The origin prior to Caxambu was not reported.",
+      "evidence_es": "Un ocupante informó a la PRF que las seis aves serían llevadas a Juiz de Fora. No se informó el origen anterior a Caxambu.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/minas-gerais/2026/junho/prf-resgata-aves-silvestres-transportadas-irregularmente-na-br-267-em-caxambu-mg"
+    },
+    {
+      "id": "ponte-rio-niteroi-corridor-2026-08-04",
+      "event_match": {
+        "location_contains": "Ponte Rio",
+        "event_date": "2026-08-04"
+      },
+      "status": "DOCUMENTED_CORRIDOR",
+      "route_type": "named_road_corridor",
+      "direction": "unspecified",
+      "line_style": "dotted",
+      "label_pt": "Corredor Ponte Rio–Niterói (sentido não informado)",
+      "label_en": "Rio–Niterói Bridge corridor (direction not reported)",
+      "label_es": "Corredor Puente Rio–Niterói (sentido no informado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Niterói (RJ)",
+            "country": "Brasil",
+            "lat": -22.8884,
+            "lon": -43.1147,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Rio de Janeiro (RJ)",
+            "country": "Brasil",
+            "lat": -22.9068,
+            "lon": -43.1729,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A PF informa que as aves eram transportadas na Ponte Rio–Niterói, sem divulgar origem, destino ou sentido do deslocamento.",
+      "evidence_en": "Federal Police reports that the birds were being transported on the Rio–Niterói Bridge, without disclosing origin, destination or direction of travel.",
+      "evidence_es": "La Policía Federal informa que las aves eran transportadas en el Puente Rio–Niterói, sin divulgar origen, destino ni sentido del desplazamiento.",
+      "source_label": "Polícia Federal / Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2026/08/pf-e-prf-prendem-duas-pessoas-em-flagrante-com-50-passaros-no-rio-de-janeiro"
+    },
+    {
+      "id": "paraguay-foz-vila-portes-2026-08-14",
+      "event_match": {
+        "location_contains": "Ponte Internacional da Amizade",
+        "event_date": "2026-08-14"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "border_delivery_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "lado paraguaio da Ponte da Amizade → Vila Portes, Foz do Iguaçu",
+      "label_en": "Paraguayan side of Friendship Bridge → Vila Portes, Foz do Iguaçu",
+      "label_es": "lado paraguayo del Puente de la Amistad → Vila Portes, Foz do Iguaçu",
+      "segments": [
+        {
+          "from": {
+            "name": "lado paraguaio da Ponte Internacional da Amizade",
+            "country": "Paraguai",
+            "lat": -25.51,
+            "lon": -54.605,
+            "precision": "border_context_generalized"
+          },
+          "to": {
+            "name": "Vila Portes, Foz do Iguaçu (PR)",
+            "country": "Brasil",
+            "lat": -25.51,
+            "lon": -54.585,
+            "precision": "neighborhood_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "As aves estavam com passageiro de táxi paraguaio na aduana brasileira; o transportador declarou que entregaria a caixa em Vila Portes e receberia R$ 200. O município de origem no Paraguai não foi informado.",
+      "evidence_en": "The birds were with a passenger in a Paraguayan taxi at Brazilian customs; the carrier stated that he would deliver the box in Vila Portes and receive BRL 200. The municipality of origin in Paraguay was not reported.",
+      "evidence_es": "Las aves estaban con un pasajero de un taxi paraguayo en la aduana brasileña; el transportista declaró que entregaría la caja en Vila Portes y recibiría R$ 200. No se informó el municipio de origen en Paraguay.",
+      "source_label": "Receita Federal do Brasil",
+      "source_url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/receita-federal-apreende-oito-aves-silvestres-durante-fiscalizacao-na-ponte-internacional-da-amizade"
     }
   ],
   "network_context": [
