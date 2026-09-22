@@ -704,6 +704,59 @@
       "evidence_es": "Una fuente gubernamental vietnamita confirma que los contenedores procedían de África. Fuentes secundarias discrepan entre la República del Congo y la República Democrática del Congo; por ello no se fija un país de origen en el mapa.",
       "source_label": "Government of Vietnam / Bao Chinh Phu",
       "source_url": "https://www2.en.baochinhphu.vn/hai-quan-ban-giao-cho-cong-an-vu-phat-hien-12-tan-nga-voi-tu-chau-phi-102260812205748003.htm"
+    },
+    {
+      "id": "valenca-parnamirim-campina-grande-2026-06-02",
+      "event_match": {
+        "location_contains": "Parnamirim",
+        "event_date": "2026-06-02"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_transport_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Valença do Piauí → Parnamirim/BR-116 → Campina Grande",
+      "label_en": "Valença do Piauí → Parnamirim/BR-116 → Campina Grande",
+      "label_es": "Valença do Piauí → Parnamirim/BR-116 → Campina Grande",
+      "segments": [
+        {
+          "from": {
+            "name": "Valença do Piauí (PI)",
+            "country": "Brasil",
+            "lat": -6.4006,
+            "lon": -41.7486,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Parnamirim / BR-116 (PE)",
+            "country": "Brasil",
+            "lat": -8.09,
+            "lon": -39.58,
+            "precision": "road_corridor_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Parnamirim / BR-116 (PE)",
+            "country": "Brasil",
+            "lat": -8.09,
+            "lon": -39.58,
+            "precision": "road_corridor_generalized"
+          },
+          "to": {
+            "name": "Campina Grande (PB)",
+            "country": "Brasil",
+            "lat": -7.2247,
+            "lon": -35.8771,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Segundo declaração do motorista registrada pela PRF, as aves haviam saído de Valença do Piauí (PI) e seriam entregues em Campina Grande (PB). A abordagem ocorreu na BR-116 em Parnamirim (PE). A rota é atribuída à declaração do motorista e não representa verificação independente de origem ou destino final.",
+      "evidence_en": "According to the driver's statement recorded by PRF, the birds had departed from Valença do Piauí, Piauí, and were to be delivered in Campina Grande, Paraíba. The vehicle was stopped on BR-116 in Parnamirim, Pernambuco. The route is attributed to the driver's statement and does not represent independent verification of origin or final destination.",
+      "evidence_es": "Según la declaración del conductor registrada por la PRF, las aves habían salido de Valença do Piauí, Piauí, y serían entregadas en Campina Grande, Paraíba. El vehículo fue abordado en la BR-116 en Parnamirim, Pernambuco. La ruta se atribuye a la declaración del conductor y no representa una verificación independiente del origen o destino final.",
+      "source_label": "Polícia Rodoviária Federal",
+      "source_url": "https://www.gov.br/prf/pt-br/noticias/estaduais/pernambuco/2026/junho/prf-resgata-250-passaros-silvestres-na-br-116-em-parnamirim"
     }
   ],
   "network_context": [
