@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-22T00:00:00-04:00",
-  "audited_through": "2026-09-21",
+  "updated_at": "2026-09-22T23:12:56.254Z",
+  "audited_through": "2026-09-22",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
     "default_layer": "documented_routes",
@@ -1101,6 +1101,104 @@
       "evidence_es": "Las aves estaban con un pasajero de un taxi paraguayo en la aduana brasileña; el transportista declaró que entregaría la caja en Vila Portes y recibiría R$ 200. No se informó el municipio de origen en Paraguay.",
       "source_label": "Receita Federal do Brasil",
       "source_url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/receita-federal-apreende-oito-aves-silvestres-durante-fiscalizacao-na-ponte-internacional-da-amizade"
+    },
+    {
+      "id": "sao-luis-curu-fortaleza-attributed-2026-09-17",
+      "event_match": {
+        "case_id": "2026-09-17__sao-goncalo-br222-206-birds"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "planned_itinerary",
+      "direction": "forward",
+      "line_style": "dashed",
+      "source_label": "GCMais",
+      "source_url": "https://gcmais.com.br/noticias/2026/09/18/homem-e-preso-com-206-aves-silvestres-transportadas-ilegalmente-na-br-222-no-ceara",
+      "label_pt": "São Luís do Curu → Fortaleza — relato do motorista",
+      "evidence_pt": "Segundo o relato atribuído ao motorista, as aves foram recebidas em São Luís do Curu e seriam entregues perto do Terminal Antônio Bezerra, em Fortaleza. A apreensão ocorreu na BR-222 antes da entrega. Declaração sob investigação, não confirmação independente de origem ou destinatário. Os pontos são referências municipais, não endereços.",
+      "label_en": "São Luís do Curu → Fortaleza — driver's statement",
+      "evidence_en": "According to the driver's reported statement, the birds were received in São Luís do Curu for delivery near Antônio Bezerra Terminal in Fortaleza. Seizure on BR-222 preceded delivery. The statement remains under investigation, not independent confirmation of origin or recipient. Endpoints are city references, not addresses.",
+      "label_es": "São Luís do Curu → Fortaleza — declaración del conductor",
+      "evidence_es": "Según la declaración atribuida al conductor, las aves se recibieron en São Luís do Curu para entregarlas cerca del Terminal Antônio Bezerra, en Fortaleza. La incautación en BR-222 precedió a la entrega. Declaración bajo investigación, no confirmación independiente del origen o destinatario. Los puntos son referencias municipales, no direcciones.",
+      "segments": [
+        {
+          "from": {
+            "name": "São Luís do Curu",
+            "lat": -3.67,
+            "lon": -39.239,
+            "precision": "city_generalized",
+            "country": "Brasil"
+          },
+          "to": {
+            "name": "Fortaleza",
+            "lat": -3.7319,
+            "lon": -38.5267,
+            "precision": "city_generalized",
+            "country": "Brasil"
+          },
+          "status": "DOCUMENTED_ATTRIBUTED",
+          "route_type": "planned_itinerary",
+          "direction": "forward",
+          "line_style": "dashed",
+          "source_label": "GCMais",
+          "source_url": "https://gcmais.com.br/noticias/2026/09/18/homem-e-preso-com-206-aves-silvestres-transportadas-ilegalmente-na-br-222-no-ceara",
+          "label_pt": "São Luís do Curu → Fortaleza — relato do motorista",
+          "evidence_pt": "Segundo o relato atribuído ao motorista, as aves foram recebidas em São Luís do Curu e seriam entregues perto do Terminal Antônio Bezerra, em Fortaleza. A apreensão ocorreu na BR-222 antes da entrega. Declaração sob investigação, não confirmação independente de origem ou destinatário. Os pontos são referências municipais, não endereços.",
+          "label_en": "São Luís do Curu → Fortaleza — driver's statement",
+          "evidence_en": "According to the driver's reported statement, the birds were received in São Luís do Curu for delivery near Antônio Bezerra Terminal in Fortaleza. Seizure on BR-222 preceded delivery. The statement remains under investigation, not independent confirmation of origin or recipient. Endpoints are city references, not addresses.",
+          "label_es": "São Luís do Curu → Fortaleza — declaración del conductor",
+          "evidence_es": "Según la declaración atribuida al conductor, las aves se recibieron en São Luís do Curu para entregarlas cerca del Terminal Antônio Bezerra, en Fortaleza. La incautación en BR-222 precedió a la entrega. Declaración bajo investigación, no confirmación independiente del origen o destinatario. Los puntos son referencias municipales, no direcciones."
+        }
+      ],
+      "audited_at": "2026-09-22T23:12:56.254Z"
+    },
+    {
+      "id": "suvarnabhumi-muscat-intercepted-2026-09-08",
+      "event_match": {
+        "case_id": "2026-09-08__suvarnabhumi-muscat-twenty-two-animals"
+      },
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "intercepted_itinerary",
+      "direction": "forward",
+      "line_style": "dashed",
+      "source_label": "Daily News",
+      "source_url": "https://www.dailynews.co.th/news/6195696/",
+      "label_pt": "Suvarnabhumi → Muscat — viagem interceptada",
+      "evidence_pt": "A reportagem identifica Muscat como destino do passageiro cuja bagagem foi interceptada em Suvarnabhumi. O segmento representa a viagem prevista, não deslocamento concluído. O destino é uma referência municipal; não se infere aeroporto receptor, comprador, origem de captura ou escala.",
+      "label_en": "Suvarnabhumi → Muscat — intercepted journey",
+      "evidence_en": "The report identifies Muscat as the destination of the passenger whose baggage was intercepted at Suvarnabhumi. The segment represents the intended journey, not completed movement. The destination is a city reference; no receiving airport, buyer, capture origin or stopover is inferred.",
+      "label_es": "Suvarnabhumi → Muscat — viaje interceptado",
+      "evidence_es": "La noticia identifica Muscat como destino del pasajero cuyo equipaje fue interceptado en Suvarnabhumi. El segmento representa el viaje previsto, no un desplazamiento completado. El destino es una referencia urbana; no se infiere aeropuerto receptor, comprador, origen de captura ni escala.",
+      "segments": [
+        {
+          "from": {
+            "name": "Suvarnabhumi",
+            "lat": 13.69,
+            "lon": 100.75,
+            "precision": "airport_generalized",
+            "country": "Tailândia"
+          },
+          "to": {
+            "name": "Muscat",
+            "lat": 23.588,
+            "lon": 58.383,
+            "precision": "city_generalized",
+            "country": "Omã"
+          },
+          "status": "DOCUMENTED_BROAD",
+          "route_type": "intercepted_itinerary",
+          "direction": "forward",
+          "line_style": "dashed",
+          "source_label": "Daily News",
+          "source_url": "https://www.dailynews.co.th/news/6195696/",
+          "label_pt": "Suvarnabhumi → Muscat — viagem interceptada",
+          "evidence_pt": "A reportagem identifica Muscat como destino do passageiro cuja bagagem foi interceptada em Suvarnabhumi. O segmento representa a viagem prevista, não deslocamento concluído. O destino é uma referência municipal; não se infere aeroporto receptor, comprador, origem de captura ou escala.",
+          "label_en": "Suvarnabhumi → Muscat — intercepted journey",
+          "evidence_en": "The report identifies Muscat as the destination of the passenger whose baggage was intercepted at Suvarnabhumi. The segment represents the intended journey, not completed movement. The destination is a city reference; no receiving airport, buyer, capture origin or stopover is inferred.",
+          "label_es": "Suvarnabhumi → Muscat — viaje interceptado",
+          "evidence_es": "La noticia identifica Muscat como destino del pasajero cuyo equipaje fue interceptado en Suvarnabhumi. El segmento representa el viaje previsto, no un desplazamiento completado. El destino es una referencia urbana; no se infiere aeropuerto receptor, comprador, origen de captura ni escala."
+        }
+      ],
+      "audited_at": "2026-09-22T23:12:56.254Z"
     }
   ],
   "network_context": [
@@ -1160,6 +1258,136 @@
       "case": "Quy Nhon — país de origem",
       "reason": "COUNTRY_CONFLICT",
       "detail_pt": "Manter apenas África → Vietnã até resolver a divergência entre República do Congo e República Democrática do Congo."
+    },
+    {
+      "case": "Mairiporã (SP)",
+      "event_match": {
+        "case_id": "2026-09-18__mairipora-exoticos-reptiles-fish"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Cruzeiro FM",
+      "source_url": "https://www.cruzeirofm.com.br/2026/09/18/noticias/policia-civil-apreende-mais-de-20-animais-da-fauna-brasileira-em-mairipora/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "Suspeita de venda online e localização de possíveis compradores não demonstram deslocamento dos animais; nenhuma geometria adicionada.",
+      "detail_en": "Suspected online sales and possible buyers' locations do not establish animal movement; no geometry added.",
+      "detail_es": "La sospecha de ventas en línea y la ubicación de posibles compradores no prueban desplazamiento de animales; no se añade geometría."
+    },
+    {
+      "case": "Turvo (PR)",
+      "event_match": {
+        "case_id": "2026-09-15__turvo-three-birds"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Rede Sul de Notícias",
+      "source_url": "https://redesuldenoticias.com.br/noticias/pm-ambiental-apreende-tres-aves-silvestres-mantidas-irregularmente-em-turvo/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Miguel Pereira (RJ), bairro Praça da Ponte",
+      "event_match": {
+        "case_id": "2026-09-12__miguel-pereira-fourteen-birds"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Jornal Ponto",
+      "source_url": "https://www.jornalponto.com/site/2026/09/16/policia-apreende-14-aves-silvestres-durante-acao-em-miguel-pereira/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Fusagasugá, Cundinamarca",
+      "event_match": {
+        "case_id": "2026-09-17__fusagasuga-two-boas"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Noticentro Colombia / CAR",
+      "source_url": "https://www.noticentrocolombia.com/2026/09/17/la-car-incauta-dos-boas-constrictor-exhibidas-como-atraccion-turistica-en-finca-de-fusagasuga/nacionales/22886/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Floresta (PE)",
+      "event_match": {
+        "case_id": "2026-09-12__floresta-140-parrot-chicks"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "CBN Recife",
+      "source_url": "https://www.cbnrecife.com/2026/09/21/papagaios-resgatados-do-trafico-recebem-tratamento-para-voltar-a-natureza/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Udyanbandh Range, Khariar Division, distrito de Nuapada, Odisha",
+      "event_match": {
+        "case_id": "2026-09-22__nuapada-leopard-skin"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "The Statesman",
+      "source_url": "https://www.thestatesman.com/bhubaneswar/odisha-vigilance-arrests-poacher-with-leopard-skin-2-1503641731.html",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Isilkul, região de Omsk, fronteira Rússia–Cazaquistão",
+      "event_match": {
+        "case_id": "2026-09-21__isilkul-bear-gallbladders"
+      },
+      "reason": "INSUFFICIENT_DIRECTION_AND_ENDPOINTS",
+      "source_label": "Interfax",
+      "source_url": "https://www.interfax-russia.ru/siberia/news/kontrabandu-zhelchnyh-puzyrey-burogo-medvedya-presekli-v-omskoy-oblasti",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma interceptação de produtos na fronteira de Isilkul, mas não estabelece endpoints e sentido suficientes para geometria. Não inferir rota a partir da demanda medicinal contextual.",
+      "detail_en": "The source confirms interception at the Isilkul border but does not establish sufficient endpoints and direction for geometry. Do not infer a route from contextual medicinal demand.",
+      "detail_es": "La fuente confirma la interceptación en la frontera de Isilkul, pero no establece extremos y sentido suficientes para una geometría. No inferir una ruta a partir de la demanda medicinal contextual."
+    },
+    {
+      "case": "Volta Redonda (RJ), Jardim Suíça",
+      "event_match": {
+        "case_id": "2026-09-16__volta-redonda-wild-birds"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Jornal Ponto / Secom–PMVR",
+      "source_url": "https://www.jornalponto.com/site/2026/09/16/acao-resgata-11-animais-mantidos-irregularmente-em-propriedade-em-volta-redonda/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Hoedspruit, Limpopo",
+      "event_match": {
+        "case_id": "2026-09-18__hoedspruit-pangolin"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "SAPS, via Accidents.co.za",
+      "source_url": "https://www.accidents.co.za/2026/09/20/five-suspects-arrested-and-two-pangolins-rescued-during-sting-operations-targeting-illegal-wildlife-traders-in-hoedspruit-and-gravelotte/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "Gravelotte, Limpopo",
+      "event_match": {
+        "case_id": "2026-09-18__gravelotte-pangolin"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "SAPS, via Accidents.co.za",
+      "source_url": "https://www.accidents.co.za/2026/09/20/five-suspects-arrested-and-two-pangolins-rescued-during-sting-operations-targeting-illegal-wildlife-traders-in-hoedspruit-and-gravelotte/",
+      "audited_at": "2026-09-22T23:12:56.254Z",
+      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
+      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
+      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
     }
   ]
 }
