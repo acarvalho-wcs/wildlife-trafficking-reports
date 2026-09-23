@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-22T23:12:56.254Z",
-  "audited_through": "2026-09-22",
+  "updated_at": "2026-09-23T23:09:57Z",
+  "audited_through": "2026-09-23",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
     "default_layer": "documented_routes",
@@ -1388,6 +1388,111 @@
       "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
       "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
       "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
+    },
+    {
+      "case": "São Bernardo do Campo, São Paulo",
+      "event_match": {
+        "case_id": "2026-09-21__sao-bernardo-12-birds"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Diário do Grande ABC",
+      "source_url": "https://www.dgabc.com.br/Noticia/4348673/gcm-apreendeu-12-aves-silvestres-e-aplica-multa-de-rs-35-mil",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
+    },
+    {
+      "case": "Apatzingán, Michoacán",
+      "event_match": {
+        "case_id": "2026-09-23__apatzingan-spider-monkey"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Debate; FGE via RED 113",
+      "source_url": "https://www.debate.com.mx/estados/rescatan-a-ejemplar-de-mono-arana-durante-cateo-en-apatzingan-michoacan-20260923-0123.html",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
+    },
+    {
+      "case": "Mariani, Assam",
+      "event_match": {
+        "case_id": "2026-09-22__mariani-86-tokay-geckos"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "NE Business Mirror",
+      "source_url": "https://nebusinessmirror.com/wildlife-smuggling-bid-foiled-on-assam-nagaland-border/",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
+    },
+    {
+      "case": "Medan, Sumatra Utara",
+      "event_match": {
+        "case_id": "2026-09-14__medan-101-leafbirds"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Kementerian Kehutanan",
+      "source_url": "https://www.kehutanan.go.id/pers/temukan-101-burung-dilindungi-di-medan-kemenhut-telusuri-keterkaitan-dengan-perkara-perdagangan-satwa-sebelumnya",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
+    },
+    {
+      "case": "Bokakhat, Assam",
+      "event_match": {
+        "case_id": "2026-09-22__bokakhat-channa-fish"
+      },
+      "reason": "VEHICLE_SERVICE_NOT_PROVEN_WILDLIFE_ITINERARY",
+      "source_label": "Aaj Tak; India Today NE",
+      "source_url": "https://www.aajtak.in/india/news/story/assam-cheng-fish-seizure-500-rare-protected-fish-bus-five-detained-lcla-strc-2650435-2026-09-23",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "O serviço Tinsukia–Siliguri é explicitado, mas a origem e o destino dos peixes permanecem sob investigação. Itinerário do ônibus mantido como contexto, sem geometria atribuída ao lote.",
+      "detail_en": "The Tinsukia–Siliguri service is stated, but the fish's origin and destination remain under investigation. Bus itinerary retained as context, without geometry attributed to the consignment.",
+      "detail_es": "Se explicita el servicio Tinsukia–Siliguri, pero el origen y destino de los peces siguen bajo investigación. El itinerario del autobús se conserva como contexto, sin geometría atribuida al lote.",
+      "context_only": true
+    },
+    {
+      "case": "Ahmedabad (Naroda), Gujarat",
+      "event_match": {
+        "case_id": "2026-09-23__ahmedabad-ambergris-report"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "IANS / Free Press Journal",
+      "source_url": "https://www.freepressjournal.in/india/ahmedabad-crime-branch-recovers-ambergris-worth-105-crore-3-held-in-wildlife-trade-case",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
+    },
+    {
+      "case": "Trecastagni, Catania",
+      "event_match": {
+        "case_id": "2026-09-23__trecastagni-102-tortoises-report"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "ANSA",
+      "source_url": "https://www.ansa.it/sicilia/notizie/2026/09/23/aveva-in-casa-102-tartarughe-di-specie-protette-denunciato_864aa647-6ab9-47d2-9501-82f46b080e84.html",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
+    },
+    {
+      "case": "Kepulauan Fam, Raja Ampat",
+      "event_match": {
+        "case_id": "2026-09-23__raja-ampat-turtle-remains-report"
+      },
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "source_label": "Koreri; Kapabar",
+      "source_url": "https://koreri.com/2026/09/23/polda-pbd-ungkap-dugaan-pelanggaran-konservasi-penyu-di-raja-ampat-ini-detail-kasusnya/",
+      "audited_at": "2026-09-23T23:09:57Z",
+      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
+      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
+      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
     }
   ]
 }
