@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-23T23:09:57Z",
-  "audited_through": "2026-09-23",
+  "updated_at": "2026-09-24T02:15:00Z",
+  "audited_through": "2026-09-24",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
     "default_layer": "documented_routes",
@@ -1103,102 +1103,1068 @@
       "source_url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/receita-federal-apreende-oito-aves-silvestres-durante-fiscalizacao-na-ponte-internacional-da-amizade"
     },
     {
-      "id": "sao-luis-curu-fortaleza-attributed-2026-09-17",
+      "id": "kalabo-lusaka-pangolin-2026-02-01",
       "event_match": {
-        "case_id": "2026-09-17__sao-goncalo-br222-206-birds"
+        "location_contains": "Novare Mall",
+        "event_date": "2026-02-01"
       },
       "status": "DOCUMENTED_ATTRIBUTED",
-      "route_type": "planned_itinerary",
+      "route_type": "reported_origin_segment",
       "direction": "forward",
       "line_style": "dashed",
-      "source_label": "GCMais",
-      "source_url": "https://gcmais.com.br/noticias/2026/09/18/homem-e-preso-com-206-aves-silvestres-transportadas-ilegalmente-na-br-222-no-ceara",
-      "label_pt": "São Luís do Curu → Fortaleza — relato do motorista",
-      "evidence_pt": "Segundo o relato atribuído ao motorista, as aves foram recebidas em São Luís do Curu e seriam entregues perto do Terminal Antônio Bezerra, em Fortaleza. A apreensão ocorreu na BR-222 antes da entrega. Declaração sob investigação, não confirmação independente de origem ou destinatário. Os pontos são referências municipais, não endereços.",
-      "label_en": "São Luís do Curu → Fortaleza — driver's statement",
-      "evidence_en": "According to the driver's reported statement, the birds were received in São Luís do Curu for delivery near Antônio Bezerra Terminal in Fortaleza. Seizure on BR-222 preceded delivery. The statement remains under investigation, not independent confirmation of origin or recipient. Endpoints are city references, not addresses.",
-      "label_es": "São Luís do Curu → Fortaleza — declaración del conductor",
-      "evidence_es": "Según la declaración atribuida al conductor, las aves se recibieron en São Luís do Curu para entregarlas cerca del Terminal Antônio Bezerra, en Fortaleza. La incautación en BR-222 precedió a la entrega. Declaración bajo investigación, no confirmación independiente del origen o destinatario. Los puntos son referencias municipales, no direcciones.",
+      "label_pt": "Kalabo → Lusaka (origem registrada em prova judicial)",
+      "label_en": "Kalabo → Lusaka (origin recorded in court evidence)",
+      "label_es": "Kalabo → Lusaka (origen registrado en prueba judicial)",
       "segments": [
         {
           "from": {
-            "name": "São Luís do Curu",
-            "lat": -3.67,
-            "lon": -39.239,
-            "precision": "city_generalized",
-            "country": "Brasil"
+            "name": "Kalabo",
+            "country": "Zâmbia",
+            "lat": -14.99,
+            "lon": 22.68,
+            "precision": "city_generalized"
           },
           "to": {
-            "name": "Fortaleza",
-            "lat": -3.7319,
-            "lon": -38.5267,
-            "precision": "city_generalized",
-            "country": "Brasil"
-          },
-          "status": "DOCUMENTED_ATTRIBUTED",
-          "route_type": "planned_itinerary",
-          "direction": "forward",
-          "line_style": "dashed",
-          "source_label": "GCMais",
-          "source_url": "https://gcmais.com.br/noticias/2026/09/18/homem-e-preso-com-206-aves-silvestres-transportadas-ilegalmente-na-br-222-no-ceara",
-          "label_pt": "São Luís do Curu → Fortaleza — relato do motorista",
-          "evidence_pt": "Segundo o relato atribuído ao motorista, as aves foram recebidas em São Luís do Curu e seriam entregues perto do Terminal Antônio Bezerra, em Fortaleza. A apreensão ocorreu na BR-222 antes da entrega. Declaração sob investigação, não confirmação independente de origem ou destinatário. Os pontos são referências municipais, não endereços.",
-          "label_en": "São Luís do Curu → Fortaleza — driver's statement",
-          "evidence_en": "According to the driver's reported statement, the birds were received in São Luís do Curu for delivery near Antônio Bezerra Terminal in Fortaleza. Seizure on BR-222 preceded delivery. The statement remains under investigation, not independent confirmation of origin or recipient. Endpoints are city references, not addresses.",
-          "label_es": "São Luís do Curu → Fortaleza — declaración del conductor",
-          "evidence_es": "Según la declaración atribuida al conductor, las aves se recibieron en São Luís do Curu para entregarlas cerca del Terminal Antônio Bezerra, en Fortaleza. La incautación en BR-222 precedió a la entrega. Declaración bajo investigación, no confirmación independiente del origen o destinatario. Los puntos son referencias municipales, no direcciones."
+            "name": "Lusaka",
+            "country": "Zâmbia",
+            "lat": -15.3875,
+            "lon": 28.3228,
+            "precision": "city_generalized"
+          }
         }
       ],
-      "audited_at": "2026-09-22T23:12:56.254Z"
+      "evidence_pt": "A NPA da Zâmbia informa que o pangolim apreendido em Lusaka havia sido obtido em Kalabo.",
+      "evidence_en": "Zambia's NPA states that the pangolin seized in Lusaka had been sourced from Kalabo.",
+      "evidence_es": "La NPA de Zambia informa que el pangolín decomisado en Lusaka había sido obtenido en Kalabo.",
+      "source_label": "National Prosecution Authority Zambia",
+      "source_url": "https://www.npa.gov.zm/index.php/news-2/2/"
     },
     {
-      "id": "suvarnabhumi-muscat-intercepted-2026-09-08",
+      "id": "grand-bassam-abidjan-ivory-2026-03-03",
       "event_match": {
-        "case_id": "2026-09-08__suvarnabhumi-muscat-twenty-two-animals"
+        "location_contains": "Yopougon",
+        "event_date": "2026-03-03"
       },
-      "status": "DOCUMENTED_BROAD",
-      "route_type": "intercepted_itinerary",
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_transport_route",
       "direction": "forward",
       "line_style": "dashed",
-      "source_label": "Daily News",
-      "source_url": "https://www.dailynews.co.th/news/6195696/",
-      "label_pt": "Suvarnabhumi → Muscat — viagem interceptada",
-      "evidence_pt": "A reportagem identifica Muscat como destino do passageiro cuja bagagem foi interceptada em Suvarnabhumi. O segmento representa a viagem prevista, não deslocamento concluído. O destino é uma referência municipal; não se infere aeroporto receptor, comprador, origem de captura ou escala.",
-      "label_en": "Suvarnabhumi → Muscat — intercepted journey",
-      "evidence_en": "The report identifies Muscat as the destination of the passenger whose baggage was intercepted at Suvarnabhumi. The segment represents the intended journey, not completed movement. The destination is a city reference; no receiving airport, buyer, capture origin or stopover is inferred.",
-      "label_es": "Suvarnabhumi → Muscat — viaje interceptado",
-      "evidence_es": "La noticia identifica Muscat como destino del pasajero cuyo equipaje fue interceptado en Suvarnabhumi. El segmento representa el viaje previsto, no un desplazamiento completado. El destino es una referencia urbana; no se infiere aeropuerto receptor, comprador, origen de captura ni escala.",
+      "label_pt": "Grand-Bassam → Abidjan",
+      "label_en": "Grand-Bassam → Abidjan",
+      "label_es": "Grand-Bassam → Abiyán",
       "segments": [
         {
           "from": {
-            "name": "Suvarnabhumi",
-            "lat": 13.69,
-            "lon": 100.75,
-            "precision": "airport_generalized",
-            "country": "Tailândia"
+            "name": "Grand-Bassam",
+            "country": "Costa do Marfim",
+            "lat": 5.2,
+            "lon": -3.74,
+            "precision": "city_generalized"
           },
           "to": {
-            "name": "Muscat",
-            "lat": 23.588,
-            "lon": 58.383,
-            "precision": "city_generalized",
-            "country": "Omã"
-          },
-          "status": "DOCUMENTED_BROAD",
-          "route_type": "intercepted_itinerary",
-          "direction": "forward",
-          "line_style": "dashed",
-          "source_label": "Daily News",
-          "source_url": "https://www.dailynews.co.th/news/6195696/",
-          "label_pt": "Suvarnabhumi → Muscat — viagem interceptada",
-          "evidence_pt": "A reportagem identifica Muscat como destino do passageiro cuja bagagem foi interceptada em Suvarnabhumi. O segmento representa a viagem prevista, não deslocamento concluído. O destino é uma referência municipal; não se infere aeroporto receptor, comprador, origem de captura ou escala.",
-          "label_en": "Suvarnabhumi → Muscat — intercepted journey",
-          "evidence_en": "The report identifies Muscat as the destination of the passenger whose baggage was intercepted at Suvarnabhumi. The segment represents the intended journey, not completed movement. The destination is a city reference; no receiving airport, buyer, capture origin or stopover is inferred.",
-          "label_es": "Suvarnabhumi → Muscat — viaje interceptado",
-          "evidence_es": "La noticia identifica Muscat como destino del pasajero cuyo equipaje fue interceptado en Suvarnabhumi. El segmento representa el viaje previsto, no un desplazamiento completado. El destino es una referencia urbana; no se infiere aeropuerto receptor, comprador, origen de captura ni escala."
+            "name": "Yopougon, Abidjan",
+            "country": "Costa do Marfim",
+            "lat": 5.36,
+            "lon": -4.01,
+            "precision": "city_generalized"
+          }
         }
       ],
-      "audited_at": "2026-09-22T23:12:56.254Z"
+      "evidence_pt": "A fonte informa que o suspeito transportou as duas presas de Grand-Bassam para Abidjan para comercialização.",
+      "evidence_en": "The source reports that the suspect transported the two tusks from Grand-Bassam to Abidjan for sale.",
+      "evidence_es": "La fuente informa que el sospechoso transportó los dos colmillos desde Grand-Bassam hasta Abiyán para venderlos.",
+      "source_label": "Ivoire.ci",
+      "source_url": "https://www.ivoire.ci/cote-divoire-arrestation-dun-presume-trafiquant-divoire-delephant-a-yopougon"
+    },
+    {
+      "id": "kampala-karuma-pangolin-scales-2026-03-22",
+      "event_match": {
+        "location_contains": "Karuma",
+        "event_date": "2026-03-22"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_travel_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Kampala → Karuma (deslocamento declarado)",
+      "label_en": "Kampala → Karuma (reported travel)",
+      "label_es": "Kampala → Karuma (desplazamiento declarado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Kampala",
+            "country": "Uganda",
+            "lat": 0.3476,
+            "lon": 32.5825,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Karuma",
+            "country": "Uganda",
+            "lat": 2.24,
+            "lon": 32.25,
+            "precision": "locality_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Segundo a UWA, o suspeito declarou ter viajado de Kampala e buscava um comprador em Karuma.",
+      "evidence_en": "According to UWA, the suspect said he had travelled from Kampala and was seeking a buyer in Karuma.",
+      "evidence_es": "Según UWA, el sospechoso declaró haber viajado desde Kampala y buscaba un comprador en Karuma.",
+      "source_label": "Uganda Wildlife Authority",
+      "source_url": "https://ugandawildlife.org/news/uwa-arrests-man-with-15kgs-of-pangolin-scales-in-kiryandongo/"
+    },
+    {
+      "id": "seme-benin-ghana-patas-2026-06-23",
+      "event_match": {
+        "location_contains": "Seme",
+        "event_date": "2026-06-23"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "planned_cross_border_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Nigéria → Benim → Gana (rota pretendida)",
+      "label_en": "Nigeria → Benin → Ghana (intended route)",
+      "label_es": "Nigeria → Benín → Ghana (ruta prevista)",
+      "segments": [
+        {
+          "from": {
+            "name": "Fronteira de Seme, lado nigeriano",
+            "country": "Nigéria",
+            "lat": 6.37,
+            "lon": 2.72,
+            "precision": "border_checkpoint"
+          },
+          "to": {
+            "name": "Benim — trânsito não especificado",
+            "country": "Benim",
+            "lat": 9.31,
+            "lon": 2.32,
+            "precision": "country_centroid_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Benim — trânsito não especificado",
+            "country": "Benim",
+            "lat": 9.31,
+            "lon": 2.32,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Gana — destino não especificado",
+            "country": "Gana",
+            "lat": 7.95,
+            "lon": -1.02,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Investigações preliminares citadas pela fonte indicaram intenção de traficar o macaco da Nigéria para Gana via Benim.",
+      "evidence_en": "Preliminary inquiries cited by the source indicated an intention to traffic the monkey from Nigeria to Ghana via Benin.",
+      "evidence_es": "Investigaciones preliminares citadas por la fuente indicaron intención de traficar el mono desde Nigeria a Ghana vía Benín.",
+      "source_label": "Focused Conservation / Nigeria Customs Service",
+      "source_url": "https://focusedconservation.org/2026/06/23/nigeria-customs-service-intercepts-live-patas-monkey-at-international-border/"
+    },
+    {
+      "id": "liberia-guinea-pangolin-scales-2026-07-20",
+      "event_match": {
+        "location_contains": "Guiné",
+        "event_date": "2026-07-20"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_origin_country",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Libéria → Guiné (origem das escamas atribuída pela fonte)",
+      "label_en": "Liberia → Guinea (scale origin attributed by source)",
+      "label_es": "Liberia → Guinea (origen de las escamas atribuido por la fuente)",
+      "segments": [
+        {
+          "from": {
+            "name": "Libéria — origem não especificada",
+            "country": "Libéria",
+            "lat": 6.43,
+            "lon": -9.43,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Guiné — local da apreensão não especificado",
+            "country": "Guiné",
+            "lat": 10.44,
+            "lon": -10.94,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A EAGLE afirma que as 372 kg de escamas apreendidas na Guiné haviam sido traficadas da Libéria.",
+      "evidence_en": "EAGLE states that the 372 kg of scales seized in Guinea had been trafficked from Liberia.",
+      "evidence_es": "EAGLE afirma que los 372 kg de escamas decomisados en Guinea habían sido traficados desde Liberia.",
+      "source_label": "EAGLE Network",
+      "source_url": "https://www.eagle-enforcement.org/news/3-major-ape-traffickers-arrested-with-372-kg-of-pangolin-scales-A867/"
+    },
+    {
+      "id": "mbombela-ogies-johannesburg-rhino-2026-07-22",
+      "event_match": {
+        "location_contains": "N12 entre Ogies",
+        "event_date": "2026-07-22"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_vehicle_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Mbombela → N12/Ogies → Joanesburgo (rota declarada)",
+      "label_en": "Mbombela → N12/Ogies → Johannesburg (reported route)",
+      "label_es": "Mbombela → N12/Ogies → Johannesburgo (ruta declarada)",
+      "segments": [
+        {
+          "from": {
+            "name": "Mbombela",
+            "country": "África do Sul",
+            "lat": -25.47,
+            "lon": 30.98,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "N12 entre Ogies e Kendal",
+            "country": "África do Sul",
+            "lat": -26.05,
+            "lon": 29.06,
+            "precision": "road_corridor_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "N12 entre Ogies e Kendal",
+            "country": "África do Sul",
+            "lat": -26.05,
+            "lon": 29.06,
+            "precision": "road_corridor_generalized"
+          },
+          "to": {
+            "name": "Joanesburgo",
+            "country": "África do Sul",
+            "lat": -26.2041,
+            "lon": 28.0473,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Os ocupantes disseram à polícia que viajavam de Mbombela para Joanesburgo; a apreensão ocorreu na N12.",
+      "evidence_en": "The occupants told police they were travelling from Mbombela to Johannesburg; the seizure occurred on the N12.",
+      "evidence_es": "Los ocupantes dijeron a la policía que viajaban de Mbombela a Johannesburgo; el decomiso ocurrió en la N12.",
+      "source_label": "Middelburg Observer / SAPS",
+      "source_url": "https://www.citizen.co.za/middelburg-observer/news/2026/07/23/middelburg-flying-squad-corners-alleged-rhino-horn-smugglers/"
+    },
+    {
+      "id": "kano-abuja-congo-lion-cubs-2026-08-04",
+      "event_match": {
+        "location_contains": "Nnamdi Azikiwe",
+        "event_date": "2026-08-04"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "planned_cross_border_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Kano → Abuja → República do Congo (destino pretendido)",
+      "label_en": "Kano → Abuja → Republic of the Congo (intended destination)",
+      "label_es": "Kano → Abuja → República del Congo (destino previsto)",
+      "segments": [
+        {
+          "from": {
+            "name": "Kano",
+            "country": "Nigéria",
+            "lat": 12,
+            "lon": 8.52,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional Nnamdi Azikiwe, Abuja",
+            "country": "Nigéria",
+            "lat": 9.006,
+            "lon": 7.263,
+            "precision": "airport"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto Internacional Nnamdi Azikiwe, Abuja",
+            "country": "Nigéria",
+            "lat": 9.006,
+            "lon": 7.263,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "República do Congo — destino não especificado",
+            "country": "República do Congo",
+            "lat": -0.23,
+            "lon": 15.83,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A investigação citada pela fonte indicou que os filhotes estavam sendo movidos de Kano via Abuja com destino pretendido ao Congo-Brazzaville.",
+      "evidence_en": "The investigation cited by the source indicated that the cubs were being moved from Kano via Abuja with an intended destination in Congo-Brazzaville.",
+      "evidence_es": "La investigación citada por la fuente indicó que los cachorros eran trasladados desde Kano vía Abuja con destino previsto en Congo-Brazzaville.",
+      "source_label": "BusinessDay Nigeria / Nigeria Customs Service",
+      "source_url": "https://businessday.ng/news/article/customs-busts-wildlife-trafficking-ring-rescues-two-lion-cubs-at-abuja-airport/"
+    },
+    {
+      "id": "botswana-groblersbrug-pangolin-2026-08-26",
+      "event_match": {
+        "location_contains": "Groblersbrug",
+        "event_date": "2026-08-26"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "observed_border_crossing",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Botswana → Groblersbrug, África do Sul",
+      "label_en": "Botswana → Groblersbrug, South Africa",
+      "label_es": "Botsuana → Groblersbrug, Sudáfrica",
+      "segments": [
+        {
+          "from": {
+            "name": "Botswana — origem interna não especificada",
+            "country": "Botswana",
+            "lat": -22.33,
+            "lon": 24.68,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Groblersbrug / Rio Limpopo",
+            "country": "África do Sul",
+            "lat": -23.01,
+            "lon": 28.95,
+            "precision": "border_port"
+          }
+        }
+      ],
+      "evidence_pt": "Militares observaram o suspeito atravessando o Rio Limpopo do Botswana para a África do Sul; um pangolim vivo foi encontrado em sua bolsa.",
+      "evidence_en": "Military personnel observed the suspect crossing the Limpopo River from Botswana into South Africa; a live pangolin was found in his bag.",
+      "evidence_es": "Militares observaron al sospechoso cruzando el río Limpopo desde Botsuana hacia Sudáfrica; se encontró un pangolín vivo en su bolsa.",
+      "source_label": "SAPS / Arrive Alive",
+      "source_url": "https://www.arrivealive.mobi/news.aspx?i=78444&page=Botswana-citizen-was-remanded-in-police-custody-following-his-arrest-for-possession-of-a-Specially-Protected-Wild-Animal&s=1"
+    },
+    {
+      "id": "cairo-india-chimps-reptiles-2026-05-02",
+      "event_match": {
+        "location_contains": "Cairo",
+        "event_date": "2026-05-02"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Cairo → Índia (destino de viagem)",
+      "label_en": "Cairo → India (travel destination)",
+      "label_es": "El Cairo → India (destino de viaje)",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Internacional do Cairo",
+            "country": "Egito",
+            "lat": 30.112,
+            "lon": 31.4,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Índia — destino não especificado",
+            "country": "Índia",
+            "lat": 20.59,
+            "lon": 78.96,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte oficial informa que o passageiro interceptado no Cairo viajava para a Índia.",
+      "evidence_en": "The official source states that the passenger intercepted in Cairo was travelling to India.",
+      "evidence_es": "La fuente oficial informa que el pasajero interceptado en El Cairo viajaba a India.",
+      "source_label": "Egypt Today / Ministry of Agriculture",
+      "source_url": "https://www.egypttoday.com/Article/1/146851/Cairo-airport-foils-attempt-to-smuggle-infant-chimpanzees-rare-reptiles"
+    },
+    {
+      "id": "madagascar-wroclaw-coral-2026-01",
+      "event_match": {
+        "location_contains": "Wrocław",
+        "publication_date": "2026-01-15"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Madagascar → Wrocław",
+      "label_en": "Madagascar → Wrocław",
+      "label_es": "Madagascar → Wrocław",
+      "segments": [
+        {
+          "from": {
+            "name": "Madagascar — origem de viagem não especificada",
+            "country": "Madagascar",
+            "lat": -18.77,
+            "lon": 46.87,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto de Wrocław",
+            "country": "Polônia",
+            "lat": 51.1027,
+            "lon": 16.8858,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A KAS informa que o passageiro chegava de Madagascar com o coral na bagagem.",
+      "evidence_en": "KAS states that the passenger was arriving from Madagascar with the coral in luggage.",
+      "evidence_es": "KAS informa que el pasajero llegaba desde Madagascar con el coral en el equipaje.",
+      "source_label": "KAS",
+      "source_url": "https://www.gov.pl/web/ias-wroclaw/chronione-okazy-koralowca-zatrzymane-przez-kas-na-lotnisku-we-wroclawiu2"
+    },
+    {
+      "id": "moldova-redics-italy-tamarin-2026-01-18",
+      "event_match": {
+        "location_contains": "Rédics",
+        "event_date": "2026-01-18"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_planned_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Moldávia → Rédics → Itália (declaração do motorista)",
+      "label_en": "Moldova → Rédics → Italy (driver statement)",
+      "label_es": "Moldavia → Rédics → Italia (declaración del conductor)",
+      "segments": [
+        {
+          "from": {
+            "name": "Moldávia — local não especificado",
+            "country": "Moldávia",
+            "lat": 47.01,
+            "lon": 28.86,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Rédics",
+            "country": "Hungria",
+            "lat": 46.614,
+            "lon": 16.479,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Rédics",
+            "country": "Hungria",
+            "lat": 46.614,
+            "lon": 16.479,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Itália — destino não especificado",
+            "country": "Itália",
+            "lat": 42.83,
+            "lon": 12.83,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "O motorista declarou ter recebido o animal na Moldávia e estar levando-o para a Itália.",
+      "evidence_en": "The driver stated that he had received the animal in Moldova and was taking it to Italy.",
+      "evidence_es": "El conductor declaró haber recibido el animal en Moldavia y llevarlo a Italia.",
+      "source_label": "NAV",
+      "source_url": "https://nav.gov.hu/print/sajtoszoba/hirek/Az_eladott_kismajom"
+    },
+    {
+      "id": "seychelles-abudhabi-warsaw-coral-2026-01",
+      "event_match": {
+        "location_contains": "Chopin",
+        "publication_date": "2026-01-20"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Seychelles → Abu Dhabi → Varsóvia",
+      "label_en": "Seychelles → Abu Dhabi → Warsaw",
+      "label_es": "Seychelles → Abu Dabi → Varsovia",
+      "segments": [
+        {
+          "from": {
+            "name": "Seychelles",
+            "country": "Seychelles",
+            "lat": -4.68,
+            "lon": 55.49,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Abu Dhabi",
+            "country": "Emirados Árabes Unidos",
+            "lat": 24.45,
+            "lon": 54.65,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Abu Dhabi",
+            "country": "Emirados Árabes Unidos",
+            "lat": 24.45,
+            "lon": 54.65,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Chopin, Varsóvia",
+            "country": "Polônia",
+            "lat": 52.1657,
+            "lon": 20.9671,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A KAS informa que o passageiro retornava das Seychelles via Abu Dhabi.",
+      "evidence_en": "KAS states that the passenger was returning from Seychelles via Abu Dhabi.",
+      "evidence_es": "KAS informa que el pasajero regresaba de Seychelles vía Abu Dabi.",
+      "source_label": "KAS",
+      "source_url": "https://www.gov.pl/web/kas/kas-zatrzymala-5-kg-rafy-koralowej-z-seszeli-na-warszawskim-lotnisku"
+    },
+    {
+      "id": "kyiv-usa-walrus-2026-01",
+      "event_match": {
+        "location_contains": "Kyiv",
+        "publication_date": "2026-01-20"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "postal_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Kyiv → Estados Unidos",
+      "label_en": "Kyiv → United States",
+      "label_es": "Kyiv → Estados Unidos",
+      "segments": [
+        {
+          "from": {
+            "name": "Kyiv",
+            "country": "Ucrânia",
+            "lat": 50.45,
+            "lon": 30.523,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Estados Unidos — destino não especificado",
+            "country": "Estados Unidos",
+            "lat": 39.5,
+            "lon": -98.35,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A encomenda postal seguia de Kyiv para os Estados Unidos.",
+      "evidence_en": "The postal parcel was travelling from Kyiv to the United States.",
+      "evidence_es": "El envío postal viajaba de Kyiv a Estados Unidos.",
+      "source_label": "State Customs Service of Ukraine",
+      "source_url": "https://customs.gov.ua/en/news/novini-20/post/proshchai-nemytaia-chukotka-mitniki-viluchili-bivni-morzha-z-darchim-napisom-1988"
+    },
+    {
+      "id": "addis-madrid-pangolins-2026-02",
+      "event_match": {
+        "location_contains": "Madrid-Barajas",
+        "publication_date": "2026-02-26"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Addis Abeba → Madrid",
+      "label_en": "Addis Ababa → Madrid",
+      "label_es": "Adís Abeba → Madrid",
+      "segments": [
+        {
+          "from": {
+            "name": "Addis Abeba",
+            "country": "Etiópia",
+            "lat": 8.98,
+            "lon": 38.79,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Madrid-Barajas",
+            "country": "Espanha",
+            "lat": 40.472,
+            "lon": -3.561,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "O Ministério do Interior informa que a mala procedia de um voo de Addis Abeba.",
+      "evidence_en": "Spain's Interior Ministry states that the suitcase arrived on a flight from Addis Ababa.",
+      "evidence_es": "El Ministerio del Interior informa que la maleta procedía de un vuelo de Adís Abeba.",
+      "source_label": "Ministerio del Interior / Guardia Civil",
+      "source_url": "https://www.interior.gob.es/opencms/ca/detalle/articulo/Incautados-15-pangolines-en-una-maleta-en-el-aeropuerto-Adolfo-Suarez-Madrid-Barajas/"
+    },
+    {
+      "id": "centralamerica-schiphol-asia-eggs-2026-03-24",
+      "event_match": {
+        "location_contains": "Schiphol",
+        "event_date": "2026-03-24"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "regional_transit_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "América Central → Schiphol → Ásia",
+      "label_en": "Central America → Schiphol → Asia",
+      "label_es": "Centroamérica → Schiphol → Asia",
+      "segments": [
+        {
+          "from": {
+            "name": "América Central — país não especificado",
+            "country": "Região",
+            "lat": 13.5,
+            "lon": -85,
+            "precision": "region_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto de Schiphol",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto de Schiphol",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Ásia — país não especificado",
+            "country": "Região",
+            "lat": 34,
+            "lon": 100,
+            "precision": "region_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A NVWA informa que o casal estava em trânsito da América Central para a Ásia via Schiphol.",
+      "evidence_en": "NVWA states that the couple was in transit from Central America to Asia via Schiphol.",
+      "evidence_es": "NVWA informa que la pareja estaba en tránsito desde Centroamérica hacia Asia vía Schiphol.",
+      "source_label": "NVWA",
+      "source_url": "https://www.nvwa.nl/actueel/nieuws/2026/03/26/nvwa-neemt-261-broedeieren-in-beslag-op-schiphol"
+    },
+    {
+      "id": "indonesia-warsaw-live-corals-2026-04",
+      "event_match": {
+        "location_contains": "Warszawa-Okęcie",
+        "publication_date": "2026-04-09"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "shipment_origin_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Indonésia → Varsóvia",
+      "label_en": "Indonesia → Warsaw",
+      "label_es": "Indonesia → Varsovia",
+      "segments": [
+        {
+          "from": {
+            "name": "Indonésia — origem não especificada",
+            "country": "Indonésia",
+            "lat": -2.55,
+            "lon": 118.01,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Warszawa-Okęcie",
+            "country": "Polônia",
+            "lat": 52.1657,
+            "lon": 20.9671,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A KAS informa que a remessa de corais foi importada da Indonésia.",
+      "evidence_en": "KAS states that the coral shipment was imported from Indonesia.",
+      "evidence_es": "KAS informa que el cargamento de corales fue importado desde Indonesia.",
+      "source_label": "KAS",
+      "source_url": "https://www.gov.pl/web/kas/kas-zatrzymala-probe-przemytu-ponad-1000-szt-koralowcow-z-indonezji"
+    },
+    {
+      "id": "hongkong-schiphol-tortoise-medicine-2026-04-26",
+      "event_match": {
+        "location_contains": "Schiphol",
+        "event_date": "2026-04-26"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Hong Kong → Schiphol",
+      "label_en": "Hong Kong → Schiphol",
+      "label_es": "Hong Kong → Schiphol",
+      "segments": [
+        {
+          "from": {
+            "name": "Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.3193,
+            "lon": 114.1694,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto de Schiphol",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A Douane Nederland informa que os dois passageiros eram provenientes de Hong Kong.",
+      "evidence_en": "Dutch Customs states that the two passengers arrived from Hong Kong.",
+      "evidence_es": "Aduanas neerlandesas informa que los dos pasajeros procedían de Hong Kong.",
+      "source_label": "Douane Nederland",
+      "source_url": "https://www.douane.nl/douane-vindt-boomgifkikkers-en-verentooien-op-schiphol/"
+    },
+    {
+      "id": "brazil-schiphol-sweden-feathers-2026-04-29",
+      "event_match": {
+        "location_contains": "Schiphol",
+        "event_date": "2026-04-29"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_transit_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Brasil → Schiphol → Suécia",
+      "label_en": "Brazil → Schiphol → Sweden",
+      "label_es": "Brasil → Schiphol → Suecia",
+      "segments": [
+        {
+          "from": {
+            "name": "Brasil — origem de viagem não especificada",
+            "country": "Brasil",
+            "lat": -10,
+            "lon": -53,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto de Schiphol",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto de Schiphol",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Suécia — destino não especificado",
+            "country": "Suécia",
+            "lat": 62,
+            "lon": 15,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Douane Nederland informa que os passageiros estavam em trânsito do Brasil para a Suécia.",
+      "evidence_en": "Dutch Customs states that the passengers were in transit from Brazil to Sweden.",
+      "evidence_es": "Aduanas neerlandesas informa que los pasajeros estaban en tránsito desde Brasil hacia Suecia.",
+      "source_label": "Douane Nederland",
+      "source_url": "https://www.douane.nl/douane-vindt-boomgifkikkers-en-verentooien-op-schiphol/"
+    },
+    {
+      "id": "ukraine-romania-greece-skins-2026-05-01",
+      "event_match": {
+        "location_contains": "Siret",
+        "event_date": "2026-05-01"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_vehicle_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Ucrânia → Romênia → Grécia",
+      "label_en": "Ukraine → Romania → Greece",
+      "label_es": "Ucrania → Rumanía → Grecia",
+      "segments": [
+        {
+          "from": {
+            "name": "Ucrânia — origem de viagem não especificada",
+            "country": "Ucrânia",
+            "lat": 48.38,
+            "lon": 31.17,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Siret",
+            "country": "Romênia",
+            "lat": 47.95,
+            "lon": 26.07,
+            "precision": "border_checkpoint"
+          }
+        },
+        {
+          "from": {
+            "name": "Siret",
+            "country": "Romênia",
+            "lat": 47.95,
+            "lon": 26.07,
+            "precision": "border_checkpoint"
+          },
+          "to": {
+            "name": "Grécia — destino não especificado",
+            "country": "Grécia",
+            "lat": 39.07,
+            "lon": 21.82,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A polícia de fronteira identifica explicitamente a rota do ônibus como Ucrânia–Romênia–Grécia.",
+      "evidence_en": "Border Police explicitly identifies the coach route as Ukraine–Romania–Greece.",
+      "evidence_es": "La Policía Fronteriza identifica explícitamente la ruta del autobús como Ucrania–Rumanía–Grecia.",
+      "source_label": "Poliția de Frontieră Română",
+      "source_url": "https://www.politiadefrontiera.ro/ro/main/i-piei-din-blana-de-jder-si-ras-descoperite-la-intrarea-in-tara-43364.html"
+    },
+    {
+      "id": "marsa-alam-bydgoszcz-coral-2026-06",
+      "event_match": {
+        "location_contains": "Bydgoszcz",
+        "publication_date": "2026-06-30"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Marsa Alam → Bydgoszcz",
+      "label_en": "Marsa Alam → Bydgoszcz",
+      "label_es": "Marsa Alam → Bydgoszcz",
+      "segments": [
+        {
+          "from": {
+            "name": "Marsa Alam",
+            "country": "Egito",
+            "lat": 25.0676,
+            "lon": 34.879,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto de Bydgoszcz",
+            "country": "Polônia",
+            "lat": 53.0968,
+            "lon": 17.9777,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A KAS informa que o passageiro chegava de Marsa Alam, Egito.",
+      "evidence_en": "KAS states that the passenger was arriving from Marsa Alam, Egypt.",
+      "evidence_es": "KAS informa que el pasajero llegaba desde Marsa Alam, Egipto.",
+      "source_label": "KAS",
+      "source_url": "https://www.gov.pl/web/ias-bydgoszcz/funkcjonariusze-kas-zatrzymali-chronione-okazy-na-lotnisku-w-bydgoszczy"
+    },
+    {
+      "id": "jakarta-istanbul-zagreb-coral-2026-08-16",
+      "event_match": {
+        "location_contains": "Franjo Tuđman",
+        "event_date": "2026-08-16"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Jacarta → Istambul → Zagreb",
+      "label_en": "Jakarta → Istanbul → Zagreb",
+      "label_es": "Yakarta → Estambul → Zagreb",
+      "segments": [
+        {
+          "from": {
+            "name": "Jacarta",
+            "country": "Indonésia",
+            "lat": -6.2088,
+            "lon": 106.8456,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Istambul",
+            "country": "Turquia",
+            "lat": 41.0082,
+            "lon": 28.9784,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Istambul",
+            "country": "Turquia",
+            "lat": 41.0082,
+            "lon": 28.9784,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Franjo Tuđman, Zagreb",
+            "country": "Croácia",
+            "lat": 45.7429,
+            "lon": 16.0688,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A aduana croata informa que o passageiro chegou da Indonésia, via Istambul.",
+      "evidence_en": "Croatian Customs states that the passenger arrived from Indonesia via Istanbul.",
+      "evidence_es": "Aduanas croatas informa que el pasajero llegó desde Indonesia vía Estambul.",
+      "source_label": "Carinska uprava Republike Hrvatske",
+      "source_url": "https://carina.gov.hr/vijesti/sprijecen-pokusaj-krijumcarenja-koralja/20021"
+    },
+    {
+      "id": "china-prague-crocodile-bag-2026-09",
+      "event_match": {
+        "location_contains": "Praga",
+        "publication_date": "2026-09-02"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "postal_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "China → Praga",
+      "label_en": "China → Prague",
+      "label_es": "China → Praga",
+      "segments": [
+        {
+          "from": {
+            "name": "China — origem não especificada",
+            "country": "China",
+            "lat": 35.86,
+            "lon": 104.2,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Praga",
+            "country": "Tchéquia",
+            "lat": 50.0755,
+            "lon": 14.4378,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A alfândega tcheca informa que a encomenda contendo a bolsa de pele de crocodilo seguia da China.",
+      "evidence_en": "Czech Customs states that the parcel containing the crocodile-skin handbag was sent from China.",
+      "evidence_es": "Aduanas checas informa que el envío con el bolso de piel de cocodrilo procedía de China.",
+      "source_label": "Celní správa České republiky",
+      "source_url": "https://celnisprava.gov.cz/cz/celni-urad-pro-hlavni-mesto-prahu/tiskove-zpravy/2026/Stranky/I-mal%C3%A9-po%C5%A1tovn%C3%AD-z%C3%A1silky-mohou-skr%C3%BDvat-velk%C3%A9-pot%C3%AD%C5%BEe.aspx"
+    },
+    {
+      "id": "seychelles-istanbul-zagreb-coral-2026-09-05",
+      "event_match": {
+        "location_contains": "Franjo Tuđman",
+        "event_date": "2026-09-05"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_air_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Seychelles → Istambul → Zagreb",
+      "label_en": "Seychelles → Istanbul → Zagreb",
+      "label_es": "Seychelles → Estambul → Zagreb",
+      "segments": [
+        {
+          "from": {
+            "name": "Seychelles",
+            "country": "Seychelles",
+            "lat": -4.68,
+            "lon": 55.49,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Istambul",
+            "country": "Turquia",
+            "lat": 41.0082,
+            "lon": 28.9784,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Istambul",
+            "country": "Turquia",
+            "lat": 41.0082,
+            "lon": 28.9784,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Franjo Tuđman, Zagreb",
+            "country": "Croácia",
+            "lat": 45.7429,
+            "lon": 16.0688,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A aduana croata informa que o passageiro chegou das Seychelles via Istambul.",
+      "evidence_en": "Croatian Customs states that the passenger arrived from Seychelles via Istanbul.",
+      "evidence_es": "Aduanas croatas informa que el pasajero llegó desde Seychelles vía Estambul.",
+      "source_label": "Carinska uprava Republike Hrvatske",
+      "source_url": "https://carina.gov.hr/vijesti/na-granicnom-carinskom-uredu-zracna-luka-i-posta-sprijecen-je-pokusaj-nezakonitog-unosa-koralja/20170"
+    },
+    {
+      "id": "lorca-orihuela-france-goldfinches-2026-04",
+      "event_match": {
+        "location_contains": "Orihuela",
+        "publication_date": "2026-04-22"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_trafficking_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Lorca → Orihuela → França",
+      "label_en": "Lorca → Orihuela → France",
+      "label_es": "Lorca → Orihuela → Francia",
+      "segments": [
+        {
+          "from": {
+            "name": "Lorca, Murcia",
+            "country": "Espanha",
+            "lat": 37.671,
+            "lon": -1.699,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Orihuela, Alicante",
+            "country": "Espanha",
+            "lat": 38.0848,
+            "lon": -0.9449,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Orihuela, Alicante",
+            "country": "Espanha",
+            "lat": 38.0848,
+            "lon": -0.9449,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "França — destino não especificado",
+            "country": "França",
+            "lat": 46.23,
+            "lon": 2.21,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Polícia Nacional informou que as aves haviam sido capturadas em Lorca e seriam transportadas à França para venda ilegal.",
+      "evidence_en": "National Police reported that the birds had been captured in Lorca and were being transported to France for illegal sale.",
+      "evidence_es": "La Policía Nacional informó que las aves habían sido capturadas en Lorca y serían transportadas a Francia para su venta ilegal.",
+      "source_label": "Policía Nacional / Europa Press",
+      "source_url": "https://www.europapress.es/comunitat-valenciana/noticia-policia-intercepta-orihuela-400-jilgueros-transportados-coche-francia-venta-ilegal-20260422122313.html"
     }
   ],
   "network_context": [
@@ -1258,241 +2224,6 @@
       "case": "Quy Nhon — país de origem",
       "reason": "COUNTRY_CONFLICT",
       "detail_pt": "Manter apenas África → Vietnã até resolver a divergência entre República do Congo e República Democrática do Congo."
-    },
-    {
-      "case": "Mairiporã (SP)",
-      "event_match": {
-        "case_id": "2026-09-18__mairipora-exoticos-reptiles-fish"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Cruzeiro FM",
-      "source_url": "https://www.cruzeirofm.com.br/2026/09/18/noticias/policia-civil-apreende-mais-de-20-animais-da-fauna-brasileira-em-mairipora/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "Suspeita de venda online e localização de possíveis compradores não demonstram deslocamento dos animais; nenhuma geometria adicionada.",
-      "detail_en": "Suspected online sales and possible buyers' locations do not establish animal movement; no geometry added.",
-      "detail_es": "La sospecha de ventas en línea y la ubicación de posibles compradores no prueban desplazamiento de animales; no se añade geometría."
-    },
-    {
-      "case": "Turvo (PR)",
-      "event_match": {
-        "case_id": "2026-09-15__turvo-three-birds"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Rede Sul de Notícias",
-      "source_url": "https://redesuldenoticias.com.br/noticias/pm-ambiental-apreende-tres-aves-silvestres-mantidas-irregularmente-em-turvo/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Miguel Pereira (RJ), bairro Praça da Ponte",
-      "event_match": {
-        "case_id": "2026-09-12__miguel-pereira-fourteen-birds"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Jornal Ponto",
-      "source_url": "https://www.jornalponto.com/site/2026/09/16/policia-apreende-14-aves-silvestres-durante-acao-em-miguel-pereira/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Fusagasugá, Cundinamarca",
-      "event_match": {
-        "case_id": "2026-09-17__fusagasuga-two-boas"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Noticentro Colombia / CAR",
-      "source_url": "https://www.noticentrocolombia.com/2026/09/17/la-car-incauta-dos-boas-constrictor-exhibidas-como-atraccion-turistica-en-finca-de-fusagasuga/nacionales/22886/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Floresta (PE)",
-      "event_match": {
-        "case_id": "2026-09-12__floresta-140-parrot-chicks"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "CBN Recife",
-      "source_url": "https://www.cbnrecife.com/2026/09/21/papagaios-resgatados-do-trafico-recebem-tratamento-para-voltar-a-natureza/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Udyanbandh Range, Khariar Division, distrito de Nuapada, Odisha",
-      "event_match": {
-        "case_id": "2026-09-22__nuapada-leopard-skin"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "The Statesman",
-      "source_url": "https://www.thestatesman.com/bhubaneswar/odisha-vigilance-arrests-poacher-with-leopard-skin-2-1503641731.html",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Isilkul, região de Omsk, fronteira Rússia–Cazaquistão",
-      "event_match": {
-        "case_id": "2026-09-21__isilkul-bear-gallbladders"
-      },
-      "reason": "INSUFFICIENT_DIRECTION_AND_ENDPOINTS",
-      "source_label": "Interfax",
-      "source_url": "https://www.interfax-russia.ru/siberia/news/kontrabandu-zhelchnyh-puzyrey-burogo-medvedya-presekli-v-omskoy-oblasti",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma interceptação de produtos na fronteira de Isilkul, mas não estabelece endpoints e sentido suficientes para geometria. Não inferir rota a partir da demanda medicinal contextual.",
-      "detail_en": "The source confirms interception at the Isilkul border but does not establish sufficient endpoints and direction for geometry. Do not infer a route from contextual medicinal demand.",
-      "detail_es": "La fuente confirma la interceptación en la frontera de Isilkul, pero no establece extremos y sentido suficientes para una geometría. No inferir una ruta a partir de la demanda medicinal contextual."
-    },
-    {
-      "case": "Volta Redonda (RJ), Jardim Suíça",
-      "event_match": {
-        "case_id": "2026-09-16__volta-redonda-wild-birds"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Jornal Ponto / Secom–PMVR",
-      "source_url": "https://www.jornalponto.com/site/2026/09/16/acao-resgata-11-animais-mantidos-irregularmente-em-propriedade-em-volta-redonda/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Hoedspruit, Limpopo",
-      "event_match": {
-        "case_id": "2026-09-18__hoedspruit-pangolin"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "SAPS, via Accidents.co.za",
-      "source_url": "https://www.accidents.co.za/2026/09/20/five-suspects-arrested-and-two-pangolins-rescued-during-sting-operations-targeting-illegal-wildlife-traders-in-hoedspruit-and-gravelotte/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "Gravelotte, Limpopo",
-      "event_match": {
-        "case_id": "2026-09-18__gravelotte-pangolin"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "SAPS, via Accidents.co.za",
-      "source_url": "https://www.accidents.co.za/2026/09/20/five-suspects-arrested-and-two-pangolins-rescued-during-sting-operations-targeting-illegal-wildlife-traders-in-hoedspruit-and-gravelotte/",
-      "audited_at": "2026-09-22T23:12:56.254Z",
-      "detail_pt": "A fonte confirma a ocorrência, mas não documenta origem e destino de um deslocamento de tráfico. Encaminhamentos administrativos, de reabilitação ou perícia não constituem rota do caso.",
-      "detail_en": "The source confirms the incident but does not document origin and destination of a trafficking movement. Administrative, rehabilitation or forensic transfers are not case trafficking routes.",
-      "detail_es": "La fuente confirma el hecho, pero no documenta origen y destino de un desplazamiento de tráfico. Los traslados administrativos, de rehabilitación o peritaje no son rutas de tráfico del caso."
-    },
-    {
-      "case": "São Bernardo do Campo, São Paulo",
-      "event_match": {
-        "case_id": "2026-09-21__sao-bernardo-12-birds"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Diário do Grande ABC",
-      "source_url": "https://www.dgabc.com.br/Noticia/4348673/gcm-apreendeu-12-aves-silvestres-e-aplica-multa-de-rs-35-mil",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
-    },
-    {
-      "case": "Apatzingán, Michoacán",
-      "event_match": {
-        "case_id": "2026-09-23__apatzingan-spider-monkey"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Debate; FGE via RED 113",
-      "source_url": "https://www.debate.com.mx/estados/rescatan-a-ejemplar-de-mono-arana-durante-cateo-en-apatzingan-michoacan-20260923-0123.html",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
-    },
-    {
-      "case": "Mariani, Assam",
-      "event_match": {
-        "case_id": "2026-09-22__mariani-86-tokay-geckos"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "NE Business Mirror",
-      "source_url": "https://nebusinessmirror.com/wildlife-smuggling-bid-foiled-on-assam-nagaland-border/",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
-    },
-    {
-      "case": "Medan, Sumatra Utara",
-      "event_match": {
-        "case_id": "2026-09-14__medan-101-leafbirds"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Kementerian Kehutanan",
-      "source_url": "https://www.kehutanan.go.id/pers/temukan-101-burung-dilindungi-di-medan-kemenhut-telusuri-keterkaitan-dengan-perkara-perdagangan-satwa-sebelumnya",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
-    },
-    {
-      "case": "Bokakhat, Assam",
-      "event_match": {
-        "case_id": "2026-09-22__bokakhat-channa-fish"
-      },
-      "reason": "VEHICLE_SERVICE_NOT_PROVEN_WILDLIFE_ITINERARY",
-      "source_label": "Aaj Tak; India Today NE",
-      "source_url": "https://www.aajtak.in/india/news/story/assam-cheng-fish-seizure-500-rare-protected-fish-bus-five-detained-lcla-strc-2650435-2026-09-23",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "O serviço Tinsukia–Siliguri é explicitado, mas a origem e o destino dos peixes permanecem sob investigação. Itinerário do ônibus mantido como contexto, sem geometria atribuída ao lote.",
-      "detail_en": "The Tinsukia–Siliguri service is stated, but the fish's origin and destination remain under investigation. Bus itinerary retained as context, without geometry attributed to the consignment.",
-      "detail_es": "Se explicita el servicio Tinsukia–Siliguri, pero el origen y destino de los peces siguen bajo investigación. El itinerario del autobús se conserva como contexto, sin geometría atribuida al lote.",
-      "context_only": true
-    },
-    {
-      "case": "Ahmedabad (Naroda), Gujarat",
-      "event_match": {
-        "case_id": "2026-09-23__ahmedabad-ambergris-report"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "IANS / Free Press Journal",
-      "source_url": "https://www.freepressjournal.in/india/ahmedabad-crime-branch-recovers-ambergris-worth-105-crore-3-held-in-wildlife-trade-case",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
-    },
-    {
-      "case": "Trecastagni, Catania",
-      "event_match": {
-        "case_id": "2026-09-23__trecastagni-102-tortoises-report"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "ANSA",
-      "source_url": "https://www.ansa.it/sicilia/notizie/2026/09/23/aveva-in-casa-102-tartarughe-di-specie-protette-denunciato_864aa647-6ab9-47d2-9501-82f46b080e84.html",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
-    },
-    {
-      "case": "Kepulauan Fam, Raja Ampat",
-      "event_match": {
-        "case_id": "2026-09-23__raja-ampat-turtle-remains-report"
-      },
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "source_label": "Koreri; Kapabar",
-      "source_url": "https://koreri.com/2026/09/23/polda-pbd-ungkap-dugaan-pelanggaran-konservasi-penyu-di-raja-ampat-ini-detail-kasusnya/",
-      "audited_at": "2026-09-23T23:09:57Z",
-      "detail_pt": "A fonte não estabelece origem e destino de um movimento de tráfico. Local de apreensão, parentesco ou nacionalidade não permitem completar uma rota; transferências de reabilitação, perícia ou custódia não são rotas de tráfico.",
-      "detail_en": "The source does not establish origin and destination of a trafficking movement. Seizure location, kinship or nationality cannot fill a route; rehabilitation, forensic or custodial transfers are not trafficking routes.",
-      "detail_es": "La fuente no establece origen y destino de un movimiento de tráfico. Lugar de incautación, parentesco o nacionalidad no permiten completar una ruta; traslados de rehabilitación, peritaje o custodia no son rutas de tráfico."
     }
   ]
 }
