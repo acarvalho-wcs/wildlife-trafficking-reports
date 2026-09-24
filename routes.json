@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T13:30:00Z",
+  "updated_at": "2026-09-24T23:14:00Z",
   "audited_through": "2026-09-24",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
@@ -3123,6 +3123,81 @@
       "case": "Quy Nhon — país de origem",
       "reason": "COUNTRY_CONFLICT",
       "detail_pt": "Manter apenas África → Vietnã até resolver a divergência entre República do Congo e República Democrática do Congo."
+    },
+    {
+      "case_id": "2026-09-24__rawson-14-aves",
+      "case": "Rawson, San Juan",
+      "event_match": {
+        "id": "2026-09-24__rawson-14-aves"
+      },
+      "status": "EXCLUDED",
+      "reason": "ORIGIN_DESTINATION_UNKNOWN",
+      "detail_pt": "Ponto de venda sem origem, destino ou trajeto documentados; transferência veterinária não é rota de tráfico.",
+      "detail_en": "Sales location without documented origin, destination or itinerary; veterinary transfer is not a trafficking route.",
+      "detail_es": "Lugar de venta sin origen, destino o trayecto documentados; el traslado veterinario no es una ruta de tráfico.",
+      "source_label": "Diario de Cuyo",
+      "source_url": "https://www.diariodecuyo.com.ar/san-juan/recuperaron-28-aves-cautivas-allanamientos-rawson-y-chimbas-n6583994",
+      "audited_at": "2026-09-24T23:14:00Z"
+    },
+    {
+      "case_id": "2026-09-24__chimbas-14-aves",
+      "case": "Chimbas, San Juan",
+      "event_match": {
+        "id": "2026-09-24__chimbas-14-aves"
+      },
+      "status": "EXCLUDED",
+      "reason": "ORIGIN_DESTINATION_UNKNOWN",
+      "detail_pt": "Ponto de venda sem origem ou destino documentados; operação simultânea não comprova rota compartilhada com Rawson.",
+      "detail_en": "Sales location without documented origin or destination; simultaneous action does not establish a shared route with Rawson.",
+      "detail_es": "Lugar de venta sin origen ni destino documentados; la acción simultánea no demuestra una ruta compartida con Rawson.",
+      "source_label": "Diario de Cuyo",
+      "source_url": "https://www.diariodecuyo.com.ar/san-juan/recuperaron-28-aves-cautivas-allanamientos-rawson-y-chimbas-n6583994",
+      "audited_at": "2026-09-24T23:14:00Z"
+    },
+    {
+      "case_id": "2026-09-24__sarita-four-spider-monkeys",
+      "case": "Sarita, Texas — posto Javier Vega Jr.",
+      "event_match": {
+        "id": "2026-09-24__sarita-four-spider-monkeys"
+      },
+      "status": "EXCLUDED",
+      "reason": "ORIGIN_DESTINATION_UNKNOWN",
+      "detail_pt": "A fonte declara origem e destino não informados; posto no Texas e nacionalidade do motorista não demonstram travessia internacional.",
+      "detail_en": "The source states that origin and destination were not reported; a Texas checkpoint and driver nationality do not establish an international crossing.",
+      "detail_es": "La fuente declara origen y destino no informados; un puesto en Texas y la nacionalidad del conductor no demuestran un cruce internacional.",
+      "source_label": "FOX RGV",
+      "source_url": "https://foxrgv.tv/four-spider-monkeys-found-hidden-in-duffle-bag-at-south-texas-border-checkpoint/",
+      "audited_at": "2026-09-24T23:14:00Z"
+    },
+    {
+      "case_id": "2026-09-24__lien-hoa-eight-wild-birds",
+      "case": "Vị Khê, Liên Hòa, Quảng Ninh",
+      "event_match": {
+        "id": "2026-09-24__lien-hoa-eight-wild-birds"
+      },
+      "status": "EXCLUDED",
+      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
+      "detail_pt": "Captura local em redes, sem deslocamento de tráfico documentado; migração natural e soltura não são rotas do caso.",
+      "detail_en": "Local net capture without documented trafficking movement; natural migration and release are not case routes.",
+      "detail_es": "Captura local en redes sin movimiento de tráfico documentado; migración natural y liberación no son rutas del caso.",
+      "source_label": "Ministério da Segurança Pública do Vietnã",
+      "source_url": "https://mps.gov.vn/bai-viet/cong-an-thanh-pho-quang-ninh-ngan-chan-tinh-trang-san-bat-bay-bat-chim-troi-1790153336",
+      "audited_at": "2026-09-24T23:14:00Z"
+    },
+    {
+      "case_id": "2026-09-23__cape-town-abalone-vehicle",
+      "case": "Camps Bay / Sea Point, Cidade do Cabo",
+      "event_match": {
+        "id": "2026-09-23__cape-town-abalone-vehicle"
+      },
+      "status": "EXCLUDED",
+      "reason": "CHASE_NOT_WILDLIFE_ROUTE",
+      "detail_pt": "A fauna estava em outro veículo, não naquele cuja perseguição teve ruas descritas. Origem e destino desconhecidos; excluir geometria da perseguição.",
+      "detail_en": "The wildlife was in a different vehicle from the one pursued along named streets. Origin and destination unknown; exclude chase geometry.",
+      "detail_es": "La fauna estaba en otro vehículo, no en el perseguido por las calles descritas. Origen y destino desconocidos; excluir la geometría de la persecución.",
+      "source_label": "Cape Argus",
+      "source_url": "https://capeargus.co.za/news/2026-09-24-watch-metro-police-open-fire-during-sea-point-abalone-bust/",
+      "audited_at": "2026-09-24T23:14:00Z"
     }
   ]
 }
