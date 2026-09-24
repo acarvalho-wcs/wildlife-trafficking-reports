@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T02:15:00Z",
+  "updated_at": "2026-09-24T02:52:00Z",
   "audited_through": "2026-09-24",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
@@ -2165,6 +2165,244 @@
       "evidence_es": "La Policía Nacional informó que las aves habían sido capturadas en Lorca y serían transportadas a Francia para su venta ilegal.",
       "source_label": "Policía Nacional / Europa Press",
       "source_url": "https://www.europapress.es/comunitat-valenciana/noticia-policia-intercepta-orihuela-400-jilgueros-transportados-coche-francia-venta-ilegal-20260422122313.html"
+    },
+    {
+      "id": "bogota-manizales-tortoises-2026-04-12",
+      "event_match": {
+        "location_contains": "Terminal de Transportes de Manizales",
+        "event_date": "2026-04-12"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "parcel_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Bogotá → Manizales",
+      "label_en": "Bogotá → Manizales",
+      "label_es": "Bogotá → Manizales",
+      "segments": [
+        {
+          "from": {
+            "name": "Bogotá",
+            "country": "Colômbia",
+            "lat": 4.711,
+            "lon": -74.072,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Manizales",
+            "country": "Colômbia",
+            "lat": 5.07,
+            "lon": -75.52,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Polícia Nacional informa que os cinco jabutis estavam em uma encomenda enviada de Bogotá para Manizales.",
+      "evidence_en": "National Police states that the five tortoises were in a parcel sent from Bogotá to Manizales.",
+      "evidence_es": "La Policía Nacional informa que los cinco morrocoyes estaban en una encomienda enviada desde Bogotá hacia Manizales.",
+      "source_label": "Policía Nacional de Colombia",
+      "source_url": "https://924.policia.gov.co/index.php/noticia/policia-en-manizales-logra-incautacion-especies-en-terminal-transportes"
+    },
+    {
+      "id": "santa-ana-la-gloria-reptiles-2026-07-10",
+      "event_match": {
+        "location_contains": "Santa Ana–La Gloria",
+        "event_date": "2026-07-10"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "reported_vehicle_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Santa Ana → La Gloria",
+      "label_en": "Santa Ana → La Gloria",
+      "label_es": "Santa Ana → La Gloria",
+      "segments": [
+        {
+          "from": {
+            "name": "Santa Ana, Magdalena",
+            "country": "Colômbia",
+            "lat": 9.32,
+            "lon": -74.57,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "La Gloria, Cesar",
+            "country": "Colômbia",
+            "lat": 8.62,
+            "lon": -73.8,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Polícia Nacional informa que o motociclista transportava os animais pela via de Santa Ana em direção a La Gloria.",
+      "evidence_en": "National Police states that the motorcyclist was transporting the animals on the road from Santa Ana toward La Gloria.",
+      "evidence_es": "La Policía Nacional informa que el motociclista transportaba los animales por la vía desde Santa Ana hacia La Gloria.",
+      "source_label": "Policía Nacional de Colombia",
+      "source_url": "https://radio.policia.gov.co/index.php/noticia/policia-nacional-frustra-trafico-94-especies-silvestres-en-vias-del-magdalena"
+    },
+    {
+      "id": "guayaquil-amsterdam-hongkong-seacucumbers-2026-06-10",
+      "event_match": {
+        "location_contains": "José Joaquín de Olmedo",
+        "event_date": "2026-06-10"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_air_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Guayaquil → Amsterdã → Hong Kong",
+      "label_en": "Guayaquil → Amsterdam → Hong Kong",
+      "label_es": "Guayaquil → Ámsterdam → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto José Joaquín de Olmedo, Guayaquil",
+            "country": "Equador",
+            "lat": -2.158,
+            "lon": -79.884,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Aeroporto de Schiphol, Amsterdã",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto de Schiphol, Amsterdã",
+            "country": "Países Baixos",
+            "lat": 52.31,
+            "lon": 4.768,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.3193,
+            "lon": 114.1694,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Fiscalía confirma a tentativa de saída do Equador; cobertura publicada do caso informa itinerário Guayaquil–Amsterdã com destino final Hong Kong.",
+      "evidence_en": "Ecuador's Prosecutor's Office confirms the attempted departure; published case reporting identifies a Guayaquil–Amsterdam itinerary with Hong Kong as final destination.",
+      "evidence_es": "La Fiscalía confirma el intento de salida del Ecuador; cobertura publicada del caso identifica un itinerario Guayaquil–Ámsterdam con destino final Hong Kong.",
+      "source_label": "Fiscalía General del Estado / El Universo",
+      "source_url": "https://www.eluniverso.com/noticias/seguridad/guayas-guayaquil-detenciones-delitos-contra-la-flora-y-la-fauna-ciudadana-china-con-403-pepinos-de-mar-en-aeropuerto-de-guayaquil-nota/"
+    },
+    {
+      "id": "kenya-ezeiza-exotic-marine-fauna-2026-04",
+      "event_match": {
+        "location_contains": "Ezeiza",
+        "publication_date": "2026-04-28"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "shipment_origin_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Quênia → Ezeiza",
+      "label_en": "Kenya → Ezeiza",
+      "label_es": "Kenia → Ezeiza",
+      "segments": [
+        {
+          "from": {
+            "name": "Quênia — origem logística não especificada",
+            "country": "Quênia",
+            "lat": -0.0236,
+            "lon": 37.9062,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Ezeiza",
+            "country": "Argentina",
+            "lat": -34.822,
+            "lon": -58.536,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A Subsecretaría de Ambiente informa que a remessa de 33 caixas com fauna exótica procedia do Quênia.",
+      "evidence_en": "Argentina's Environment Undersecretariat states that the 33-box exotic-wildlife shipment came from Kenya.",
+      "evidence_es": "La Subsecretaría de Ambiente informa que el envío de 33 cajas con fauna exótica procedía de Kenia.",
+      "source_label": "Subsecretaría de Ambiente de la Nación",
+      "source_url": "https://www.argentina.gob.ar/noticias/la-subsecretaria-de-ambiente-rescato-mas-de-700-ejemplares-de-especies-exoticas"
+    },
+    {
+      "id": "aregua-asuncion-yacare-2026-05-28",
+      "event_match": {
+        "location_contains": "Asunción",
+        "event_date": "2026-05-28"
+      },
+      "status": "DOCUMENTED_ATTRIBUTED",
+      "route_type": "reported_delivery_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Areguá → Assunção (origem logística declarada)",
+      "label_en": "Areguá → Asunción (reported logistical origin)",
+      "label_es": "Areguá → Asunción (origen logístico declarado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Areguá",
+            "country": "Paraguai",
+            "lat": -25.3125,
+            "lon": -57.3847,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Asunción",
+            "country": "Paraguai",
+            "lat": -25.287,
+            "lon": -57.633,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Cobertura policial informa que o entregador detido declarou ter recolhido a caixa com os filhotes em Areguá antes da entrega simulada em Assunção.",
+      "evidence_en": "Police reporting states that the detained courier said he collected the box containing the juveniles in Areguá before the controlled delivery in Asunción.",
+      "evidence_es": "La cobertura policial informa que el repartidor detenido declaró haber recogido la caja con las crías en Areguá antes de la entrega controlada en Asunción.",
+      "source_label": "MADES / ABC Color",
+      "source_url": "https://www.abc.com.py/policiales/2026/05/29/rescatan-a-siete-bebes-de-yacare-en-operativo-encubierto/"
+    },
+    {
+      "id": "managua-esteli-wildlife-2026-07-26",
+      "event_match": {
+        "location_contains": "Estelí",
+        "event_date": "2026-07-26"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "completed_bus_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Manágua → Estelí",
+      "label_en": "Managua → Estelí",
+      "label_es": "Managua → Estelí",
+      "segments": [
+        {
+          "from": {
+            "name": "Manágua",
+            "country": "Nicarágua",
+            "lat": 12.114,
+            "lon": -86.236,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Estelí",
+            "country": "Nicarágua",
+            "lat": 13.092,
+            "lon": -86.354,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que os 13 animais eram transportados em um ônibus que seguia de Manágua para Estelí.",
+      "evidence_en": "The source states that the 13 animals were being transported on a bus travelling from Managua to Estelí.",
+      "evidence_es": "La fuente informa que los 13 animales eran transportados en un autobús que viajaba de Managua hacia Estelí.",
+      "source_label": "MARENA / La Prensa Nicaragua",
+      "source_url": "https://www.laprensani.com/2026/07/28/nacionales/3748333-marena-decomisa-animales-silvestres-esteli"
     }
   ],
   "network_context": [
