@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T02:52:00Z",
+  "updated_at": "2026-09-24T13:30:00Z",
   "audited_through": "2026-09-24",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
@@ -2403,6 +2403,667 @@
       "evidence_es": "La fuente informa que los 13 animales eran transportados en un autobús que viajaba de Managua hacia Estelí.",
       "source_label": "MARENA / La Prensa Nicaragua",
       "source_url": "https://www.laprensani.com/2026/07/28/nacionales/3748333-marena-decomisa-animales-silvestres-esteli"
+    },
+    {
+      "id": "hawaii-california-private-jet-shark-fins-2026-02",
+      "event_match": {
+        "location_contains": "Havaí",
+        "publication_date": "2026-04-29"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Havaí → Califórnia",
+      "label_en": "Hawaii → California",
+      "label_es": "Hawái → California",
+      "segments": [
+        {
+          "from": {
+            "name": "Havaí — origem não especificada",
+            "country": "Estados Unidos",
+            "lat": 20.7984,
+            "lon": -156.3319,
+            "precision": "state_centroid_generalized"
+          },
+          "to": {
+            "name": "Califórnia — destino não especificado",
+            "country": "Estados Unidos",
+            "lat": 36.7783,
+            "lon": -119.4179,
+            "precision": "state_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "O registro documenta o transporte de 40 barbatanas secas ou congeladas de tubarão em jato privado do Havaí para a Califórnia. As localidades específicas de origem e destino dentro dos estados não estão estabelecidas; por isso, os pontos são generalizados e a linha é tracejada.",
+      "evidence_en": "The record documents the transport of 40 dried or frozen shark fins by private jet from Hawaii to California. The specific origin and destination locations within the states are not established, so the endpoints are generalized and the route is dashed.",
+      "evidence_es": "El registro documenta el transporte de 40 aletas de tiburón secas o congeladas en un jet privado desde Hawái hasta California. No se establecen las localidades específicas de origen y destino dentro de los estados, por lo que los puntos son generalizados y la ruta se representa con línea discontinua.",
+      "source_label": "Hawaii News Now / San Francisco Chronicle",
+      "source_url": "https://www.sfchronicle.com/california/article/shark-fins-private-jet-22233407.php"
+    },
+    {
+      "id": "aceh-timur-thailand-wildlife-2026-01-30",
+      "event_match": {
+        "location_contains": "Madat",
+        "event_date": "2026-01-30"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Aceh Timur → Tailândia",
+      "label_en": "East Aceh → Thailand",
+      "label_es": "Aceh Oriental → Tailandia",
+      "segments": [
+        {
+          "from": {
+            "name": "Madat, Aceh Timur",
+            "country": "Indonésia",
+            "lat": 4.63,
+            "lon": 97.62,
+            "precision": "district_generalized"
+          },
+          "to": {
+            "name": "Tailândia — destino não especificado",
+            "country": "Tailândia",
+            "lat": 15.87,
+            "lon": 100.99,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte oficial afirma que a carga interceptada em Aceh Timur tinha como destino pretendido a exportação para a Tailândia.",
+      "evidence_en": "The official source states that the shipment intercepted in East Aceh was intended for export to Thailand.",
+      "evidence_es": "La fuente oficial afirma que el cargamento interceptado en Aceh Oriental tenía como destino previsto la exportación a Tailandia.",
+      "source_label": "Gakkum Kehutanan — Kementerian Kehutanan Indonesia",
+      "source_url": "https://gakkum.kehutanan.go.id/siaran-pers/detail/gakkum-kehutanan-limpahkan-tersangka-penyelundupan-satwa-dilindungi-ilegal-lintas-negara-ke-kejaksaan-tinggi-aceh-timur"
+    },
+    {
+      "id": "thailand-soekarno-hatta-live-animals-2026-05-08",
+      "event_match": {
+        "location_contains": "Soekarno-Hatta",
+        "event_date": "2026-05-08"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Tailândia → Soekarno-Hatta",
+      "label_en": "Thailand → Soekarno-Hatta",
+      "label_es": "Tailandia → Soekarno-Hatta",
+      "segments": [
+        {
+          "from": {
+            "name": "Tailândia — origem de viagem não especificada",
+            "country": "Tailândia",
+            "lat": 15.87,
+            "lon": 100.99,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional Soekarno-Hatta",
+            "country": "Indonésia",
+            "lat": -6.1256,
+            "lon": 106.6559,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A Badan Karantina Indonesia informa que o passageiro chegou em voo internacional procedente da Tailândia.",
+      "evidence_en": "Indonesia's Quarantine Agency states that the passenger arrived on an international flight from Thailand.",
+      "evidence_es": "La Agencia de Cuarentena de Indonesia informa que el pasajero llegó en un vuelo internacional procedente de Tailandia.",
+      "source_label": "Badan Karantina Indonesia",
+      "source_url": "https://karantinaindonesia.go.id/kepulauan-bangka-belitung/berita/sinergi-bersama-barantin-gagalkan-penyelundupan-satwa-hidup-asal-thailandPenyelundupan%20Satwa%20Hidup%20Asal%20Thailand"
+    },
+    {
+      "id": "soekarno-hatta-oman-wildlife-2026-06-26",
+      "event_match": {
+        "location_contains": "Soekarno-Hatta",
+        "event_date": "2026-06-26"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Soekarno-Hatta → Omã",
+      "label_en": "Soekarno-Hatta → Oman",
+      "label_es": "Soekarno-Hatta → Omán",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Internacional Soekarno-Hatta",
+            "country": "Indonésia",
+            "lat": -6.1256,
+            "lon": 106.6559,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Omã — destino não especificado",
+            "country": "Omã",
+            "lat": 20.5937,
+            "lon": 56.2719,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte oficial descreve a tentativa de envio dos animais para Omã por meio do Aeroporto Internacional Soekarno-Hatta.",
+      "evidence_en": "The official source describes an attempted shipment of the animals to Oman through Soekarno-Hatta International Airport.",
+      "evidence_es": "La fuente oficial describe un intento de envío de los animales a Omán a través del Aeropuerto Internacional Soekarno-Hatta.",
+      "source_label": "Kementerian Kehutanan Indonesia",
+      "source_url": "https://bpkh3.planologi.kehutanan.go.id/web/berita/1636ec31-0c81-4283-8081-a1e5525b1cee"
+    },
+    {
+      "id": "soekarno-hatta-seoul-monitors-2026-07-28",
+      "event_match": {
+        "location_contains": "Soekarno-Hatta",
+        "event_date": "2026-07-28"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Soekarno-Hatta → Seul",
+      "label_en": "Soekarno-Hatta → Seoul",
+      "label_es": "Soekarno-Hatta → Seúl",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Internacional Soekarno-Hatta",
+            "country": "Indonésia",
+            "lat": -6.1256,
+            "lon": 106.6559,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Seul — aeroporto não especificado",
+            "country": "Coreia do Sul",
+            "lat": 37.5665,
+            "lon": 126.978,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte oficial informa que o passageiro foi detido na partida internacional quando pretendia voar para Seul.",
+      "evidence_en": "The official source states that the passenger was stopped in international departures while intending to fly to Seoul.",
+      "evidence_es": "La fuente oficial informa que el pasajero fue detenido en salidas internacionales cuando pretendía volar a Seúl.",
+      "source_label": "Kementerian Kehutanan Indonesia",
+      "source_url": "https://www.kehutanan.go.id/news/kemenhut-gagalkan-penyelundupan-biawak-dalam-koper-oleh-wna-korea"
+    },
+    {
+      "id": "cuyo-taytay-shark-fins-2026-02-17",
+      "event_match": {
+        "location_contains": "Taytay",
+        "event_date": "2026-02-17"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Cuyo → Taytay",
+      "label_en": "Cuyo → Taytay",
+      "label_es": "Cuyo → Taytay",
+      "segments": [
+        {
+          "from": {
+            "name": "Cuyo, Palawan",
+            "country": "Filipinas",
+            "lat": 10.852,
+            "lon": 121.01,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Porto de Taytay, Palawan",
+            "country": "Filipinas",
+            "lat": 10.817,
+            "lon": 119.516,
+            "precision": "port_city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Philippine Information Agency informa que os três sacos de barbatanas foram transportados por motorbanca proveniente de Cuyo e apreendidos em Taytay.",
+      "evidence_en": "The Philippine Information Agency reports that the three sacks of shark fins were transported by motorbanca from Cuyo and seized in Taytay.",
+      "evidence_es": "La Philippine Information Agency informa que los tres sacos de aletas fueron transportados en motorbanca desde Cuyo y decomisados en Taytay.",
+      "source_label": "Philippine Information Agency",
+      "source_url": "https://pia.gov.ph/news/luzon/mimaropa/3-sacks-of-dried-shark-fins-confiscated-in-northern-palawan-town/"
+    },
+    {
+      "id": "bangkok-manila-tortoises-2026-06-12",
+      "event_match": {
+        "location_contains": "Ninoy Aquino",
+        "event_date": "2026-06-12"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Bangkok → Manila",
+      "label_en": "Bangkok → Manila",
+      "label_es": "Bangkok → Manila",
+      "segments": [
+        {
+          "from": {
+            "name": "Bangkok — aeroporto de origem não especificado",
+            "country": "Tailândia",
+            "lat": 13.7563,
+            "lon": 100.5018,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional Ninoy Aquino, Manila",
+            "country": "Filipinas",
+            "lat": 14.5086,
+            "lon": 121.0198,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "O Bureau of Customs informa que o passageiro chegou a Manila procedente de Bangkok.",
+      "evidence_en": "The Bureau of Customs states that the passenger arrived in Manila from Bangkok.",
+      "evidence_es": "La Oficina de Aduanas informa que el pasajero llegó a Manila procedente de Bangkok.",
+      "source_label": "Philippines Bureau of Customs",
+      "source_url": "https://customs.gov.ph/boc-naia-seizes-50-endangered-tortoises-from-arriving-passenger/"
+    },
+    {
+      "id": "xiamen-kinmen-live-animals-2026-06",
+      "event_match": {
+        "location_contains": "Kinmen",
+        "publication_date": "2026-06-25"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Xiamen → Kinmen",
+      "label_en": "Xiamen → Kinmen",
+      "label_es": "Xiamen → Kinmen",
+      "segments": [
+        {
+          "from": {
+            "name": "Xiamen",
+            "country": "China",
+            "lat": 24.4798,
+            "lon": 118.0894,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Kinmen",
+            "country": "Taiwan",
+            "lat": 24.449,
+            "lon": 118.376,
+            "precision": "island_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que o passageiro entrou em Kinmen vindo de Xiamen e transportava os animais na bagagem de mão.",
+      "evidence_en": "The source states that the passenger entered Kinmen from Xiamen while carrying the animals in hand luggage.",
+      "evidence_es": "La fuente informa que el pasajero entró en Kinmen procedente de Xiamen llevando los animales en el equipaje de mano.",
+      "source_label": "Taiwan Immigrants' Global News Network / Kaohsiung Customs",
+      "source_url": "https://news.immigration.gov.tw/NewsSection/Detail/9c7c6650-f32b-4aa3-9a8a-7d9afeb6a47d?lang=EN"
+    },
+    {
+      "id": "poland-ben-gurion-parrots-2026-06",
+      "event_match": {
+        "location_contains": "Ben Gurion",
+        "publication_date": "2026-06-15"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Polônia → Israel",
+      "label_en": "Poland → Israel",
+      "label_es": "Polonia → Israel",
+      "segments": [
+        {
+          "from": {
+            "name": "Polônia — origem de viagem não especificada",
+            "country": "Polônia",
+            "lat": 52.0693,
+            "lon": 19.4803,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Ben Gurion",
+            "country": "Israel",
+            "lat": 32.0114,
+            "lon": 34.8867,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A autoridade israelense informa que o passageiro retornava de uma viagem à Polônia quando os papagaios foram encontrados em sua bagagem.",
+      "evidence_en": "The Israeli authority states that the passenger was returning from a trip to Poland when the parrots were found in his luggage.",
+      "evidence_es": "La autoridad israelí informa que el pasajero regresaba de un viaje a Polonia cuando los loros fueron hallados en su equipaje.",
+      "source_label": "Israel Nature and Parks Authority",
+      "source_url": "https://www.parks.org.il/new/enforcement-8/"
+    },
+    {
+      "id": "south-africa-hongkong-tortoises-2026-03-09",
+      "event_match": {
+        "location_contains": "Hong Kong",
+        "event_date": "2026-03-09"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "África do Sul → Hong Kong",
+      "label_en": "South Africa → Hong Kong",
+      "label_es": "Sudáfrica → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "África do Sul — origem não especificada",
+            "country": "África do Sul",
+            "lat": -30.5595,
+            "lon": 22.9375,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.308,
+            "lon": 113.9185,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A carga aérea foi declarada como importada da África do Sul para Hong Kong.",
+      "evidence_en": "The air consignment was declared as imported from South Africa to Hong Kong.",
+      "evidence_es": "La carga aérea fue declarada como importada de Sudáfrica a Hong Kong.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.info.gov.hk/gia/general/202603/10/P2026031000523.htm"
+    },
+    {
+      "id": "south-africa-dubai-hongkong-reptiles-2026-03-12",
+      "event_match": {
+        "location_contains": "Hong Kong",
+        "event_date": "2026-03-12"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "África do Sul → Dubai → Hong Kong",
+      "label_en": "South Africa → Dubai → Hong Kong",
+      "label_es": "Sudáfrica → Dubái → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "África do Sul — origem de viagem não especificada",
+            "country": "África do Sul",
+            "lat": -30.5595,
+            "lon": 22.9375,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Dubai",
+            "country": "Emirados Árabes Unidos",
+            "lat": 25.2048,
+            "lon": 55.2708,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Dubai",
+            "country": "Emirados Árabes Unidos",
+            "lat": 25.2048,
+            "lon": 55.2708,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.308,
+            "lon": 113.9185,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "Hong Kong Customs informa que o passageiro chegou da África do Sul via Dubai.",
+      "evidence_en": "Hong Kong Customs states that the passenger arrived from South Africa via Dubai.",
+      "evidence_es": "Hong Kong Customs informa que el pasajero llegó desde Sudáfrica vía Dubái.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.info.gov.hk/gia/general/202603/13/P2026031300622p.htm"
+    },
+    {
+      "id": "australia-hongkong-reptiles-2026-03-16",
+      "event_match": {
+        "location_contains": "Hong Kong",
+        "event_date": "2026-03-16"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Austrália → Hong Kong",
+      "label_en": "Australia → Hong Kong",
+      "label_es": "Australia → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "Austrália — origem não especificada",
+            "country": "Austrália",
+            "lat": -25.2744,
+            "lon": 133.7751,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.308,
+            "lon": 113.9185,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "Hong Kong Customs informa que a carga aérea foi importada da Austrália.",
+      "evidence_en": "Hong Kong Customs states that the air consignment was imported from Australia.",
+      "evidence_es": "Hong Kong Customs informa que la carga aérea fue importada desde Australia.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.info.gov.hk/gia/general/202603/17/P2026031700636.htm"
+    },
+    {
+      "id": "netherlands-shanghai-hongkong-reptiles-2026-06-09",
+      "event_match": {
+        "location_contains": "Hong Kong",
+        "event_date": "2026-06-09"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Países Baixos → Xangai → Hong Kong",
+      "label_en": "Netherlands → Shanghai → Hong Kong",
+      "label_es": "Países Bajos → Shanghái → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "Países Baixos — origem de viagem não especificada",
+            "country": "Países Baixos",
+            "lat": 52.1326,
+            "lon": 5.2913,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Xangai",
+            "country": "China",
+            "lat": 31.2304,
+            "lon": 121.4737,
+            "precision": "city_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Xangai",
+            "country": "China",
+            "lat": 31.2304,
+            "lon": 121.4737,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.308,
+            "lon": 113.9185,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "Hong Kong Customs informa que o passageiro chegou dos Países Baixos via Xangai.",
+      "evidence_en": "Hong Kong Customs states that the passenger arrived from the Netherlands via Shanghai.",
+      "evidence_es": "Hong Kong Customs informa que el pasajero llegó desde Países Bajos vía Shanghái.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.info.gov.hk/gia/general/202606/10/P2026061000665.htm"
+    },
+    {
+      "id": "usa-hongkong-turtles-2026-06-12",
+      "event_match": {
+        "location_contains": "Hong Kong",
+        "event_date": "2026-06-12"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Estados Unidos → Hong Kong",
+      "label_en": "United States → Hong Kong",
+      "label_es": "Estados Unidos → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "Estados Unidos — origem não especificada",
+            "country": "Estados Unidos",
+            "lat": 39.8283,
+            "lon": -98.5795,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.308,
+            "lon": 113.9185,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "Hong Kong Customs informa que a carga aérea foi importada dos Estados Unidos para Hong Kong.",
+      "evidence_en": "Hong Kong Customs states that the air consignment was imported from the United States to Hong Kong.",
+      "evidence_es": "Hong Kong Customs informa que la carga aérea fue importada desde Estados Unidos a Hong Kong.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.info.gov.hk/gia/general/202606/13/P2026061300293p.htm"
+    },
+    {
+      "id": "bangkok-kolkata-wildlife-2026-05-24",
+      "event_match": {
+        "location_contains": "Suvarnabhumi",
+        "event_date": "2026-05-24"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Bangkok → Kolkata",
+      "label_en": "Bangkok → Kolkata",
+      "label_es": "Bangkok → Kolkata",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Suvarnabhumi, Bangkok",
+            "country": "Tailândia",
+            "lat": 13.69,
+            "lon": 100.7501,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Aeroporto Internacional Netaji Subhas Chandra Bose, Kolkata",
+            "country": "Índia",
+            "lat": 22.6547,
+            "lon": 88.4467,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que o passageiro foi interceptado antes de embarcar de Suvarnabhumi para o Aeroporto Internacional Netaji Subhas Chandra Bose, em Kolkata.",
+      "evidence_en": "The source states that the passenger was intercepted before boarding from Suvarnabhumi to Netaji Subhas Chandra Bose International Airport in Kolkata.",
+      "evidence_es": "La fuente informa que el pasajero fue interceptado antes de embarcar desde Suvarnabhumi hacia el Aeropuerto Internacional Netaji Subhas Chandra Bose, en Kolkata.",
+      "source_label": "Nation Thailand",
+      "source_url": "https://www.nationthailand.com/news/general/40066669"
+    },
+    {
+      "id": "sydney-hongkong-163-reptiles-aggregate-2025-12_2026-03",
+      "event_match": {
+        "location_contains": "Sydney",
+        "publication_date": "2026-09-04"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Sydney → Hong Kong",
+      "label_en": "Sydney → Hong Kong",
+      "label_es": "Sídney → Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "Sydney",
+            "country": "Austrália",
+            "lat": -33.8688,
+            "lon": 151.2093,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Hong Kong — destino de carga",
+            "country": "Hong Kong",
+            "lat": 22.3193,
+            "lon": 114.1694,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A National EPA informa que 38 encomendas contendo 163 répteis nativos foram interceptadas quando estavam destinadas de Sydney a Hong Kong entre dezembro de 2025 e março de 2026.",
+      "evidence_en": "The National EPA states that 38 parcels containing 163 native reptiles were intercepted while bound from Sydney to Hong Kong between December 2025 and March 2026.",
+      "evidence_es": "La National EPA informa que 38 envíos con 163 reptiles nativos fueron interceptados cuando estaban destinados de Sídney a Hong Kong entre diciembre de 2025 y marzo de 2026.",
+      "source_label": "Australian National Environmental Protection Agency",
+      "source_url": "https://www.nationalepa.gov.au/about/news/man-charged-over-alleged-attempt-traffic-163-native-reptiles-out-australia"
+    },
+    {
+      "id": "lau-suva-prohibited-wildlife-2026-08",
+      "event_match": {
+        "location_contains": "Suva",
+        "publication_date": "2026-08-24"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "attributed_movement",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Lau → Suva",
+      "label_en": "Lau → Suva",
+      "label_es": "Lau → Suva",
+      "segments": [
+        {
+          "from": {
+            "name": "Lau — ilha específica não informada",
+            "country": "Fiji",
+            "lat": -18.2,
+            "lon": -178.5,
+            "precision": "archipelago_centroid_generalized"
+          },
+          "to": {
+            "name": "Porto de Suva",
+            "country": "Fiji",
+            "lat": -18.1416,
+            "lon": 178.4419,
+            "precision": "port_city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A ministra da Pesca informou que as espécies apreendidas no barco que chegou a Suva eram consideradas provenientes de Lau. A origem exata dentro do arquipélago não foi estabelecida.",
+      "evidence_en": "The Fisheries Minister stated that the seized species found on the boat arriving in Suva were believed to have been brought from Lau. The exact origin within the archipelago was not established.",
+      "evidence_es": "La ministra de Pesca indicó que se creía que las especies decomisadas en el barco que llegó a Suva habían sido traídas desde Lau. No se estableció el origen exacto dentro del archipiélago.",
+      "source_label": "Fiji Sun / Fiji Ministry of Fisheries",
+      "source_url": "https://fijisun.com.fj/news/nation/banned-kawakawa-donu-turtle-seized-at-suva-port"
     }
   ],
   "network_context": [
