@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-24T23:14:00Z",
-  "audited_through": "2026-09-24",
+  "updated_at": "2026-09-25T01:50:00Z",
+  "audited_through": "2026-09-25",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
     "default_layer": "documented_routes",
@@ -3064,6 +3064,530 @@
       "evidence_es": "La ministra de Pesca indicó que se creía que las especies decomisadas en el barco que llegó a Suva habían sido traídas desde Lau. No se estableció el origen exacto dentro del archipiélago.",
       "source_label": "Fiji Sun / Fiji Ministry of Fisheries",
       "source_url": "https://fijisun.com.fj/news/nation/banned-kawakawa-donu-turtle-seized-at-suva-port"
+    },
+    {
+      "id": "el-salto-laos-pogonomyrmex-2026-07-09",
+      "event_match": {
+        "location_contains": "El Salto",
+        "event_date": "2026-07-09"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "postal_route",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "El Salto → Laos",
+      "label_en": "El Salto → Laos",
+      "label_es": "El Salto → Laos",
+      "segments": [
+        {
+          "from": {
+            "name": "El Salto, Jalisco",
+            "country": "México",
+            "lat": 20.5185,
+            "lon": -103.1817,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Laos — destino específico não informado",
+            "country": "Laos",
+            "lat": 19.8563,
+            "lon": 102.4955,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Profepa informa que a remessa com 105 formigas-rainhas foi detectada em El Salto e tinha o Laos como destino. A localidade específica no Laos não foi informada.",
+      "evidence_en": "Profepa states that the parcel containing 105 queen ants was detected in El Salto and was bound for Laos. The specific destination within Laos was not reported.",
+      "evidence_es": "Profepa informa que el envío con 105 hormigas reina fue detectado en El Salto y tenía Laos como destino. No se informó la localidad específica en Laos.",
+      "source_label": "PROFEPA",
+      "source_url": "https://www.gob.mx/profepa/prensa/detectan-trafico-ilegal-de-hormigas-reina-en-jalisco"
+    },
+    {
+      "id": "juanda-protected-butterflies-multiple-destinations-2026-04-22",
+      "event_match": {
+        "location_contains": "Juanda",
+        "event_date": "2026-04-22"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Juanda → múltiplos destinos internacionais",
+      "label_en": "Juanda → multiple international destinations",
+      "label_es": "Juanda → múltiples destinos internacionales",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Juanda",
+            "country": "Indonésia",
+            "lat": -7.3798,
+            "lon": 112.7868,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "China — destino não especificado",
+            "country": "China",
+            "lat": 35.8617,
+            "lon": 104.1954,
+            "precision": "country_centroid_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Juanda",
+            "country": "Indonésia",
+            "lat": -7.3798,
+            "lon": 112.7868,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Estados Unidos — destino não especificado",
+            "country": "Estados Unidos",
+            "lat": 39.5,
+            "lon": -98.35,
+            "precision": "country_centroid_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Juanda",
+            "country": "Indonésia",
+            "lat": -7.3798,
+            "lon": 112.7868,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Canadá — destino não especificado",
+            "country": "Canadá",
+            "lat": 56.1304,
+            "lon": -106.3468,
+            "precision": "country_centroid_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Juanda",
+            "country": "Indonésia",
+            "lat": -7.3798,
+            "lon": 112.7868,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "França — destino não especificado",
+            "country": "França",
+            "lat": 46.2276,
+            "lon": 2.2137,
+            "precision": "country_centroid_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Juanda",
+            "country": "Indonésia",
+            "lat": -7.3798,
+            "lon": 112.7868,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Alemanha — destino não especificado",
+            "country": "Alemanha",
+            "lat": 51.1657,
+            "lon": 10.4515,
+            "precision": "country_centroid_generalized"
+          }
+        },
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Juanda",
+            "country": "Indonésia",
+            "lat": -7.3798,
+            "lon": 112.7868,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Tchéquia — destino não especificado",
+            "country": "Tchéquia",
+            "lat": 49.8175,
+            "lon": 15.473,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A BBKSDA Jawa Timur informa que os dez pacotes de exportação continham borboletas destinadas à China, Estados Unidos, Canadá, França, Alemanha e Tchéquia. A fonte não associa quantidades específicas a cada destino.",
+      "evidence_en": "BBKSDA Jawa Timur states that the ten export parcels contained butterflies intended for China, the United States, Canada, France, Germany and Czechia. The source does not assign specific quantities to each destination.",
+      "evidence_es": "BBKSDA Jawa Timur informa que los diez paquetes de exportación contenían mariposas destinadas a China, Estados Unidos, Canadá, Francia, Alemania y Chequia. La fuente no asigna cantidades específicas a cada destino.",
+      "source_label": "BBKSDA Jawa Timur",
+      "source_url": "https://bbksdajawatimur.id/ribuan-sayap-terbungkam-polda-jawa-timur-bongkar-jalur-perdagangan-kupu-kupu-dilindungi"
+    },
+    {
+      "id": "viracopos-hong-kong-melipona-2025-08-01",
+      "event_match": {
+        "location_contains": "Viracopos",
+        "event_date": "2025-08-01"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_shipment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Viracopos → Hong Kong (destino pretendido)",
+      "label_en": "Viracopos → Hong Kong (intended destination)",
+      "label_es": "Viracopos → Hong Kong (destino previsto)",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Internacional de Viracopos",
+            "country": "Brasil",
+            "lat": -23.0074,
+            "lon": -47.1345,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.3193,
+            "lon": 114.1694,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "O relato do Ibama informa que a remessa expressa contendo a colônia de mandaçaias foi interceptada em Viracopos e tinha Hong Kong como destino. A linha representa destino pretendido, não viagem completada.",
+      "evidence_en": "Ibama's account states that the express shipment containing the mandaçaia colony was intercepted at Viracopos and was bound for Hong Kong. The line represents an intended destination, not completed travel.",
+      "evidence_es": "El relato de Ibama indica que el envío exprés con la colonia de mandaçaias fue interceptado en Viracopos y tenía Hong Kong como destino. La línea representa un destino previsto, no un viaje completado.",
+      "source_label": "Ibama (republished by Tudo Rondônia)",
+      "source_url": "https://www.tudorondonia.com/noticias/ibama-impede-tentativa-de-trafico-internacional-de-400-abelhas%2C144843.shtml"
+    },
+    {
+      "id": "jkia-china-ants-2026-03-10",
+      "event_match": {
+        "location_contains": "Jomo Kenyatta",
+        "event_date": "2026-03-10"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "planned_air_route",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Nairobi/JKIA → China (destino pretendido)",
+      "label_en": "Nairobi/JKIA → China (intended destination)",
+      "label_es": "Nairobi/JKIA → China (destino previsto)",
+      "segments": [
+        {
+          "from": {
+            "name": "Aeroporto Internacional Jomo Kenyatta",
+            "country": "Quênia",
+            "lat": -1.3192,
+            "lon": 36.9278,
+            "precision": "airport"
+          },
+          "to": {
+            "name": "China — aeroporto/cidade não informados",
+            "country": "China",
+            "lat": 35.8617,
+            "lon": 104.1954,
+            "precision": "country_centroid_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "Cobertura judicial informa que o passageiro interceptado no JKIA tentava embarcar para a China com mais de 2.200 formigas vivas. O aeroporto ou cidade final na China não foi informado.",
+      "evidence_en": "Court reporting states that the passenger intercepted at JKIA was attempting to board for China with more than 2,200 live ants. The final airport or city in China was not reported.",
+      "evidence_es": "La cobertura judicial informa que el pasajero interceptado en JKIA intentaba embarcar hacia China con más de 2.200 hormigas vivas. No se informó el aeropuerto o ciudad final en China.",
+      "source_label": "Channels Television / The Star",
+      "source_url": "https://www.channelstv.com/2026/03/17/two-men-in-kenyan-court-for-ant-smuggling/"
+    },
+    {
+      "id": "itacoatiara-parintins-arapaima-2026-01-09",
+      "event_match": {
+        "location_contains": "Itacoatiara",
+        "event_date": "2026-01-09"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "reported_destination_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Itacoatiara (interceptação) → Parintins",
+      "label_en": "Itacoatiara (interception) → Parintins",
+      "label_es": "Itacoatiara (intervención) → Parintins",
+      "segments": [
+        {
+          "from": {
+            "name": "Trecho do rio Amazonas próximo a Itacoatiara",
+            "country": "Brasil",
+            "lat": -3.1437,
+            "lon": -58.4442,
+            "precision": "river_city_generalized"
+          },
+          "to": {
+            "name": "Parintins",
+            "country": "Brasil",
+            "lat": -2.6276,
+            "lon": -56.735,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que a embarcação foi abordada nas proximidades de Itacoatiara e tinha Parintins como destino. O ponto de origem anterior à interceptação não foi informado.",
+      "evidence_en": "The source states that the vessel was intercepted near Itacoatiara and was bound for Parintins. Its origin before interception was not reported.",
+      "evidence_es": "La fuente informa que la embarcación fue intervenida cerca de Itacoatiara y tenía Parintins como destino. No se informó su origen anterior a la intervención.",
+      "source_label": "SSP-AM / Portal Marcos Santos",
+      "source_url": "https://www.portalmarcossantos.com.br/2026/01/10/policia-apreende-12-toneladas-de-pirarucu-seco-dentro-de-embarcacao/"
+    },
+    {
+      "id": "manaus-santarem-arapaima-obidos-2026-02-04",
+      "event_match": {
+        "location_contains": "Óbidos",
+        "event_date": "2026-02-04"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Manaus → Santarém (interceptada em Óbidos)",
+      "label_en": "Manaus → Santarém (intercepted at Óbidos)",
+      "label_es": "Manaus → Santarém (interceptada en Óbidos)",
+      "segments": [
+        {
+          "from": {
+            "name": "Manaus",
+            "country": "Brasil",
+            "lat": -3.119,
+            "lon": -60.0217,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Santarém",
+            "country": "Brasil",
+            "lat": -2.4431,
+            "lon": -54.7083,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A SEGUP Pará informa que a F/B São Bartolomeu V vinha de Manaus com destino a Santarém e foi fiscalizada em Óbidos.",
+      "evidence_en": "Pará public security authorities state that F/B São Bartolomeu V was travelling from Manaus to Santarém and was inspected at Óbidos.",
+      "evidence_es": "La autoridad de seguridad pública de Pará informa que la F/B São Bartolomeu V viajaba de Manaus a Santarém y fue fiscalizada en Óbidos.",
+      "source_label": "SEGUP Pará",
+      "source_url": "https://cetran.segup.pa.gov.br/materias/base-integrada-fluvial-candiru-apreende-300-quilos-de-pirarucu-ilegal-em-obidos-2/"
+    },
+    {
+      "id": "manaus-santarem-ana-beatriz-2026-03-06",
+      "event_match": {
+        "location_contains": "Óbidos",
+        "event_date": "2026-03-06"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Manaus → Santarém (Ana Beatriz)",
+      "label_en": "Manaus → Santarém (Ana Beatriz)",
+      "label_es": "Manaus → Santarém (Ana Beatriz)",
+      "segments": [
+        {
+          "from": {
+            "name": "Manaus",
+            "country": "Brasil",
+            "lat": -3.119,
+            "lon": -60.0217,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Santarém",
+            "country": "Brasil",
+            "lat": -2.4431,
+            "lon": -54.7083,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A SEGUP Pará informa que a embarcação Ana Beatriz era procedente de Manaus e seguia para Santarém quando a carga foi apreendida em Óbidos.",
+      "evidence_en": "Pará public security authorities state that Ana Beatriz came from Manaus and was bound for Santarém when the cargo was seized at Óbidos.",
+      "evidence_es": "La autoridad de seguridad pública de Pará informa que la embarcación Ana Beatriz procedía de Manaus y se dirigía a Santarém cuando la carga fue decomisada en Óbidos.",
+      "source_label": "SEGUP Pará",
+      "source_url": "https://cetran.segup.pa.gov.br/materias/base-candiru-apreende-mais-de-meia-tonelada-de-pescado-irregular/"
+    },
+    {
+      "id": "fonte-boa-santarem-princesa-carol-2026-03-28",
+      "event_match": {
+        "location_contains": "Coari",
+        "event_date": "2026-03-28"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Fonte Boa → Santarém (interceptada em Coari)",
+      "label_en": "Fonte Boa → Santarém (intercepted at Coari)",
+      "label_es": "Fonte Boa → Santarém (interceptada en Coari)",
+      "segments": [
+        {
+          "from": {
+            "name": "Fonte Boa",
+            "country": "Brasil",
+            "lat": -2.5234,
+            "lon": -66.0922,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Santarém",
+            "country": "Brasil",
+            "lat": -2.4431,
+            "lon": -54.7083,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que a Princesa Carol havia saído de Fonte Boa e tinha Santarém como destino; a fiscalização ocorreu na Base Arpão 2 em Coari.",
+      "evidence_en": "The source states that Princesa Carol had departed Fonte Boa and was bound for Santarém; inspection occurred at the Arpão 2 river base in Coari.",
+      "evidence_es": "La fuente informa que la Princesa Carol había salido de Fonte Boa y tenía Santarém como destino; la fiscalización ocurrió en la Base Arpão 2 en Coari.",
+      "source_label": "SSP-AM / Portal Em Tempo",
+      "source_url": "https://emtempo.com.br/456155/policia/pescado-ilegal-coari/"
+    },
+    {
+      "id": "tefe-manaus-sonho-meu-2026-05-10",
+      "event_match": {
+        "location_contains": "Coari",
+        "event_date": "2026-05-10"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Tefé → Manaus (Sonho Meu)",
+      "label_en": "Tefé → Manaus (Sonho Meu)",
+      "label_es": "Tefé → Manaus (Sonho Meu)",
+      "segments": [
+        {
+          "from": {
+            "name": "Tefé",
+            "country": "Brasil",
+            "lat": -3.3542,
+            "lon": -64.7113,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Manaus",
+            "country": "Brasil",
+            "lat": -3.119,
+            "lon": -60.0217,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que a embarcação Sonho Meu havia saído de Tefé com destino a Manaus e foi abordada na Base Arpão 2 em Coari.",
+      "evidence_en": "The source states that Sonho Meu had departed Tefé bound for Manaus and was intercepted at the Arpão 2 river base in Coari.",
+      "evidence_es": "La fuente informa que la embarcación Sonho Meu había salido de Tefé con destino a Manaus y fue intervenida en la Base Arpão 2 en Coari.",
+      "source_label": "SSP-AM / Informe Tefé",
+      "source_url": "https://informetefe.com.br/base-arpao-2-pmam-apreende-26-toneladas-de-pescado-durante-abordagem-a-embarcacao/05/"
+    },
+    {
+      "id": "manaus-belem-amazon-star-2026-05-28",
+      "event_match": {
+        "location_contains": "Óbidos",
+        "event_date": "2026-05-28"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "documented_movement",
+      "direction": "forward",
+      "line_style": "solid",
+      "label_pt": "Manaus → Belém (Amazon Star)",
+      "label_en": "Manaus → Belém (Amazon Star)",
+      "label_es": "Manaus → Belém (Amazon Star)",
+      "segments": [
+        {
+          "from": {
+            "name": "Manaus",
+            "country": "Brasil",
+            "lat": -3.119,
+            "lon": -60.0217,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Belém",
+            "country": "Brasil",
+            "lat": -1.4558,
+            "lon": -48.4902,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A fonte informa que a Amazon Star fazia o trajeto entre Manaus e Belém quando foi fiscalizada em Óbidos.",
+      "evidence_en": "The source states that Amazon Star was travelling between Manaus and Belém when inspected at Óbidos.",
+      "evidence_es": "La fuente informa que la Amazon Star realizaba el trayecto entre Manaus y Belém cuando fue fiscalizada en Óbidos.",
+      "source_label": "SEGUP Pará / Agência Pará",
+      "source_url": "https://obidense.com.br/noticia/18798/base-fluvial-candiru-apreende-10-toneladas-de-pirarucu-em-fiscalizacao-a-embarcacao/amp"
+    },
+    {
+      "id": "coari-codajas-mixed-wildlife-2026-06-19",
+      "event_match": {
+        "location_contains": "Codajás",
+        "event_date": "2026-06-19"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "reported_origin_segment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Coari → Codajás (origem reportada)",
+      "label_en": "Coari → Codajás (reported origin)",
+      "label_es": "Coari → Codajás (origen reportado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Coari",
+            "country": "Brasil",
+            "lat": -4.085,
+            "lon": -63.1413,
+            "precision": "city_generalized"
+          },
+          "to": {
+            "name": "Codajás",
+            "country": "Brasil",
+            "lat": -3.8367,
+            "lon": -62.057,
+            "precision": "city_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A SSP-AM informa que a equipe recebeu informação sobre transporte irregular que havia saído de Coari; a embarcação contendo fauna foi localizada em Codajás. A linha é tracejada porque a fonte descreve a origem reportada, não todos os segmentos do trajeto.",
+      "evidence_en": "Amazonas public security authorities state that officers received information about irregular transport that had departed Coari; the vessel carrying wildlife was found in Codajás. The line is dashed because the source reports origin but not every segment of the journey.",
+      "evidence_es": "La autoridad de seguridad pública de Amazonas informa que el equipo recibió información sobre transporte irregular que había salido de Coari; la embarcación con fauna fue localizada en Codajás. La línea es discontinua porque la fuente reporta el origen, pero no todos los segmentos del trayecto.",
+      "source_label": "SSP-AM / PMAM",
+      "source_url": "https://pmam.online/portal/noticia/forcas_de_seguranca_apree-21465"
+    },
+    {
+      "id": "brazil-ucayali-men-del-norte-2026-05",
+      "event_match": {
+        "location_contains": "Ucayali",
+        "publication_date": "2026-05-15"
+      },
+      "status": "DOCUMENTED",
+      "route_type": "reported_origin_country",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Brasil → Ucayali (procedência documentada; origem brasileira não especificada)",
+      "label_en": "Brazil → Ucayali (documented provenance; Brazilian origin unspecified)",
+      "label_es": "Brasil → Ucayali (procedencia documentada; origen brasileño no especificado)",
+      "segments": [
+        {
+          "from": {
+            "name": "Brasil — origem não especificada",
+            "country": "Brasil",
+            "lat": -14.235,
+            "lon": -51.9253,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Ucayali — local de apreensão não especificado",
+            "country": "Peru",
+            "lat": -9,
+            "lon": -74,
+            "precision": "region_generalized"
+          }
+        }
+      ],
+      "evidence_pt": "A Fiscalía peruana informa que a documentação indicava procedência de Loreto, mas a fiscalização constatou que os recursos transportados pela Men del Norte procediam do Brasil. Nenhum município brasileiro de origem foi informado.",
+      "evidence_en": "Peru's Fiscalía states that documents indicated Loreto provenance, but inspectors determined that the resources carried by Men del Norte originated in Brazil. No Brazilian municipality of origin was reported.",
+      "evidence_es": "La Fiscalía peruana informa que los documentos indicaban procedencia de Loreto, pero la fiscalización constató que los recursos transportados por Men del Norte procedían de Brasil. No se informó ningún municipio brasileño de origen.",
+      "source_label": "Ministerio Público - Fiscalía de la Nación (Peru)",
+      "source_url": "https://www.gob.pe/institucion/mpfn/noticias/1392530-fema-logra-la-incautacion-de-embarcacion-fluvial-por-presunto-trafico-ilegal-de-recursos-hidrobiologicos"
     }
   ],
   "network_context": [
@@ -3076,6 +3600,18 @@
       "label_es": "EE. UU. ↔ México — presunto esquema bidireccional en proceso federal",
       "note_pt": "O DOJ alega um esquema de vários anos para mover répteis nos dois sentidos da fronteira. Exibir apenas em camada analítica separada, não como rota factual de uma única apreensão.",
       "source_url": "https://www.justice.gov/usao-sdca/pr/two-arrested-years-long-scheme-smuggle-protected-reptiles-across-us-mexico-border"
+    },
+    {
+      "id": "kenya-ant-investigation-march-2026",
+      "status": "INVESTIGATIVELY_LINKED_EVENTS",
+      "render_by_default": false,
+      "label_pt": "Quênia — eventos de formigas de 10 e 13 de março de 2026 ligados pela mesma investigação",
+      "label_en": "Kenya — 10 and 13 March 2026 ant events linked by the same investigation",
+      "label_es": "Kenia — eventos de hormigas del 10 y 13 de marzo de 2026 vinculados por la misma investigación",
+      "note_pt": "A promotoria queniana tratou as apreensões de 10 de março (2.248 formigas) e 13 de março em Gilgil (1.113 formigas) como contagens/eventos separados, mas alegou colaboração entre os acusados no período e vínculos entre os episódios. Manter separados no mapa e nos totais; mostrar a relação apenas em camada analítica/contextual.",
+      "note_en": "Kenyan prosecutors treated the 10 March seizure (2,248 ants) and the 13 March Gilgil seizure (1,113 ants) as separate counts/events, while alleging collaboration between the accused during the period and links between the episodes. Keep them separate on the map and in totals; show the relationship only in an analytical/context layer.",
+      "note_es": "La fiscalía keniana trató el decomiso del 10 de marzo (2.248 hormigas) y el del 13 de marzo en Gilgil (1.113 hormigas) como conteos/eventos separados, aunque alegó colaboración entre los acusados durante el período y vínculos entre los episodios. Mantenerlos separados en el mapa y en los totales; mostrar la relación solo en una capa analítica/contextual.",
+      "source_url": "https://www.the-star.co.ke/news/2026-03-21-chinese-kenyan-charged-over-alleged-ant-trafficking"
     }
   ],
   "excluded": [
@@ -3123,81 +3659,6 @@
       "case": "Quy Nhon — país de origem",
       "reason": "COUNTRY_CONFLICT",
       "detail_pt": "Manter apenas África → Vietnã até resolver a divergência entre República do Congo e República Democrática do Congo."
-    },
-    {
-      "case_id": "2026-09-24__rawson-14-aves",
-      "case": "Rawson, San Juan",
-      "event_match": {
-        "id": "2026-09-24__rawson-14-aves"
-      },
-      "status": "EXCLUDED",
-      "reason": "ORIGIN_DESTINATION_UNKNOWN",
-      "detail_pt": "Ponto de venda sem origem, destino ou trajeto documentados; transferência veterinária não é rota de tráfico.",
-      "detail_en": "Sales location without documented origin, destination or itinerary; veterinary transfer is not a trafficking route.",
-      "detail_es": "Lugar de venta sin origen, destino o trayecto documentados; el traslado veterinario no es una ruta de tráfico.",
-      "source_label": "Diario de Cuyo",
-      "source_url": "https://www.diariodecuyo.com.ar/san-juan/recuperaron-28-aves-cautivas-allanamientos-rawson-y-chimbas-n6583994",
-      "audited_at": "2026-09-24T23:14:00Z"
-    },
-    {
-      "case_id": "2026-09-24__chimbas-14-aves",
-      "case": "Chimbas, San Juan",
-      "event_match": {
-        "id": "2026-09-24__chimbas-14-aves"
-      },
-      "status": "EXCLUDED",
-      "reason": "ORIGIN_DESTINATION_UNKNOWN",
-      "detail_pt": "Ponto de venda sem origem ou destino documentados; operação simultânea não comprova rota compartilhada com Rawson.",
-      "detail_en": "Sales location without documented origin or destination; simultaneous action does not establish a shared route with Rawson.",
-      "detail_es": "Lugar de venta sin origen ni destino documentados; la acción simultánea no demuestra una ruta compartida con Rawson.",
-      "source_label": "Diario de Cuyo",
-      "source_url": "https://www.diariodecuyo.com.ar/san-juan/recuperaron-28-aves-cautivas-allanamientos-rawson-y-chimbas-n6583994",
-      "audited_at": "2026-09-24T23:14:00Z"
-    },
-    {
-      "case_id": "2026-09-24__sarita-four-spider-monkeys",
-      "case": "Sarita, Texas — posto Javier Vega Jr.",
-      "event_match": {
-        "id": "2026-09-24__sarita-four-spider-monkeys"
-      },
-      "status": "EXCLUDED",
-      "reason": "ORIGIN_DESTINATION_UNKNOWN",
-      "detail_pt": "A fonte declara origem e destino não informados; posto no Texas e nacionalidade do motorista não demonstram travessia internacional.",
-      "detail_en": "The source states that origin and destination were not reported; a Texas checkpoint and driver nationality do not establish an international crossing.",
-      "detail_es": "La fuente declara origen y destino no informados; un puesto en Texas y la nacionalidad del conductor no demuestran un cruce internacional.",
-      "source_label": "FOX RGV",
-      "source_url": "https://foxrgv.tv/four-spider-monkeys-found-hidden-in-duffle-bag-at-south-texas-border-checkpoint/",
-      "audited_at": "2026-09-24T23:14:00Z"
-    },
-    {
-      "case_id": "2026-09-24__lien-hoa-eight-wild-birds",
-      "case": "Vị Khê, Liên Hòa, Quảng Ninh",
-      "event_match": {
-        "id": "2026-09-24__lien-hoa-eight-wild-birds"
-      },
-      "status": "EXCLUDED",
-      "reason": "NO_DOCUMENTED_TRAFFICKING_MOVEMENT",
-      "detail_pt": "Captura local em redes, sem deslocamento de tráfico documentado; migração natural e soltura não são rotas do caso.",
-      "detail_en": "Local net capture without documented trafficking movement; natural migration and release are not case routes.",
-      "detail_es": "Captura local en redes sin movimiento de tráfico documentado; migración natural y liberación no son rutas del caso.",
-      "source_label": "Ministério da Segurança Pública do Vietnã",
-      "source_url": "https://mps.gov.vn/bai-viet/cong-an-thanh-pho-quang-ninh-ngan-chan-tinh-trang-san-bat-bay-bat-chim-troi-1790153336",
-      "audited_at": "2026-09-24T23:14:00Z"
-    },
-    {
-      "case_id": "2026-09-23__cape-town-abalone-vehicle",
-      "case": "Camps Bay / Sea Point, Cidade do Cabo",
-      "event_match": {
-        "id": "2026-09-23__cape-town-abalone-vehicle"
-      },
-      "status": "EXCLUDED",
-      "reason": "CHASE_NOT_WILDLIFE_ROUTE",
-      "detail_pt": "A fauna estava em outro veículo, não naquele cuja perseguição teve ruas descritas. Origem e destino desconhecidos; excluir geometria da perseguição.",
-      "detail_en": "The wildlife was in a different vehicle from the one pursued along named streets. Origin and destination unknown; exclude chase geometry.",
-      "detail_es": "La fauna estaba en otro vehículo, no en el perseguido por las calles descritas. Origen y destino desconocidos; excluir la geometría de la persecución.",
-      "source_label": "Cape Argus",
-      "source_url": "https://capeargus.co.za/news/2026-09-24-watch-metro-police-open-fire-during-sea-point-abalone-bust/",
-      "audited_at": "2026-09-24T23:14:00Z"
     }
   ]
 }
