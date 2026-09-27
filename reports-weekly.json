@@ -1,0 +1,19 @@
+[
+  {
+    "id": "2026-09-08_2026-09-14",
+    "type": "weekly",
+    "period_start": "2026-09-08",
+    "period_end": "2026-09-14",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 8–14 setembro 2026",
+    "title_en": "Weekly Report | 8–14 September 2026",
+    "title_es": "Informe Semanal | 8–14 de septiembre de 2026",
+    "summary_pt": "Relatório semanal do Observatório Global de Tráfico de Animais.",
+    "summary_en": "Weekly report of the Illegal Wildlife Trafficking Global Observatory.",
+    "summary_es": "Informe semanal del Observatorio Global del Tráfico de Animales.",
+    "languages": ["pt", "en", "es"],
+    "doi": "10.5281/zenodo.22997274",
+    "zenodo_url": "https://zenodo.org/records/22997274",
+    "published_at": "2026-09-27"
+  }
+]
