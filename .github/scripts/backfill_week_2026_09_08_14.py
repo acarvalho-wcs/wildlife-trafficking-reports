@@ -1,129 +1,177 @@
 from pathlib import Path
 import json
-from docx import Document
-from docx.shared import Inches, Pt, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
-from docx.oxml import OxmlElement
-from docx.oxml.ns import qn
+import re
 
-ROOT=Path('.')
-OUT=ROOT/'reports/2026/2026-09-08_2026-09-14'; OUT.mkdir(parents=True,exist_ok=True)
-sources=json.loads((ROOT/'.github/data/backfill_sources.json').read_text(encoding='utf-8'))
-cases=[]
-for _n in ('a','b','c'):
-    cases += json.loads((ROOT/f'.github/data/backfill_cases_{_n}.json').read_text(encoding='utf-8'))
-uncertain=json.loads((ROOT/'.github/data/backfill_uncertain.json').read_text(encoding='utf-8'))
-LANGS=json.loads((ROOT/'.github/data/backfill_LANGS.json').read_text(encoding='utf-8'))
-ACCENT='0A6B55'; DARK='14372C'; GRAY='5C6B66'
+ROOT = Path(".")
+BASE_SCRIPT = ROOT / ".github/scripts/backfill_week_2026_09_08_14.py"
+BASE_LANGS = ROOT / ".github/data/backfill_LANGS.json"
+TEMP_LANGS = ROOT / ".github/data/_week_2026_09_14_20_langs.json"
+PERIOD_ID = "2026-09-14_2026-09-20"
 
-def shade(cell,fill):
-    pr=cell._tc.get_or_add_tcPr(); n=pr.find(qn('w:shd'))
-    if n is None: n=OxmlElement('w:shd'); pr.append(n)
-    n.set(qn('w:fill'),fill)
+langs = json.loads(BASE_LANGS.read_text(encoding="utf-8"))
 
-def margins(cell,v=80):
-    pr=cell._tc.get_or_add_tcPr(); mar=pr.first_child_found_in('w:tcMar')
-    if mar is None: mar=OxmlElement('w:tcMar'); pr.append(mar)
-    for k in ('top','start','bottom','end'):
-        n=mar.find(qn('w:'+k))
-        if n is None: n=OxmlElement('w:'+k); mar.append(n)
-        n.set(qn('w:w'),str(v)); n.set(qn('w:type'),'dxa')
+updates = {
+"pt": {
+"outfile":"Relatorio_Semanal_Observatorio_Global_14-20_Set_2026_WCS.docx",
+"title":"RELATÓRIO SEMANAL DE MONITORAMENTO",
+"subtitle":"Observatório Global de Tráfico de Animais",
+"period":"14-20 de setembro de 2026 | Semana civil | America/Manaus",
+"close":"WCS Brasil | Programa de Inteligência para Conservação",
+"metrics":["25\ncasos validados","13\npaíses/territórios","680\nanimais/espécimes em contagens exatas",">=21\nadicionais em contagens mínimas"],
+"foot":"Publicado em 27 de setembro de 2026. O núcleo semanal usa a data de ocorrência/apreensão, e não apenas a data de publicação.",
+"scope":"Núcleo semanal: somente registros VALIDATED com ocorrência/apreensão entre segunda-feira 14/09/2026 00:00 e domingo 20/09/2026 23:59:59, America/Manaus. Quantidades mínimas e desconhecidas não entram no total exato.",
+"sections":["1. Resumo executivo","2. Núcleo semanal consolidado","3. Leitura analítica da semana","4. Casos do período","5. Limites da evidência","6. Nota metodológica","7. Fontes principais"],
+"executive":[
+"O núcleo semanal reúne 25 casos VALIDATED em 13 países ou territórios. Dezenove casos têm contagens exatas, somando 680 animais ou espécimes. Dois casos adicionais apresentam somente contagens mínimas, com ao menos 21 indivíduos confirmados; quatro casos permanecem sem quantidade numérica confiável.",
+"Fatos documentados: o maior incidente por contagem exata envolve 206 aves na BR-222, em São Gonçalo do Amarante. Dois incidentes registraram 101 espécimes cada, em Singapura e Medan. Em Samalayuca foram apreendidas 75 tarântulas e 20 tartarugas; em Motu, 55 tartarugas-de-casco-mole-indianas.",
+"Foram documentados canais logísticos distintos - rodovias, ônibus, encomenda postal, bagagem em conexão aeroportuária, encomenda aérea e porto marítimo - além de exploração ou caça ilegal sem rota comercial demonstrada."
+],
+"analytical":[
+["Padrões observados","O transporte terrestre aparece como modal principal em 8 dos 25 registros; 2 são classificados como aéreos e 1 como marítimo. Em 14 registros, o modal principal não foi informado. Aves e répteis aparecem em grande parte do núcleo; mamíferos também estão presentes em casos de grandes felinos, tatus, pangolins e ouriços. Há recorrência de transição do ambiente digital para a apreensão física, como WhatsApp em Angaco, anúncios online em Singapura e investigação de vendas por redes sociais em Mairiporã."],
+["Interpretação analítica","Os casos mostram um mosaico de cadeias de suprimento e exploração que utilizam logística comercial, bagagem de passageiros, transporte rodoviário e canais digitais. Isso reforça o valor de combinar controles em nós de transporte, inteligência digital e rastreabilidade documental. A recorrência de táxons distintos em canais semelhantes sugere que indicadores de risco devem priorizar comportamento, rota, documentação e método de ocultação, e não apenas espécies-alvo. Essas semelhanças não demonstram, por si só, uma rede transnacional comum."],
+["Limites da evidência","Quatro casos não têm quantidade confiável e dois apresentam somente contagens mínimas; portanto, 680 não representa todos os animais envolvidos. As fontes de Motu divergem em um dia, mas ambas as datas estão na janela semanal. Em Singapura, a autoridade não afirmou que as seis pessoas investigadas formassem uma única rede. Em Paulo Afonso, a direção Bahia-Pernambuco não é estabelecida com segurança. Origem biológica, comprador final, rota completa e participação em redes permanecem desconhecidos em vários registros."]
+],
+"methodology":[
+"Inclusão definida pela data de ocorrência/apreensão entre 14 e 20 de setembro de 2026, no fuso America/Manaus; a data de publicação foi usada apenas como informação auxiliar.",
+"Somente registros VALIDATED do banco canônico do Observatório integram o núcleo semanal. Não foram incluídos casos cuja data do evento não pôde ser estabelecida dentro da janela.",
+"Operações agregadas e comunicados conjuntos foram reconciliados para evitar dupla contagem. Hoedspruit e Gravelotte são duas intervenções distintas, cada uma com um pangolim; prisões e veículos divulgados conjuntamente não foram repartidos entre os dois registros.",
+"Peso, valor financeiro, embalagens, partes e produtos não foram convertidos automaticamente em número de animais. Volta Redonda permanece sem quantidade por inconsistência interna da fonte."
+],
+"core_intro":"Ordem cronológica pela data da ocorrência/apreensão. Quantidades mínimas ou desconhecidas são excluídas do total exato de 680.",
+"body_footer":"Criado e gerenciado pelo Programa de Inteligência para Conservação da WCS Brasil."
+},
+"en": {
+"outfile":"Weekly_Report_Global_Observatory_14-20_Sep_2026_WCS.docx",
+"title":"WEEKLY MONITORING REPORT",
+"subtitle":"Illegal Wildlife Trafficking Global Observatory",
+"period":"14-20 September 2026 | Civil week | America/Manaus",
+"close":"WCS Brasil | Conservation Intelligence Program",
+"metrics":["25\nvalidated cases","13\ncountries/territories","680\nanimals/specimens in exact counts",">=21\nadditional in minimum counts"],
+"foot":"Published 27 September 2026. The weekly core uses event/seizure date, not publication date alone.",
+"scope":"Weekly core: only VALIDATED records with event/seizure dates between Monday 14 September 2026 00:00 and Sunday 20 September 2026 23:59:59, America/Manaus. Minimum and unknown quantities are excluded from the exact total.",
+"sections":["1. Executive summary","2. Consolidated weekly core","3. Analytical reading of the week","4. Cases during the period","5. Limits of the evidence","6. Methodological note","7. Main sources"],
+"executive":[
+"The weekly core contains 25 VALIDATED cases across 13 countries or territories. Nineteen cases have exact counts totaling 680 animals or specimens. Two additional cases have minimum-only counts totaling at least 21 confirmed individuals, while four cases remain without a reliable numeric quantity.",
+"Documented facts: the largest exact-count incident involved 206 birds on BR-222 in São Gonçalo do Amarante. Two incidents recorded 101 specimens each, in Singapore and Medan. In Samalayuca, 75 tarantulas and 20 turtles were seized; in Motu, 55 Indian flapshell turtles were intercepted.",
+"Distinct logistics channels were documented - roads, bus transport, postal parcel, airport transfer baggage, air parcel and seaport - alongside exploitation or illegal hunting without a demonstrated trade route."
+],
+"analytical":[
+["Observed patterns","Road transport is the primary mode in 8 of 25 records; 2 are classified as air and 1 as maritime. In 14 records, the primary mode was not reported. Birds and reptiles appear across a large share of the weekly core, while mammals are present in cases involving big cats, armadillos, pangolins and hedgehogs. A recurring transition from digital environments to physical seizure appears in WhatsApp offers in Angaco, online advertisements in Singapore and investigation of social-media sales in Mairiporã."],
+["Analytical interpretation","The week's cases show a mosaic of supply and exploitation chains using commercial logistics, passenger baggage, road transport and digital channels. This reinforces the value of combining controls at transport nodes, digital intelligence and documentary traceability. The recurrence of different taxa through similar logistics channels suggests that risk indicators should prioritize behavior, route, documentation and concealment method, not only target species. These similarities do not, by themselves, demonstrate a common transnational network."],
+["Limits of the evidence","Four cases lack reliable quantities and two have minimum-only counts, so 680 does not represent all animals involved. Sources for Motu differ by one day, but both dates fall inside the weekly window. In Singapore, the authority did not state that the six investigated people formed a single network. In Paulo Afonso, the Bahia-Pernambuco direction is not securely established. Biological origin, final buyer, complete route and network participation remain unknown in several records."]
+],
+"methodology":[
+"Inclusion is based on event/seizure date between 14 and 20 September 2026 in the America/Manaus time zone; publication date is used only as supporting information.",
+"Only VALIDATED records in the Observatory's canonical database are included. Cases whose event date could not be established inside the window are excluded from the weekly core.",
+"Aggregated operations and joint releases were reconciled to prevent double counting. Hoedspruit and Gravelotte are distinct interventions, each involving one pangolin; jointly reported arrests and vehicles were not allocated between the two records.",
+"Weight, monetary value, packages, wildlife parts and products were not automatically converted into numbers of animals. Volta Redonda remains uncounted because the source contains internally inconsistent figures."
+],
+"core_intro":"Chronological order by event/seizure date. Minimum or unknown quantities are excluded from the exact total of 680.",
+"body_footer":"Created and managed by the Conservation Intelligence Program at WCS Brasil."
+},
+"es": {
+"outfile":"Informe_Semanal_Observatorio_Global_14-20_Sep_2026_WCS.docx",
+"title":"INFORME SEMANAL DE MONITOREO",
+"subtitle":"Observatorio Global del Tráfico de Animales",
+"period":"14-20 de septiembre de 2026 | Semana civil | America/Manaus",
+"close":"WCS Brasil | Programa de Inteligencia para la Conservación",
+"metrics":["25\ncasos validados","13\npaíses/territorios","680\nanimales/especímenes en conteos exactos",">=21\nadicionales en conteos mínimos"],
+"foot":"Publicado el 27 de septiembre de 2026. El núcleo semanal usa la fecha de ocurrencia/decomiso, no solo la fecha de publicación.",
+"scope":"Núcleo semanal: solo registros VALIDATED con ocurrencia/decomiso entre el lunes 14/09/2026 00:00 y el domingo 20/09/2026 23:59:59, America/Manaus. Las cantidades mínimas o desconocidas se excluyen del total exacto.",
+"sections":["1. Resumen ejecutivo","2. Núcleo semanal consolidado","3. Lectura analítica de la semana","4. Casos del período","5. Límites de la evidencia","6. Nota metodológica","7. Fuentes principales"],
+"executive":[
+"El núcleo semanal reúne 25 casos VALIDATED en 13 países o territorios. Diecinueve casos tienen conteos exactos que suman 680 animales o especímenes. Dos casos adicionales presentan solo conteos mínimos, con al menos 21 individuos confirmados, mientras cuatro casos permanecen sin una cantidad numérica confiable.",
+"Hechos documentados: el mayor incidente por conteo exacto involucró 206 aves en la BR-222, en São Gonçalo do Amarante. Dos incidentes registraron 101 especímenes cada uno, en Singapur y Medan. En Samalayuca se decomisaron 75 tarántulas y 20 tortugas; en Motu se interceptaron 55 tortugas de caparazón blando indias.",
+"Se documentaron distintos canales logísticos - carreteras, autobús, encomienda postal, equipaje en conexión aeroportuaria, encomienda aérea y puerto marítimo - además de explotación o caza ilegal sin una ruta comercial demostrada."
+],
+"analytical":[
+["Patrones observados","El transporte terrestre es el modo principal en 8 de 25 registros; 2 se clasifican como aéreos y 1 como marítimo. En 14 registros, el modo principal no fue informado. Aves y reptiles aparecen en gran parte del núcleo semanal, y los mamíferos están presentes en casos de grandes felinos, armadillos, pangolines y erizos. Se observa una transición recurrente de lo digital a la incautación física: WhatsApp en Angaco, anuncios en línea en Singapur e investigación de ventas por redes sociales en Mairiporã."],
+["Interpretación analítica","Los casos de la semana muestran un mosaico de cadenas de suministro y explotación que utilizan logística comercial, equipaje de pasajeros, transporte por carretera y canales digitales. Esto refuerza el valor de combinar controles en nodos de transporte, inteligencia digital y trazabilidad documental. La recurrencia de taxones distintos en canales similares sugiere que los indicadores de riesgo deben priorizar comportamiento, ruta, documentación y método de ocultamiento, y no solo especies objetivo. Estas similitudes no demuestran, por sí mismas, una red transnacional común."],
+["Límites de la evidencia","Cuatro casos carecen de cantidad confiable y dos presentan solo conteos mínimos; por eso 680 no representa a todos los animales involucrados. Las fuentes de Motu difieren en un día, pero ambas fechas están dentro de la ventana semanal. En Singapur, la autoridad no afirmó que las seis personas investigadas formaran una única red. En Paulo Afonso, la dirección Bahía-Pernambuco no se establece con seguridad. Origen biológico, comprador final, ruta completa y participación en redes siguen desconocidos en varios registros."]
+],
+"methodology":[
+"La inclusión se basa en la fecha de ocurrencia/decomiso entre el 14 y el 20 de septiembre de 2026, en el huso America/Manaus; la fecha de publicación se usa solo como información auxiliar.",
+"Solo se incluyen registros VALIDATED de la base canónica del Observatorio. Los casos cuya fecha de ocurrencia no pudo establecerse dentro de la ventana se excluyen del núcleo semanal.",
+"Las operaciones agregadas y comunicados conjuntos fueron reconciliados para evitar doble conteo. Hoedspruit y Gravelotte son intervenciones distintas, cada una con un pangolín; las detenciones y vehículos divulgados conjuntamente no se repartieron entre los dos registros.",
+"Peso, valor financiero, embalajes, partes y productos no se convirtieron automáticamente en número de animales. Volta Redonda permanece sin conteo por cifras internamente incompatibles en la fuente."
+],
+"core_intro":"Orden cronológico por fecha de ocurrencia/decomiso. Las cantidades mínimas o desconocidas se excluyen del total exacto de 680.",
+"body_footer":"Creado y gestionado por el Programa de Inteligencia para la Conservación de WCS Brasil."
+}
+}
 
-def no_split(row):
-    pr=row._tr.get_or_add_trPr(); pr.append(OxmlElement('w:cantSplit'))
+for lang, vals in updates.items():
+    langs[lang].update(vals)
 
-def link(p,text,url):
-    rid=p.part.relate_to(url,'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink',is_external=True)
-    h=OxmlElement('w:hyperlink'); h.set(qn('r:id'),rid); rr=OxmlElement('w:r'); rp=OxmlElement('w:rPr')
-    c=OxmlElement('w:color'); c.set(qn('w:val'),ACCENT); rp.append(c); u=OxmlElement('w:u'); u.set(qn('w:val'),'single'); rp.append(u)
-    rr.append(rp); t=OxmlElement('w:t'); t.text=text; rr.append(t); h.append(rr); p._p.append(h)
+TEMP_LANGS.write_text(json.dumps(langs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-def clear_body(doc):
-    body=doc._element.body
-    for ch in list(body):
-        if ch.tag != qn('w:sectPr'): body.remove(ch)
+src = BASE_SCRIPT.read_text(encoding="utf-8")
+src = src.replace("import json\n", "import json\nimport re\n", 1)
+src = src.replace("OUT=ROOT/'reports/2026/2026-09-08_2026-09-14'; OUT.mkdir(parents=True,exist_ok=True)",
+                  "OUT=ROOT/'reports/2026/2026-09-14_2026-09-20'; OUT.mkdir(parents=True,exist_ok=True)")
+src = src.replace("sources=json.loads((ROOT/'.github/data/backfill_sources.json').read_text(encoding='utf-8'))",
+                  "sources=json.loads((ROOT/'.github/data/week_2026_09_14_20_sources.json').read_text(encoding='utf-8'))")
+src = re.sub(r"cases=\[\]\nfor _n in \('a','b','c'\):\n    cases \+= json\.loads\(\(ROOT/f'\.github/data/backfill_cases_\{_n\}\.json'\)\.read_text\(encoding='utf-8'\)\)",
+             "cases=json.loads((ROOT/'.github/data/week_2026_09_14_20_cases.json').read_text(encoding='utf-8'))", src)
+src = src.replace("uncertain=json.loads((ROOT/'.github/data/backfill_uncertain.json').read_text(encoding='utf-8'))", "uncertain=[]")
+src = src.replace("LANGS=json.loads((ROOT/'.github/data/backfill_LANGS.json').read_text(encoding='utf-8'))",
+                  "LANGS=json.loads((ROOT/'.github/data/_week_2026_09_14_20_langs.json').read_text(encoding='utf-8'))")
 
-def body(doc,text,size=10,after=6,italic=False):
+old_body = """def body(doc,text,size=10,after=6,italic=False):
     p=doc.add_paragraph(); p.paragraph_format.space_after=Pt(after); p.paragraph_format.line_spacing=1.08
     r=p.add_run(text); r.font.name='Aptos'; r.font.size=Pt(size); r.italic=italic
     return p
+"""
+new_body = """SCI_RE=re.compile(r'\\b(?:Chloropsis\\s+(?:moluccensis|cyanopogon|venusta)|C\\.\\s+(?:cyanopogon|venusta)|Carduelis\\s+carduelis|Panthera\\s+(?:leo|tigris)|Atelerix\\s+albiventris|Gekko\\s+gecko|Lissemys\\s+punctata|Brachypelma\\s+emilia|Kinosternon\\s+integrum|Pantherophis\\s+guttatus|Geochelone\\s+elegans)\\b')
 
-def heading(doc,text,level=1):
-    p=doc.add_paragraph(); p.paragraph_format.keep_with_next=True; p.paragraph_format.space_before=Pt(10 if level==1 else 7); p.paragraph_format.space_after=Pt(5)
-    r=p.add_run(text); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(16 if level==1 else 11.5); r.font.color.rgb=RGBColor.from_string(DARK if level==1 else ACCENT)
+def add_sci(p,text,size=10,italic=False):
+    text=text.replace('*','')
+    pos=0
+    for m in SCI_RE.finditer(text):
+        if m.start()>pos:
+            r=p.add_run(text[pos:m.start()]); r.font.name='Aptos'; r.font.size=Pt(size); r.italic=italic
+        r=p.add_run(m.group(0)); r.font.name='Aptos'; r.font.size=Pt(size); r.italic=True
+        pos=m.end()
+    if pos<len(text):
+        r=p.add_run(text[pos:]); r.font.name='Aptos'; r.font.size=Pt(size); r.italic=italic
 
-def val(c,lang,k):
-    if lang=='pt': return c[k]
-    return c.get(k+'_'+lang,c[k])
+def body(doc,text,size=10,after=6,italic=False):
+    p=doc.add_paragraph(); p.paragraph_format.space_after=Pt(after); p.paragraph_format.line_spacing=1.08
+    add_sci(p,text,size,italic)
+    return p
+"""
+src = src.replace(old_body, new_body)
+src = src.replace("p=c.paragraphs[0]; p.alignment=WD_ALIGN_PARAGRAPH.CENTER if i<2 else WD_ALIGN_PARAGRAPH.LEFT; p.paragraph_format.space_after=Pt(0); r=p.add_run(x); r.font.name='Aptos'; r.font.size=Pt(6.8)",
+                  "p=c.paragraphs[0]; p.alignment=WD_ALIGN_PARAGRAPH.CENTER if i<2 else WD_ALIGN_PARAGRAPH.LEFT; p.paragraph_format.space_after=Pt(0); add_sci(p,x,6.8)")
+src = re.sub(r"\n    heading\(doc,cfg\['sections'\]\[4\]\)\n    for u in uncertain:.*?\n    heading\(doc,cfg\['sections'\]\[5\]\)",
+             "\n    heading(doc,cfg['sections'][5])", src, flags=re.S)
 
-def first_page(doc,cfg):
-    p=doc.add_paragraph(); p.paragraph_format.space_after=Pt(6); r=p.add_run(cfg['title']); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(18); r.font.color.rgb=RGBColor.from_string(DARK)
-    p=doc.add_paragraph(); p.paragraph_format.space_after=Pt(4); r=p.add_run(cfg['subtitle']); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(13); r.font.color.rgb=RGBColor.from_string(ACCENT)
-    p=doc.add_paragraph(); p.paragraph_format.space_after=Pt(10); r=p.add_run(cfg['period']); r.font.name='Aptos'; r.font.size=Pt(11); r.font.color.rgb=RGBColor.from_string(GRAY)
-    t=doc.add_table(rows=1,cols=4); t.alignment=WD_TABLE_ALIGNMENT.CENTER; t.autofit=False
-    for i,m in enumerate(cfg['metrics']):
-        c=t.cell(0,i); c.width=Inches(1.75); shade(c,'E4F1EC'); margins(c,120); c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
-        a,b=m.split('\n',1); p=c.paragraphs[0]; p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after=Pt(3)
-        r=p.add_run(a); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(20); r.font.color.rgb=RGBColor.from_string(ACCENT)
-        p=c.add_paragraph(); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after=Pt(0); r=p.add_run(b); r.font.name='Aptos'; r.font.size=Pt(9)
-    p=body(doc,cfg['foot'],8.5,7,italic=True); p.runs[0].font.color.rgb=RGBColor.from_string(GRAY)
-    box=doc.add_table(rows=1,cols=1); box.alignment=WD_TABLE_ALIGNMENT.CENTER; c=box.cell(0,0); shade(c,'F2F6F4'); margins(c,100); bp=c.paragraphs[0]; bp.paragraph_format.space_after=Pt(0); rr=bp.add_run(cfg['scope']); rr.font.name='Aptos'; rr.font.size=Pt(9.2); rr.font.color.rgb=RGBColor.from_string(DARK)
-    p=body(doc,cfg['close'],8.5,7); p.runs[0].font.color.rgb=RGBColor.from_string(GRAY)
+src = src.split("\nidx=ROOT/'reports.json'", 1)[0]
+exec(compile(src, str(BASE_SCRIPT), "exec"), {"__name__":"__main__"})
 
-def build(lang):
-    cfg=LANGS[lang]; doc=Document(cfg['template']); clear_body(doc); first_page(doc,cfg)
-    heading(doc,cfg['sections'][0])
-    for x in cfg['executive']: body(doc,x,10)
-    heading(doc,cfg['sections'][1]); body(doc,cfg['core_intro'],9.2)
-    t=doc.add_table(rows=1,cols=6); t.alignment=WD_TABLE_ALIGNMENT.CENTER; t.autofit=False
-    heads={'pt':['Data','País','Local','Fauna / produto','Modalidade','Síntese'],'en':['Date','Country','Location','Wildlife / product','Mode','Summary'],'es':['Fecha','País','Lugar','Fauna / producto','Modalidad','Síntesis']}[lang]
-    widths=[0.55,0.78,1.0,1.35,1.2,2.0]
-    for i,h in enumerate(heads):
-        c=t.cell(0,i); c.width=Inches(widths[i]); shade(c,DARK); margins(c,70); p=c.paragraphs[0]; p.alignment=WD_ALIGN_PARAGRAPH.CENTER; r=p.add_run(h); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(7.2); r.font.color.rgb=RGBColor(255,255,255)
-    for cse in cases:
-        row=t.add_row(); no_split(row); desc=cse[lang]; desc=(desc[:170]+'…') if len(desc)>171 else desc
-        vals=[cse['date'],val(cse,lang,'country'),cse['location'],val(cse,lang,'fauna'),val(cse,lang,'mode'),desc]
-        for i,x in enumerate(vals):
-            c=row.cells[i]; c.width=Inches(widths[i]); margins(c,65); c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
-            p=c.paragraphs[0]; p.alignment=WD_ALIGN_PARAGRAPH.CENTER if i<2 else WD_ALIGN_PARAGRAPH.LEFT; p.paragraph_format.space_after=Pt(0); r=p.add_run(x); r.font.name='Aptos'; r.font.size=Pt(6.8)
-    heading(doc,cfg['sections'][2])
-    for h,x in cfg['analytical']: heading(doc,h,2); body(doc,x,10)
-    heading(doc,cfg['sections'][3])
-    for i,cse in enumerate(cases,1):
-        p=doc.add_paragraph(); p.paragraph_format.keep_with_next=True; p.paragraph_format.space_before=Pt(7); p.paragraph_format.space_after=Pt(3)
-        r=p.add_run(f"{i:02d}  {val(cse,lang,'country')} — {cse['location']} | {cse['date']}/2026"); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(10.5); r.font.color.rgb=RGBColor.from_string(DARK)
-        body(doc,cse[lang],9.5,4); p=doc.add_paragraph(); r=p.add_run(cfg['source_label']); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(8.8); link(p,cse['source'],sources[cse['src']])
-    heading(doc,cfg['sections'][4])
-    for u in uncertain:
-        p=doc.add_paragraph(); p.paragraph_format.keep_with_next=True; p.paragraph_format.space_before=Pt(7); p.paragraph_format.space_after=Pt(3)
-        r=p.add_run(f"{val(u,lang,'country')} — {u['location']} | {cfg['published_prefix']}{u['published']}"); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(10.5); r.font.color.rgb=RGBColor.from_string(DARK)
-        body(doc,u[lang],9.5,4); p=doc.add_paragraph(); r=p.add_run(cfg['source_label']); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(8.8); link(p,u['source'],sources[u['src']])
-    heading(doc,cfg['sections'][5])
-    for x in cfg['methodology']: body(doc,x,9.5)
-    heading(doc,cfg['sections'][6])
-    items=[(f"{val(c,lang,'country')} — {c['source']}",sources[c['src']]) for c in cases]+[(f"{val(u,lang,'country')} — {u['source']}",sources[u['src']]) for u in uncertain]
-    st=doc.add_table(rows=(len(items)+1)//2,cols=2); st.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for i,(label,url) in enumerate(items):
-        c=st.cell(i//2,i%2); margins(c,70); p=c.paragraphs[0]; p.paragraph_format.space_after=Pt(0); r=p.add_run(f'{i+1}. '); r.bold=True; r.font.name='Aptos'; r.font.size=Pt(7.6); link(p,label,url)
-    p=doc.add_paragraph(); p.alignment=WD_ALIGN_PARAGRAPH.CENTER; r=p.add_run(cfg['body_footer']); r.font.name='Aptos'; r.font.size=Pt(8); r.font.color.rgb=RGBColor.from_string(GRAY)
-    for sec in doc.sections:
-        if sec.footer.tables:
-            c=sec.footer.tables[0].cell(0,0); c.text=cfg['footer']; rr=c.paragraphs[0].runs[0]; rr.font.name='Aptos'; rr.font.size=Pt(8); rr.font.color.rgb=RGBColor.from_string('70817C')
-    doc.save(OUT/cfg['outfile'])
-
-for L in ('pt','en','es'): build(L)
-
-idx=ROOT/'reports.json'; current=json.loads(idx.read_text(encoding='utf-8'))
-record={'id':'2026-09-08_2026-09-14','period_start':'2026-09-08','period_end':'2026-09-14','year':2026,
-'title_pt':'Relatório Semanal de Monitoramento','title_en':'Weekly Monitoring Report','title_es':'Informe Semanal de Monitoreo',
-'summary_pt':'Síntese dos casos validados de tráfico e exploração ilegal de fauna registrados entre 8 e 14 de setembro de 2026.',
-'summary_en':'Summary of validated wildlife trafficking and illegal exploitation cases recorded between 8 and 14 September 2026.',
-'summary_es':'Síntesis de los casos validados de tráfico y explotación ilegal de fauna registrados entre el 8 y el 14 de septiembre de 2026.',
-'metrics':{'cases':17,'countries':10,'exact_animals':210,'additional_uncertain_date_records':3},
-'pdf_pt':'reports/2026/2026-09-08_2026-09-14/Relatorio_Semanal_Observatorio_Global_08-14_Set_2026_WCS.pdf','docx_pt':'reports/2026/2026-09-08_2026-09-14/Relatorio_Semanal_Observatorio_Global_08-14_Set_2026_WCS.docx',
-'pdf_en':'reports/2026/2026-09-08_2026-09-14/Weekly_Report_Global_Observatory_08-14_Sep_2026_WCS.pdf','docx_en':'reports/2026/2026-09-08_2026-09-14/Weekly_Report_Global_Observatory_08-14_Sep_2026_WCS.docx',
-'pdf_es':'reports/2026/2026-09-08_2026-09-14/Informe_Semanal_Observatorio_Global_08-14_Sep_2026_WCS.pdf','docx_es':'reports/2026/2026-09-08_2026-09-14/Informe_Semanal_Observatorio_Global_08-14_Sep_2026_WCS.docx','published_at':'2026-09-22'}
-current=[r for r in current if r.get('id')!=record['id']]+[record]
-current.sort(key=lambda r:r.get('period_end',''),reverse=True)
-idx.write_text(json.dumps(current,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+record = {
+"id": PERIOD_ID,
+"period_start":"2026-09-14",
+"period_end":"2026-09-20",
+"year":2026,
+"title_pt":"Relatório Semanal do Observatório Global de Tráfico de Animais - 14 a 20 de setembro de 2026",
+"title_en":"Weekly Report of the Illegal Wildlife Trafficking Global Observatory - 14-20 September 2026",
+"title_es":"Informe Semanal del Observatorio Global del Tráfico de Animales - 14-20 de septiembre de 2026",
+"summary_pt":"25 casos validados em 13 países ou territórios; 680 animais ou espécimes em 19 contagens exatas, mais pelo menos 21 indivíduos em dois registros de contagem mínima. Quatro casos permanecem sem quantidade numérica confiável.",
+"summary_en":"25 validated cases across 13 countries or territories; 680 animals or specimens in 19 exact-count cases, plus at least 21 individuals in two minimum-count records. Four cases remain without a reliable numeric quantity.",
+"summary_es":"25 casos validados en 13 países o territorios; 680 animales o especímenes en 19 casos con conteo exacto, más al menos 21 individuos en dos registros de conteo mínimo. Cuatro casos permanecen sin una cantidad numérica confiable.",
+"metrics":{"cases":25,"countries":13,"exact_animals":680,"exact_count_cases":19,"minimum_additional_animals":21,"minimum_count_cases":2,"unknown_quantity_cases":4},
+"pdf_pt":f"reports/2026/{PERIOD_ID}/Relatorio_Semanal_Observatorio_Global_14-20_Set_2026_WCS.pdf",
+"docx_pt":f"reports/2026/{PERIOD_ID}/Relatorio_Semanal_Observatorio_Global_14-20_Set_2026_WCS.docx",
+"pdf_en":f"reports/2026/{PERIOD_ID}/Weekly_Report_Global_Observatory_14-20_Sep_2026_WCS.pdf",
+"docx_en":f"reports/2026/{PERIOD_ID}/Weekly_Report_Global_Observatory_14-20_Sep_2026_WCS.docx",
+"pdf_es":f"reports/2026/{PERIOD_ID}/Informe_Semanal_Observatorio_Global_14-20_Sep_2026_WCS.pdf",
+"docx_es":f"reports/2026/{PERIOD_ID}/Informe_Semanal_Observatorio_Global_14-20_Sep_2026_WCS.docx",
+"published_at":"2026-09-27"
+}
+index_path=ROOT/"reports.json"
+index=json.loads(index_path.read_text(encoding="utf-8"))
+index=[r for r in index if r.get("id")!=PERIOD_ID]
+index.insert(0,record)
+index_path.write_text(json.dumps(index,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+TEMP_LANGS.unlink(missing_ok=True)
