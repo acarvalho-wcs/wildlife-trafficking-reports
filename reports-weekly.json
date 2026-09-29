@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-09-15_2026-09-21",
+    "type": "weekly",
+    "period_start": "2026-09-15",
+    "period_end": "2026-09-21",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 15–21 setembro 2026",
+    "title_en": "Weekly Report | 15–21 September 2026",
+    "title_es": "Informe Semanal | 15–21 de septiembre de 2026",
+    "summary_pt": "Relatório semanal de monitoramento global de tráfico e comércio ilegal de fauna. O recorte principal reúne 23 ocorrências em 11 países e territórios, com 484 animais ou espécimes em registros de contagem total exata e 6 registros adicionais com data do evento incerta. Sintetiza ocorrências, rotas documentadas, grupos de fauna, casos de destaque, metodologia e fontes abertas.",
+    "summary_en": "Weekly monitoring report on wildlife trafficking and illegal wildlife trade worldwide. The main reporting period covers 23 incidents in 11 countries and territories, with 484 animals or specimens in records with exact total counts, plus 6 additional records with uncertain event dates. It summarizes incidents, documented routes, wildlife groups, notable cases, methodology and open sources.",
+    "summary_es": "Informe semanal de monitoreo global del tráfico y comercio ilegal de fauna. El período principal reúne 23 incidentes en 11 países y territorios, con 484 animales o especímenes en registros con conteos totales exactos y 6 registros adicionales con fecha del evento incierta. Sintetiza incidentes, rutas documentadas, grupos de fauna, casos destacados, metodología y fuentes abiertas.",
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "doi": "10.5281/zenodo.23008516",
+    "zenodo_url": "https://zenodo.org/records/23008516",
+    "published_at": "2026-09-28"
+  },
+  {
     "id": "2026-09-08_2026-09-14",
     "type": "weekly",
     "period_start": "2026-09-08",
@@ -11,7 +32,11 @@
     "summary_pt": "Relatório semanal do Observatório Global de Tráfico de Animais.",
     "summary_en": "Weekly report of the Illegal Wildlife Trafficking Global Observatory.",
     "summary_es": "Informe semanal del Observatorio Global del Tráfico de Animales.",
-    "languages": ["pt", "en", "es"],
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
     "doi": "10.5281/zenodo.22997274",
     "zenodo_url": "https://zenodo.org/records/22997274",
     "published_at": "2026-09-27"
