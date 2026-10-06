@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-09-22_2026-09-28",
+    "type": "weekly",
+    "period_start": "2026-09-22",
+    "period_end": "2026-09-28",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 22–28 setembro 2026",
+    "title_en": "Weekly Report | 22–28 September 2026",
+    "title_es": "Informe Semanal | 22–28 de septiembre de 2026",
+    "summary_pt": "Relatório semanal de monitoramento global de tráfico e comércio ilegal de fauna. O recorte principal reúne ocorrências cuja data do evento ou da apreensão está entre 22 e 28 de setembro de 2026, independentemente da data de publicação. Registros redundantes do mesmo evento foram consolidados. Quatorze registros publicados nesse período são apresentados separadamente porque as fontes não permitem estabelecer a data exata do evento com confiança.",
+    "summary_en": "Weekly report on global monitoring of wildlife trafficking and illegal wildlife trade. The main reporting period covers incidents whose event or seizure date falls between 22 and 28 September 2026, regardless of publication date. Duplicate accounts of the same incident were consolidated. Fourteen records published during this period are presented separately because their exact event dates could not be established confidently from the sources.",
+    "summary_es": "Informe semanal de monitoreo global del tráfico y comercio ilegal de fauna. El período principal reúne incidentes cuya fecha del evento o de la incautación se sitúa entre el 22 y el 28 de septiembre de 2026, independientemente de la fecha de publicación. Los registros redundantes del mismo incidente fueron consolidados. Catorce registros publicados durante este período se presentan por separado porque las fuentes no permiten establecer con confianza la fecha exacta del evento.",
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "doi": "10.5281/zenodo.23100929",
+    "zenodo_url": "https://zenodo.org/records/23100929",
+    "published_at": "2026-10-02"
+  },
+  {
     "id": "2026-09-15_2026-09-21",
     "type": "weekly",
     "period_start": "2026-09-15",
