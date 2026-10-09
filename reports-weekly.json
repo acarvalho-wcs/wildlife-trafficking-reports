@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-09-29_2026-10-05",
+    "type": "weekly",
+    "period_start": "2026-09-29",
+    "period_end": "2026-10-05",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 29 setembro–5 outubro 2026",
+    "title_en": "Weekly Report | 29 September–5 October 2026",
+    "title_es": "Informe Semanal | 29 de septiembre–5 de octubre de 2026",
+    "summary_pt": "Relatório semanal de monitoramento global de tráfico e comércio ilegal de fauna. O núcleo reúne 30 ocorrências com data confirmada entre 29 de setembro e 5 de outubro de 2026, distribuídas por 11 países, com 3.213 animais em contagem exata. São contabilizados separadamente 77 ovos e 382 itens de fauna; uma ocorrência com data incerta e duas operações agregadas aparecem como registros complementares. Inclui rotas documentadas, distribuição geográfica, casos de destaque e notas metodológicas.",
+    "summary_en": "Weekly report from the Illegal Wildlife Trafficking Global Observatory. The core dataset covers 30 incidents with confirmed event dates between 29 September and 5 October 2026 across 11 countries, involving 3,213 individually counted animals. Separately recorded are 77 eggs and 382 wildlife items; one incident with an uncertain date and two aggregated operations are included as supplementary records. The report covers documented routes, geographic distribution, notable cases and methodology.",
+    "summary_es": "Informe semanal del Observatorio Global del Tráfico Ilegal de Fauna. El conjunto principal reúne 30 incidentes con fecha confirmada entre el 29 de septiembre y el 5 de octubre de 2026, en 11 países, con 3.213 animales contabilizados de forma exacta. Se registran por separado 77 huevos y 382 artículos de fauna; un incidente de fecha incierta y dos operaciones agregadas figuran como registros complementarios. Incluye rutas documentadas, distribución geográfica, casos destacados y metodología.",
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "doi": "10.5281/zenodo.23269208",
+    "zenodo_url": "https://zenodo.org/records/23269208",
+    "published_at": "2026-10-09"
+  },
+  {
     "id": "2026-09-22_2026-09-28",
     "type": "weekly",
     "period_start": "2026-09-22",
