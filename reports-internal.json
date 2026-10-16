@@ -57,15 +57,15 @@
       "files": {
         "pt": {
           "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Relatorio_Territorial_Triplice_Fronteira_Brasil_Peru_Colombia_Quelonios_2026-10-13.pdf",
-          "available": false,
+          "available": true,
           "language": "pt"
         }
       },
       "materials": [
         {
           "type": "image",
-          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Infografico_Quelonios_Triplice_Fronteira.png",
-          "available": false,
+          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Infográfico dos Quelônios na Tríplice Fronteira.png",
+          "available": true,
           "title": {
             "pt": "Infográfico — Quelônios na tríplice fronteira",
             "en": "Infographic — Chelonians at the triple border",
@@ -74,12 +74,12 @@
         },
         {
           "type": "image",
-          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Mapa_Rotas_Quelonios_Amazonia.png",
-          "available": false,
+          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Mapa das Rotas de Quelônios na Amazônia.png",
+          "available": true,
           "title": {
-            "pt": "Mapa complementar — Rios, áreas urbanas e rotas de comércio",
-            "en": "Supplementary map — Rivers, urban areas and trade routes",
-            "es": "Mapa complementario — Ríos, áreas urbanas y rutas de comercio"
+            "pt": "Mapa — Rios, áreas urbanas e rotas de comércio na Amazônia",
+            "en": "Map — Amazonian rivers, urban areas and trade routes",
+            "es": "Mapa — Ríos, áreas urbanas y rutas de comercio en la Amazonía"
           }
         }
       ]
@@ -108,10 +108,32 @@
       "files": {
         "pt": {
           "path": "reports/internal/territorial/guapore-itenez-2026-10-09/Relatorio_Territorial_Guapore_Itenez.pdf",
-          "available": false,
+          "available": true,
           "language": "pt"
         }
-      }
+      },
+      "materials": [
+        {
+          "type": "image",
+          "path": "reports/internal/territorial/guapore-itenez-2026-10-09/Infográfico dos Quelônios na Tríplice Fronteira.png",
+          "available": true,
+          "title": {
+            "pt": "Infográfico — Quelônios na tríplice fronteira",
+            "en": "Infographic — Chelonians at the triple border",
+            "es": "Infografía — Quelonios en la triple frontera"
+          }
+        },
+        {
+          "type": "image",
+          "path": "reports/internal/territorial/guapore-itenez-2026-10-09/Mapa das Rotas de Quelônios na Amazônia.png",
+          "available": true,
+          "title": {
+            "pt": "Mapa — Rios, áreas urbanas e rotas de comércio na Amazônia",
+            "en": "Map — Amazonian rivers, urban areas and trade routes",
+            "es": "Mapa — Ríos, áreas urbanas y rutas de comercio en la Amazonía"
+          }
+        }
+      ]
     }
   ]
 }
