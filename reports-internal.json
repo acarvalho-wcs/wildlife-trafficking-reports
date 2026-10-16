@@ -34,6 +34,29 @@
       }
     },
     {
+      "id": "species-corallus-cropanii-osint-2026-10-13",
+      "category": "species",
+      "date": "2026-10-13",
+      "scientific_name": "Corallus cropanii",
+      "title": {
+        "pt": "Dossiê global — Corallus cropanii: apreensões, cativeiro irregular e anúncios comerciais",
+        "en": "Global dossier — Corallus cropanii: seizures, unlawful captivity and commercial listings",
+        "es": "Dosier global — Corallus cropanii: incautaciones, cautiverio irregular y anuncios comerciales"
+      },
+      "description": {
+        "pt": "Consolidação OSINT global e multilíngue sobre Corallus cropanii. Documenta um episódio confirmado de retirada de cativeiro irregular em Sete Barras (SP), em fevereiro de 2022, e examina avisos históricos, perfis de plataformas comerciais e fóruns. Distingue menções à espécie de ofertas e transações efetivamente comprovadas; não identifica outras apreensões independentemente corroboradas.",
+        "en": "Global multilingual OSINT assessment of Corallus cropanii. Documents one confirmed removal from irregular captivity in Sete Barras, Brazil, in February 2022, and reviews historical notices, marketplace profiles and online forums. Distinguishes species mentions from verified offers and transactions; no additional independently corroborated seizures were identified.",
+        "es": "Análisis OSINT global y multilingüe de Corallus cropanii. Documenta un retiro confirmado de cautiverio irregular en Sete Barras (Brasil), en febrero de 2022, y examina avisos históricos, perfiles comerciales y foros. Distingue menciones de la especie de ofertas y transacciones verificadas; no se identificaron otras incautaciones corroboradas de forma independiente."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/species/corallus-cropanii-2026-10-13/dossie_global_Corallus_cropanii_OSINT_2026-10-13.pdf",
+          "language": "pt",
+          "available": true
+        }
+      }
+    },
+    {
       "id": "territorial-quelonios-triplice-fronteira-2026-10-13",
       "category": "territorial",
       "date": "2026-10-13",
