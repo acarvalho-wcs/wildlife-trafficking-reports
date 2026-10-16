@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-16",
+  "reports": [
+    {
+      "id": "evolution-2026-09-21-2026-10-15",
+      "category": "evolution",
+      "date": "2026-10-15",
+      "period_start": "2026-09-21",
+      "period_end": "2026-10-15",
+      "title": {
+        "pt": "Relatório de evolução mensal — Observatório Global de Tráfico de Animais",
+        "en": "Monthly evolution report — Illegal Wildlife Trafficking Global Observatory",
+        "es": "Informe de evolución mensual — Observatorio Global del Tráfico de Animales"
+      },
+      "description": {
+        "pt": "Edição inaugural sobre a evolução tecnológica e metodológica do Observatório, incluindo arquitetura de dados, repositórios, mapas 2D/3D, área restrita, auditorias e integração futura com o Aurum. O recorte documentado vai de 21/09 a 15/10/2026, precedido por pelo menos duas semanas de desenvolvimento.",
+        "en": "Inaugural account of the Observatory's technological and methodological development, covering data architecture, repositories, 2D/3D maps, restricted areas, quality assurance and planned Aurum integration. The reporting window spans 21 September–15 October 2026, preceded by at least two weeks of development.",
+        "es": "Edición inaugural sobre la evolución tecnológica y metodológica del Observatorio, incluida la arquitectura de datos, repositorios, mapas 2D/3D, área restringida, auditorías y futura integración con Aurum. El período documentado abarca del 21/09 al 15/10/2026, precedido por al menos dos semanas de desarrollo."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/evolution-2026-09-21-2026-10-15/Observatorio_Relatorio_Evolucao_2026-09-21_a_10-15_PT.pdf",
+          "available": true
+        },
+        "en": {
+          "path": "reports/internal/evolution-2026-09-21-2026-10-15/Observatorio_Relatorio_Evolucao_2026-09-21_a_10-15_EN.pdf",
+          "available": false
+        },
+        "es": {
+          "path": "reports/internal/evolution-2026-09-21-2026-10-15/Observatorio_Relatorio_Evolucao_2026-09-21_a_10-15_ES.pdf",
+          "available": true
+        }
+      }
+    }
+  ]
+}
