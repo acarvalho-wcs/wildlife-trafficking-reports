@@ -32,6 +32,86 @@
           "available": true
         }
       }
+    },
+    {
+      "id": "territorial-quelonios-triplice-fronteira-2026-10-13",
+      "category": "territorial",
+      "date": "2026-10-13",
+      "period_start": "2000-01-01",
+      "period_end": "2025-12-31",
+      "title": {
+        "pt": "Quelônios na tríplice fronteira Brasil–Peru–Colômbia: Alto Solimões–Javari",
+        "en": "Chelonians at the Brazil–Peru–Colombia triple border: Upper Solimões–Javari",
+        "es": "Quelonios en la triple frontera Brasil–Perú–Colombia: Alto Solimões–Javari"
+      },
+      "description": {
+        "pt": "Relatório territorial que cruza apreensões e registros do Aurum com documentos da WCS e fontes oficiais no Alto Solimões–Javari. Examina exploração de quelônios e ovos, distribuição espacial, fiscalização e crimes ambientais convergentes, distinguindo séries potencialmente sobrepostas para evitar somas indevidas.",
+        "en": "Territorial analysis combining Aurum records, WCS documents and official seizure sources for the Upper Solimões–Javari. Examines turtles and eggs, spatial patterns, enforcement and converging environmental offences, keeping potentially overlapping datasets separate to avoid double counting.",
+        "es": "Análisis territorial que integra registros de Aurum, documentos de WCS y fuentes oficiales de incautaciones en el Alto Solimões–Javari. Examina quelonios y huevos, patrones espaciales, fiscalización y delitos ambientales convergentes, separando series potencialmente superpuestas para evitar dobles conteos."
+      },
+      "territory": {
+        "pt": "Tríplice fronteira Brasil–Peru–Colômbia · Alto Solimões–Javari",
+        "en": "Brazil–Peru–Colombia triple border · Upper Solimões–Javari",
+        "es": "Triple frontera Brasil–Perú–Colombia · Alto Solimões–Javari"
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Relatorio_Territorial_Triplice_Fronteira_Brasil_Peru_Colombia_Quelonios_2026-10-13.pdf",
+          "available": false,
+          "language": "pt"
+        }
+      },
+      "materials": [
+        {
+          "type": "image",
+          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Infografico_Quelonios_Triplice_Fronteira.png",
+          "available": false,
+          "title": {
+            "pt": "Infográfico — Quelônios na tríplice fronteira",
+            "en": "Infographic — Chelonians at the triple border",
+            "es": "Infografía — Quelonios en la triple frontera"
+          }
+        },
+        {
+          "type": "image",
+          "path": "reports/internal/territorial/quelonios-triplice-fronteira-2026-10-13/Mapa_Rotas_Quelonios_Amazonia.png",
+          "available": false,
+          "title": {
+            "pt": "Mapa complementar — Rios, áreas urbanas e rotas de comércio",
+            "en": "Supplementary map — Rivers, urban areas and trade routes",
+            "es": "Mapa complementario — Ríos, áreas urbanas y rutas de comercio"
+          }
+        }
+      ]
+    },
+    {
+      "id": "territorial-guapore-itenez-2026-10-09",
+      "category": "territorial",
+      "date": "2026-10-09",
+      "period_start": "2018-01-01",
+      "period_end": "2026-12-31",
+      "title": {
+        "pt": "Guaporé–Iténez: exploração ilegal de quelônios e convergência de crimes ambientais",
+        "en": "Guaporé–Iténez: Illegal exploitation of chelonians and converging environmental offences",
+        "es": "Guaporé–Iténez: explotación ilegal de quelonios y convergencia de delitos ambientales"
+      },
+      "description": {
+        "pt": "Diagnóstico territorial do corredor Guaporé–Iténez baseado na auditoria de 20 registros do Observatório (2018–2026). Distingue ocorrências com quelônios e ovos, equipamentos de captura e crimes ambientais convergentes, destaca incertezas documentais e lacunas de cobertura na margem boliviana.",
+        "en": "Territorial assessment of the Guaporé–Iténez corridor based on 20 audited Observatory records (2018–2026). Separates turtle and egg cases, capture equipment and related environmental offences, while describing evidentiary uncertainty and coverage gaps on the Bolivian side.",
+        "es": "Diagnóstico territorial del corredor Guaporé–Iténez basado en 20 registros auditados del Observatorio (2018–2026). Distingue casos de quelonios y huevos, equipos de captura y delitos ambientales conexos, señalando incertidumbres documentales y vacíos de cobertura en la margen boliviana."
+      },
+      "territory": {
+        "pt": "Corredor Guaporé–Iténez · Fronteira Brasil–Bolívia",
+        "en": "Guaporé–Iténez corridor · Brazil–Bolivia border",
+        "es": "Corredor Guaporé–Iténez · Frontera Brasil–Bolivia"
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/territorial/guapore-itenez-2026-10-09/Relatorio_Territorial_Guapore_Itenez.pdf",
+          "available": false,
+          "language": "pt"
+        }
+      }
     }
   ]
 }
