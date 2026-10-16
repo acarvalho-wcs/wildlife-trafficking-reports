@@ -25,7 +25,7 @@
         },
         "en": {
           "path": "reports/internal/evolution-2026-09-21-2026-10-15/Observatorio_Relatorio_Evolucao_2026-09-21_a_10-15_EN.pdf",
-          "available": false
+          "available": true
         },
         "es": {
           "path": "reports/internal/evolution-2026-09-21-2026-10-15/Observatorio_Relatorio_Evolucao_2026-09-21_a_10-15_ES.pdf",
