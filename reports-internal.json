@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "reports": [
     {
       "id": "evolution-2026-09-21-2026-10-15",
@@ -136,16 +136,6 @@
         }
       },
       "materials": [
-        {
-          "type": "image",
-          "path": "reports/internal/territorial/guapore-itenez-2026-10-09/Infográfico dos Quelônios na Tríplice Fronteira.png",
-          "available": true,
-          "title": {
-            "pt": "Infográfico — Quelônios na tríplice fronteira",
-            "en": "Infographic — Chelonians at the triple border",
-            "es": "Infografía — Quelonios en la triple frontera"
-          }
-        },
         {
           "type": "image",
           "path": "reports/internal/territorial/guapore-itenez-2026-10-09/Mapa das Rotas de Quelônios na Amazônia.jpeg",
