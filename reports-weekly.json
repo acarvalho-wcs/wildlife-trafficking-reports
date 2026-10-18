@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-10-06_2026-10-12",
+    "type": "weekly",
+    "period_start": "2026-10-06",
+    "period_end": "2026-10-12",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 6–12 outubro 2026",
+    "title_en": "Weekly Report | 6–12 October 2026",
+    "title_es": "Informe Semanal | 6–12 de octubre de 2026",
+    "summary_pt": "Relatório semanal do Observatório Global de Tráfico de Animais. Foram documentadas 68 ocorrências com data confirmada entre 6 e 12 de outubro de 2026, em 20 países e territórios, envolvendo 7.228 animais em registros de contagem exata e 3.049 itens e partes de fauna contabilizados separadamente. Três registros com data incerta e quatro registros investigativos ou agregados aparecem fora do núcleo quantitativo. A edição apresenta quatro rotas documentadas, distribuição geográfica, perfis taxonômicos, seis casos de destaque e metodologia de monitoramento OSINT.",
+    "summary_en": "Weekly report from the Illegal Wildlife Trafficking Global Observatory. The report documents 68 incidents with confirmed event dates between 6 and 12 October 2026 across 20 countries and territories, involving 7,228 animals in records with exact counts and 3,049 wildlife items and parts counted separately. Three records with uncertain event dates and four investigative or aggregated records are treated outside the quantitative core. The edition covers four documented routes, geographic distribution, taxonomic profiles, six notable cases and OSINT monitoring methodology.",
+    "summary_es": "Informe semanal del Observatorio Global del Tráfico de Animales. Se documentaron 68 incidentes con fecha confirmada entre el 6 y el 12 de octubre de 2026 en 20 países y territorios, con 7.228 animales registrados mediante recuentos exactos y 3.049 artículos y partes de fauna contabilizados por separado. Tres registros con fechas inciertas y cuatro registros investigativos o agregados se presentan fuera del núcleo cuantitativo. La edición incluye cuatro rutas documentadas, distribución geográfica, perfiles taxonómicos, seis casos destacados y metodología de monitoreo OSINT.",
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "doi": "10.5281/zenodo.23443551",
+    "zenodo_url": "https://zenodo.org/records/23443551",
+    "published_at": "2026-10-17"
+  },
+  {
     "id": "2026-09-29_2026-10-05",
     "type": "weekly",
     "period_start": "2026-09-29",
