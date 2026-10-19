@@ -167,7 +167,7 @@
         "pt": {
           "path": "reports/internal/species/melipona-capixaba-2026-10-19/dossie_Melipona_capixaba_OSINT_2026-10-19.pdf",
           "language": "pt",
-          "available": false
+          "available": true
         }
       }
     }
