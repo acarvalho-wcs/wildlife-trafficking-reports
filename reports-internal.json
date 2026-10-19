@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-19",
   "reports": [
     {
       "id": "evolution-2026-09-21-2026-10-15",
@@ -147,6 +147,29 @@
           }
         }
       ]
+    },
+    {
+      "id": "species-melipona-capixaba-osint-2026-10-19",
+      "category": "species",
+      "date": "2026-10-19",
+      "scientific_name": "Melipona capixaba",
+      "title": {
+        "pt": "Dossiê OSINT — Melipona capixaba: comércio on-line de abelhas nativas sem ferrão",
+        "en": "OSINT dossier — Melipona capixaba: online trade in native stingless bees",
+        "es": "Dosier OSINT — Melipona capixaba: comercio en línea de abejas nativas sin aguijón"
+      },
+      "description": {
+        "pt": "Análise de fontes abertas sobre anúncios de Melipona capixaba na plataforma abelhas.org, com atenção à distribuição natural da espécie, à localização dos vendedores e a indícios de comércio fora de sua área de ocorrência. Integra a investigação mais ampla sobre Melipona capixaba, M. rufiventris e M. scutellaris, distinguindo ofertas verificadas de eventuais infrações que ainda exigem comprovação.",
+        "en": "Open-source analysis of Melipona capixaba listings on abelhas.org, examining the species' native range, seller locations and indications of trade beyond its natural distribution. Part of a broader investigation of Melipona capixaba, M. rufiventris and M. scutellaris, distinguishing documented offers from potential violations that require further verification.",
+        "es": "Análisis de fuentes abiertas de anuncios de Melipona capixaba en abelhas.org, considerando su distribución natural, la ubicación de los vendedores y los indicios de comercio fuera de su área de distribución. Integra una investigación más amplia sobre Melipona capixaba, M. rufiventris y M. scutellaris, diferenciando las ofertas documentadas de posibles infracciones pendientes de verificación."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/species/melipona-capixaba-2026-10-19/dossie_Melipona_capixaba_OSINT_2026-10-19.pdf",
+          "language": "pt",
+          "available": false
+        }
+      }
     }
   ]
 }
