@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19",
+  "updated_at": "2026-10-21",
   "reports": [
     {
       "id": "evolution-2026-09-21-2026-10-15",
@@ -30,6 +30,28 @@
         "es": {
           "path": "reports/internal/evolution-2026-09-21-2026-10-15/Observatorio_Relatorio_Evolucao_2026-09-21_a_10-15_ES.pdf",
           "available": true
+        }
+      }
+    },
+    {
+      "id": "management-audit-aurum-integration-2026-10-10",
+      "category": "evolution",
+      "date": "2026-10-10",
+      "title": {
+        "pt": "Relatório de Auditoria - Integração do Aurum",
+        "en": "Audit Report - Aurum Integration",
+        "es": "Informe de Auditoría - Integración de Aurum"
+      },
+      "description": {
+        "pt": "Relatório de auditoria sobre a integração do Aurum ao Observatório Global de Tráfico de Animais. Documento aguardando envio do PDF original.",
+        "en": "Audit report on the integration of Aurum into the Illegal Wildlife Trafficking Global Observatory. Original PDF pending upload.",
+        "es": "Informe de auditoría sobre la integración de Aurum en el Observatorio Global del Tráfico de Animales. Pendiente de carga del PDF original."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/management/auditoria-aurum-integracao-2026-10-10/Relatorio_Auditoria_Aurum_Integracao_Observatorio_2026-10-10.pdf",
+          "language": "pt",
+          "available": false
         }
       }
     },
