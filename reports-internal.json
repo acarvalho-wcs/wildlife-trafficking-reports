@@ -192,6 +192,29 @@
           "available": true
         }
       }
+    },
+    {
+      "id": "species-amazona-amazonica-osint-2026-10-21",
+      "category": "species",
+      "date": "2026-10-21",
+      "scientific_name": "Amazona amazonica",
+      "title": {
+        "pt": "Dossiê de espécie — Amazona amazonica",
+        "en": "Species dossier — Amazona amazonica",
+        "es": "Dosier de especie — Amazona amazonica"
+      },
+      "description": {
+        "pt": "Relatório OSINT sobre registros documentados de Amazona amazonica, com destaque para Maranhão e Piauí.",
+        "en": "OSINT review of documented Amazona amazonica records, including Maranhão and Piauí.",
+        "es": "Análisis OSINT de registros documentados de Amazona amazonica, incluidos Maranhão y Piauí."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/species/amazona-amazonica-2026-10-21/dossie_Amazona_amazonica_OSINT_2026-10-21.pdf",
+          "language": "pt",
+          "available": true
+        }
+      }
     }
   ]
 }
