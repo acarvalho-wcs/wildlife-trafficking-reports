@@ -43,15 +43,15 @@
         "es": "Informe de Auditoría - Integración de Aurum"
       },
       "description": {
-        "pt": "Relatório de auditoria sobre a integração do Aurum ao Observatório Global de Tráfico de Animais. Documento aguardando envio do PDF original.",
-        "en": "Audit report on the integration of Aurum into the Illegal Wildlife Trafficking Global Observatory. Original PDF pending upload.",
-        "es": "Informe de auditoría sobre la integración de Aurum en el Observatorio Global del Tráfico de Animales. Pendiente de carga del PDF original."
+        "pt": "Relatório de auditoria sobre a integração do Aurum ao Observatório Global de Tráfico de Animais. Documento disponível em português.",
+        "en": "Audit report on the integration of Aurum into the Illegal Wildlife Trafficking Global Observatory. Document available in Portuguese.",
+        "es": "Informe de auditoría sobre la integración de Aurum en el Observatorio Global del Tráfico de Animales. Documento disponible en portugués."
       },
       "files": {
         "pt": {
           "path": "reports/internal/management/auditoria-aurum-integracao-2026-10-10/Relatorio_Auditoria_Aurum_Integracao_Observatorio_2026-10-10.pdf",
           "language": "pt",
-          "available": false
+          "available": true
         }
       }
     },
