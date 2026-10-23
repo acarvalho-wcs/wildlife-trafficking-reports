@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-10-13_2026-10-19",
+    "type": "weekly",
+    "period_start": "2026-10-13",
+    "period_end": "2026-10-19",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 13–19 outubro 2026",
+    "title_en": "Weekly Report | 13–19 October 2026",
+    "title_es": "Informe Semanal | 13–19 de octubre de 2026",
+    "summary_pt": "Relatório semanal do Observatório Global de Tráfico de Animais. O recorte revisado reúne 26 ocorrências com datas de evento suficientemente documentadas entre 13 e 19 de outubro de 2026, em 8 países e territórios, com 507 animais em contagem exata, uma ave taxidermizada e dois ovos de casuar contabilizados separadamente. Registros com múltiplas localidades, notícias sem data operacional e informações retrospectivas ficam fora das métricas. A edição analisa rotas documentadas, grupos de fauna, canais de comercialização, seis casos de destaque e limitações de cobertura do monitoramento OSINT.",
+    "summary_en": "Weekly report from the Illegal Wildlife Trafficking Global Observatory. The reviewed extract identifies 26 incidents with sufficiently documented event dates between 13 and 19 October 2026 across 8 countries and territories, with 507 animals counted exactly, one taxidermied bird and two cassowary eggs counted separately. Multi-location records, news without an operational date and retrospective information are excluded from the metrics. The edition discusses documented routes, faunal groups, marketing channels, six notable cases and OSINT monitoring coverage limitations.",
+    "summary_es": "Informe semanal del Observatorio Global del Tráfico de Animales. El conjunto revisado reúne 26 incidentes con fechas de evento suficientemente documentadas entre el 13 y el 19 de octubre de 2026, en 8 países y territorios, con 507 animales contabilizados de forma exacta, un ave taxidermizada y dos huevos de casuario contabilizados por separado. Los registros con múltiples localidades, las noticias sin fecha operativa y la información retrospectiva quedan fuera de las métricas. La edición analiza rutas documentadas, grupos de fauna, canales de comercialización, seis casos destacados y limitaciones de cobertura del monitoreo OSINT.",
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "doi": "10.5281/zenodo.23600257",
+    "zenodo_url": "https://zenodo.org/records/23600257",
+    "published_at": "2026-10-23"
+  },
+  {
     "id": "2026-10-06_2026-10-12",
     "type": "weekly",
     "period_start": "2026-10-06",
