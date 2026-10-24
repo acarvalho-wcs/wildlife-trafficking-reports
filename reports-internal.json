@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-21",
+  "updated_at": "2026-10-24",
   "reports": [
     {
       "id": "evolution-2026-09-21-2026-10-15",
@@ -52,6 +52,30 @@
           "path": "reports/internal/management/auditoria-aurum-integracao-2026-10-10/Relatorio_Auditoria_Aurum_Integracao_Observatorio_2026-10-10.pdf",
           "language": "pt",
           "available": true
+        }
+      }
+    },
+    {
+      "id": "management-usage-ga4-2026-10-01-2026-10-22",
+      "category": "evolution",
+      "date": "2026-10-24",
+      "period_start": "2026-10-01",
+      "period_end": "2026-10-22",
+      "title": {
+        "pt": "Relatório de Uso e Alcance do Observatório — 1 a 22 de outubro de 2026",
+        "en": "Observatory Usage and Reach Report — 1–22 October 2026",
+        "es": "Informe de Uso y Alcance del Observatorio — 1–22 de octubre de 2026"
+      },
+      "description": {
+        "pt": "Análise dos primeiros 22 dias de monitoramento no Google Analytics 4: audiência, abrangência geográfica, aquisição, engajamento, interações e dispositivos.",
+        "en": "Analysis of the first 22 days of Google Analytics 4 monitoring: audience, geographic reach, acquisition, engagement, interactions and devices.",
+        "es": "Análisis de los primeros 22 días de seguimiento con Google Analytics 4: audiencia, alcance geográfico, adquisición, interacción y dispositivos."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/management/uso-observatorio-ga4-2026-10-01-a-2026-10-22/Relatorio_Uso_Alcance_Observatorio_01-22_Out_2026.pdf",
+          "language": "pt",
+          "available": false
         }
       }
     },
