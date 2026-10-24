@@ -75,7 +75,7 @@
         "pt": {
           "path": "reports/internal/management/uso-observatorio-ga4-2026-10-01-a-2026-10-22/Relatorio_Uso_Alcance_Observatorio_01-22_Out_2026.pdf",
           "language": "pt",
-          "available": false
+          "available": true
         }
       }
     },
