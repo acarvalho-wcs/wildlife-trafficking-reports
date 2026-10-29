@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-28",
-  "audited_through": "2026-10-28",
+  "updated_at": "2026-10-29",
+  "audited_through": "2026-10-29",
   "base_rule": "Render only movements or corridors explicitly documented in a source or explicitly attributed in the case record. Never infer an origin, destination, intermediate stop, direction, or criminal linkage from species range, nationality, geography, or contextual/historical material.",
   "rendering": {
     "default_layer": "documented_routes",
@@ -4673,6 +4673,43 @@
       "evidence_es": "Pareja interceptada en Foz con 32 huevos en autobús declaró entrega en Galeão. Tramo no completado; destino internacional desconocido.",
       "source_label": "H2FOZ / Receita Federal (comunicado da Alfândega de Foz do Iguaçu)",
       "source_url": "https://www.h2foz.com.br/seguranca-publica/casal-e-flagrado-com-32-ovos-de-aves-que-podem-valer-50-mil-euros-cada-um/"
+    },
+    {
+      "id": "us-hongkong-2026-10-28-eight-turtles",
+      "event_match": {
+        "location_contains": "Aeroporto Internacional de Hong Kong",
+        "event_date": "2026-10-28"
+      },
+      "status": "DOCUMENTED_BROAD",
+      "route_type": "completed_shipment",
+      "direction": "forward",
+      "line_style": "dashed",
+      "label_pt": "Estados Unidos → Aeroporto Internacional de Hong Kong",
+      "label_en": "United States → Hong Kong International Airport",
+      "label_es": "Estados Unidos → Aeropuerto Internacional de Hong Kong",
+      "segments": [
+        {
+          "from": {
+            "name": "Estados Unidos — cidade de origem não informada",
+            "country": "Estados Unidos",
+            "lat": 39.8283,
+            "lon": -98.5795,
+            "precision": "country_centroid_generalized"
+          },
+          "to": {
+            "name": "Aeroporto Internacional de Hong Kong",
+            "country": "Hong Kong",
+            "lat": 22.308,
+            "lon": 113.9185,
+            "precision": "airport"
+          }
+        }
+      ],
+      "evidence_pt": "Duas encomendas com oito tartarugas vivas foram enviadas dos Estados Unidos a Hong Kong e apreendidas no aeroporto em 28/10/2026. Não foram informadas cidade de origem, escalas ou proveniência biológica.",
+      "evidence_en": "Two parcels containing eight live turtles were sent from the United States to Hong Kong and seized at the airport on 28 October 2026. Dispatch city, stopovers and biological provenance were not reported.",
+      "evidence_es": "Dos paquetes con ocho tortugas vivas fueron enviados de Estados Unidos a Hong Kong y decomisados en el aeropuerto el 28/10/2026. No se informó ciudad de envío, escalas ni procedencia biológica.",
+      "source_label": "Hong Kong Customs",
+      "source_url": "https://www.info.gov.hk/gia/general/202610/29/P2026102900312.htm"
     }
   ],
   "network_context": [
