@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-24",
+  "updated_at": "2026-11-07",
   "reports": [
     {
       "id": "evolution-2026-09-21-2026-10-15",
@@ -237,6 +237,29 @@
           "path": "reports/internal/species/amazona-amazonica-2026-10-21/dossie_Amazona_amazonica_OSINT_2026-10-21.pdf",
           "language": "pt",
           "available": true
+        }
+      }
+    },
+    {
+      "id": "species-podocnemis-expansa-osint-2026-11-07",
+      "category": "species",
+      "date": "2026-11-07",
+      "scientific_name": "Podocnemis expansa",
+      "title": {
+        "pt": "Dossiê OSINT: Podocnemis expansa - Apreensões de ovos e indivíduos, geografias e rotas documentadas",
+        "en": "OSINT dossier: Podocnemis expansa - Seizures of eggs and individuals, geographies and documented routes",
+        "es": "Dosier OSINT: Podocnemis expansa - Incautaciones de huevos e individuos, geografías y rutas documentadas"
+      },
+      "description": {
+        "pt": "Dossiê OSINT sobre apreensões documentadas de ovos e indivíduos de Podocnemis expansa, abrangendo distribuição geográfica dos registros e rotas sustentadas pelas fontes disponíveis.",
+        "en": "OSINT dossier covering documented seizures of Podocnemis expansa eggs and individuals, the geographic distribution of records and routes supported by available sources.",
+        "es": "Dosier OSINT sobre incautaciones documentadas de huevos e individuos de Podocnemis expansa, la distribución geográfica de los registros y las rutas respaldadas por las fuentes disponibles."
+      },
+      "files": {
+        "pt": {
+          "path": "reports/internal/species/podocnemis-expansa-2026-11-07/dossie_Podocnemis_expansa_OSINT_2026-11-07.pdf",
+          "language": "pt",
+          "available": false
         }
       }
     }
