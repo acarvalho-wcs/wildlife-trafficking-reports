@@ -257,9 +257,9 @@
       },
       "files": {
         "pt": {
-          "path": "reports/internal/species/podocnemis-expansa-2026-11-07/dossie_Podocnemis_expansa_OSINT_2026-11-07.pdf",
+          "path": "reports/internal/species/podocnemis-expansa-2026-11-07/Dossie_Podocnemis_expansa_apreensoes_07-11-2026.pdf",
           "language": "pt",
-          "available": false
+          "available": true
         }
       }
     }
