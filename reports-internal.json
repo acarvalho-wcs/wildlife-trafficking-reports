@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07",
+  "updated_at": "2026-11-08",
   "reports": [
     {
       "id": "evolution-2026-09-21-2026-10-15",
@@ -76,6 +76,28 @@
           "path": "reports/internal/management/uso-observatorio-ga4-2026-10-01-a-2026-10-22/Relatorio_Uso_Alcance_Observatorio_01-22_Out_2026.pdf",
           "language": "pt",
           "available": true
+        }
+      }
+    },
+    {
+      "id": "management-comparative-wildlife-crime-monitoring-platforms-2026",
+      "category": "evolution",
+      "date": "2026-11-08",
+      "title": {
+        "pt": "Comparative Assessment of Wildlife-Crime Monitoring Platforms",
+        "en": "Comparative Assessment of Wildlife-Crime Monitoring Platforms",
+        "es": "Comparative Assessment of Wildlife-Crime Monitoring Platforms"
+      },
+      "description": {
+        "pt": "Análise comparativa de plataformas de monitoramento de crimes contra a fauna, incluindo cobertura geográfica e taxonômica, rastreabilidade das fontes, periodicidade de atualização, acesso a dados abertos, informações por ocorrência, visualização de rotas e condições para obtenção de dados. Relatório disponível em inglês.",
+        "en": "Comparative review of wildlife-crime monitoring platforms, examining geographic and taxonomic coverage, source traceability, update frequency, open-data access, event-level detail, route visualization and data-request requirements. Report in English.",
+        "es": "Evaluación comparativa de plataformas de monitoreo de delitos contra la fauna, incluyendo cobertura geográfica y taxonómica, trazabilidad de fuentes, frecuencia de actualización, acceso a datos abiertos, detalles por evento, visualización de rutas y requisitos para solicitar datos. Informe disponible en inglés."
+      },
+      "files": {
+        "en": {
+          "path": "reports/internal/management/comparative-assessment-wildlife-crime-monitoring-platforms-2026-11-08/Comparative_Assessment_Wildlife_Crime_Monitoring_Platforms_2026.pdf",
+          "language": "en",
+          "available": false
         }
       }
     },
