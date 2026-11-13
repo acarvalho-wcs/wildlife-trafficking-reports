@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-11-03_2026-11-09",
+    "type": "weekly",
+    "period_start": "2026-11-03",
+    "period_end": "2026-11-09",
+    "year": 2026,
+    "title_pt": "Relatório Semanal | 3–9 de novembro de 2026",
+    "title_en": "Weekly Report | 3–9 November 2026",
+    "title_es": "Informe Semanal | 3–9 de noviembre de 2026",
+    "summary_pt": "Relatório semanal do Observatório Global de Tráfico de Animais. O conjunto principal reúne 35 ocorrências em 14 países, com 1.289 animais em contagem exata e 2.009 ovos e outros itens contabilizados individualmente. Outros 21 registros complementares ficam fora das métricas principais. A edição apresenta distribuição geográfica, rotas documentadas, grupos de fauna, casos de destaque, análise de inteligência, metodologia e fontes abertas, mantendo ovos, produtos e quantidades por peso em categorias separadas.",
+    "summary_en": "Weekly report from the Illegal Wildlife Trafficking Global Observatory. The core dataset covers 35 incidents across 14 countries, with 1,289 animals recorded as exact counts and 2,009 eggs and other individually counted items. A further 21 supplementary records are excluded from the core metrics. The report presents geographic distribution, documented routes, wildlife groups, featured cases, intelligence analysis, methodology and open sources, keeping eggs, products and quantities by weight in separate categories.",
+    "summary_es": "Informe semanal del Observatorio Global del Tráfico de Animales. El conjunto principal reúne 35 incidentes en 14 países, con 1.289 animales contabilizados de forma exacta y 2.009 huevos y otros artículos contabilizados individualmente. Otros 21 registros complementarios quedan fuera de las métricas principales. La edición presenta distribución geográfica, rutas documentadas, grupos de fauna, casos destacados, análisis de inteligencia, metodología y fuentes abiertas, manteniendo los huevos, los productos y las cantidades por peso en categorías separadas.",
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "doi": "10.5281/zenodo.24135765",
+    "zenodo_url": "https://zenodo.org/records/24135765",
+    "published_at": "2026-11-13"
+  },
+  {
     "id": "2026-10-27_2026-11-02",
     "type": "weekly",
     "period_start": "2026-10-27",
